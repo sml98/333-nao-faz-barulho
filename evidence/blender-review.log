@@ -1,0 +1,410 @@
+19:23:56 | INFO: Data are loaded, start creating Blender stuff
+19:23:56 | INFO: Blender create Mesh node Cube.012
+19:23:56 | INFO: Blender create Mesh node Cube.014
+19:23:56 | INFO: Blender create Mesh node Cube.013
+19:23:56 | INFO: Blender create Mesh node backpack strap
+19:23:56 | INFO: Blender create Mesh node backpack strap.001
+19:23:56 | INFO: Blender create Mesh node Cube.015
+19:23:56 | INFO: Blender create Mesh node Sphere.010
+19:23:56 | INFO: Blender create Mesh node Cylinder
+19:23:56 | INFO: Blender create Mesh node curled finger
+19:23:56 | INFO: Blender create Mesh node curled finger.001
+19:23:56 | INFO: Blender create Mesh node curled finger.002
+19:23:56 | INFO: Blender create Mesh node Sphere.004
+19:23:56 | INFO: Blender create Mesh node Sphere.005
+19:23:56 | INFO: Blender create Mesh node jacket sleeve
+19:23:56 | INFO: Blender create Mesh node Sphere.006
+19:23:56 | INFO: Blender create Mesh node Cylinder.001
+19:23:56 | INFO: Blender create Mesh node curled finger.003
+19:23:56 | INFO: Blender create Mesh node curled finger.004
+19:23:56 | INFO: Blender create Mesh node curled finger.005
+19:23:56 | INFO: Blender create Mesh node Sphere.007
+19:23:56 | INFO: Blender create Mesh node Sphere.008
+19:23:56 | INFO: Blender create Mesh node jacket sleeve.001
+19:23:56 | INFO: Blender create Mesh node Sphere.009
+19:23:56 | INFO: Blender create Mesh node Sphere.030
+19:23:56 | INFO: Blender create Mesh node Sphere.029
+19:23:56 | INFO: Blender create Mesh node Cube.016
+19:23:56 | INFO: Blender create Mesh node cap piping
+19:23:56 | INFO: Blender create Mesh node Sphere.021
+19:23:56 | INFO: Blender create Mesh node Sphere.026
+19:23:56 | INFO: Blender create Mesh node curved cap visor
+19:23:56 | INFO: Blender create Mesh node Sphere.013
+19:23:56 | INFO: Blender create Mesh node Sphere.014
+19:23:56 | INFO: Blender create Mesh node Sphere.016
+19:23:56 | INFO: Blender create Mesh node Sphere.015
+19:23:56 | INFO: Blender create Mesh node Sphere.018
+19:23:56 | INFO: Blender create Mesh node Sphere.023
+19:23:56 | INFO: Blender create Mesh node eyebrow
+19:23:56 | INFO: Blender create Mesh node eyebrow.001
+19:23:56 | INFO: Blender create Mesh node Sphere.017
+19:23:56 | INFO: Blender create Mesh node Sphere.022
+19:23:56 | INFO: Blender create Mesh node Sphere.011
+19:23:56 | INFO: Blender create Mesh node Sphere.028
+19:23:56 | INFO: Blender create Mesh node hair lock
+19:23:56 | INFO: Blender create Mesh node hair lock.001
+19:23:56 | INFO: Blender create Mesh node hair lock.002
+19:23:56 | INFO: Blender create Mesh node hair lock.003
+19:23:56 | INFO: Blender create Mesh node hair lock.004
+19:23:56 | INFO: Blender create Mesh node hair lock.005
+19:23:56 | INFO: Blender create Mesh node hair lock.006
+19:23:56 | INFO: Blender create Mesh node Sphere.019
+19:23:56 | INFO: Blender create Mesh node Sphere.024
+19:23:56 | INFO: Blender create Mesh node Sphere.012
+19:23:56 | INFO: Blender create Mesh node lower lip
+19:23:56 | INFO: Blender create Mesh node Sphere.027
+19:23:56 | INFO: Blender create Mesh node Sphere.020
+19:23:56 | INFO: Blender create Mesh node Sphere.025
+19:23:56 | INFO: Blender create Mesh node upper lip
+19:23:56 | INFO: Blender create Mesh node fitted jacket
+19:23:56 | INFO: Blender create Mesh node Cube.009
+19:23:56 | INFO: Blender create Mesh node hood drawstring
+19:23:56 | INFO: Blender create Mesh node hood drawstring.001
+19:23:56 | INFO: Blender create Mesh node Sphere.002
+19:23:56 | INFO: Blender create Mesh node Cube.010
+19:23:56 | INFO: Blender create Mesh node Cube.011
+19:23:56 | INFO: Blender create Mesh node Sphere.003
+19:23:56 | INFO: Blender create Mesh node pack stitching
+19:23:56 | INFO: Blender create Mesh node pack stitching.001
+19:23:56 | INFO: Blender create Mesh node Cube.001
+19:23:56 | INFO: Blender create Mesh node cargo trouser
+19:23:56 | INFO: Blender create Mesh node Cube.003
+19:23:56 | INFO: Blender create Mesh node Cube.002
+19:23:56 | INFO: Blender create Mesh node Sphere
+19:23:56 | INFO: Blender create Mesh node shoe lace
+19:23:56 | INFO: Blender create Mesh node shoe lace.001
+19:23:56 | INFO: Blender create Mesh node shoe lace.002
+19:23:56 | INFO: Blender create Mesh node Cube.004
+19:23:56 | INFO: Blender create Mesh node Cube.005
+19:23:56 | INFO: Blender create Mesh node cargo trouser.001
+19:23:56 | INFO: Blender create Mesh node Cube.007
+19:23:56 | INFO: Blender create Mesh node Cube.006
+19:23:56 | INFO: Blender create Mesh node shoe lace.003
+19:23:56 | INFO: Blender create Mesh node shoe lace.004
+19:23:56 | INFO: Blender create Mesh node shoe lace.005
+19:23:56 | INFO: Blender create Mesh node Sphere.001
+19:23:56 | INFO: Blender create Mesh node Cube.008
+19:23:56 | INFO: Blender create Mesh node zipper
+19:23:56 | INFO: glTF import finished in 0.27s
+19:23:56 | INFO: Data are loaded, start creating Blender stuff
+19:23:56 | INFO: Blender create Mesh node bell chain
+19:23:56 | INFO: Blender create Mesh node Sphere.053
+19:23:56 | INFO: Blender create Mesh node gold cuff
+19:23:56 | INFO: Blender create Mesh node gold cuff.001
+19:23:56 | INFO: Blender create Mesh node hooked thumb
+19:23:57 | INFO: Blender create Mesh node Sphere.034
+19:23:57 | INFO: Blender create Mesh node Sphere.035
+19:23:57 | INFO: Blender create Mesh node Sphere.036
+19:23:57 | INFO: Blender create Mesh node Sphere.037
+19:23:57 | INFO: Blender create Mesh node long articulated finger
+19:23:57 | INFO: Blender create Mesh node long articulated finger.001
+19:23:57 | INFO: Blender create Mesh node long articulated finger.002
+19:23:57 | INFO: Blender create Mesh node long articulated finger.003
+19:23:57 | INFO: Blender create Mesh node long sleeve
+19:23:57 | INFO: Blender create Mesh node Sphere.033
+19:23:57 | INFO: Blender create Mesh node gold cuff.002
+19:23:57 | INFO: Blender create Mesh node gold cuff.003
+19:23:57 | INFO: Blender create Mesh node hooked thumb.001
+19:23:57 | INFO: Blender create Mesh node Sphere.039
+19:23:57 | INFO: Blender create Mesh node Sphere.040
+19:23:57 | INFO: Blender create Mesh node Sphere.041
+19:23:57 | INFO: Blender create Mesh node Sphere.042
+19:23:57 | INFO: Blender create Mesh node long articulated finger.004
+19:23:57 | INFO: Blender create Mesh node long articulated finger.005
+19:23:57 | INFO: Blender create Mesh node long articulated finger.006
+19:23:57 | INFO: Blender create Mesh node long articulated finger.007
+19:23:57 | INFO: Blender create Mesh node long sleeve.001
+19:23:57 | INFO: Blender create Mesh node Sphere.038
+19:23:57 | INFO: Blender create Mesh node Cylinder.002
+19:23:57 | INFO: Blender create Mesh node Sphere.056
+19:23:57 | INFO: Blender create Mesh node Sphere.060
+19:23:57 | INFO: Blender create Mesh node Sphere.054
+19:23:57 | INFO: Blender create Mesh node Sphere.055
+19:23:57 | INFO: Blender create Mesh node Sphere.059
+19:23:57 | INFO: Blender create Mesh node Sphere.058
+19:23:57 | INFO: Blender create Mesh node Sphere.062
+19:23:57 | INFO: Blender create Mesh node Sphere.057
+19:23:57 | INFO: Blender create Mesh node Sphere.061
+19:23:57 | INFO: Blender create Mesh node Cylinder.003
+19:23:57 | INFO: Blender create Mesh node Cube.019
+19:23:57 | INFO: Blender create Mesh node Sphere.063
+19:23:57 | INFO: Blender create Mesh node mask grille
+19:23:57 | INFO: Blender create Mesh node mask grille.001
+19:23:57 | INFO: Blender create Mesh node mask grille.002
+19:23:57 | INFO: Blender create Mesh node mask grille.003
+19:23:57 | INFO: Blender create Mesh node mask grille.004
+19:23:57 | INFO: Blender create Mesh node mask grille.005
+19:23:57 | INFO: Blender create Mesh node mask grille.006
+19:23:57 | INFO: Blender create Mesh node metal face
+19:23:57 | INFO: Blender create Mesh node metal grin
+19:23:57 | INFO: Blender create Mesh node coat tail
+19:23:57 | INFO: Blender create Mesh node coat tail.001
+19:23:57 | INFO: Blender create Mesh node Cube.017
+19:23:57 | INFO: Blender create Mesh node Cube.018
+19:23:57 | INFO: Blender create Mesh node gold lapel
+19:23:57 | INFO: Blender create Mesh node gold lapel.001
+19:23:57 | INFO: Blender create Mesh node long coat
+19:23:57 | INFO: Blender create Mesh node gold shoe trim
+19:23:57 | INFO: Blender create Mesh node long trouser
+19:23:57 | INFO: Blender create Mesh node Sphere.031
+19:23:57 | INFO: Blender create Mesh node gold shoe trim.001
+19:23:57 | INFO: Blender create Mesh node long trouser.001
+19:23:57 | INFO: Blender create Mesh node Sphere.032
+19:23:57 | INFO: Blender create Mesh node Cone
+19:23:57 | INFO: Blender create Mesh node Sphere.043
+19:23:57 | INFO: Blender create Mesh node Sphere.044
+19:23:57 | INFO: Blender create Mesh node Sphere.045
+19:23:57 | INFO: Blender create Mesh node Sphere.046
+19:23:57 | INFO: Blender create Mesh node Sphere.047
+19:23:57 | INFO: Blender create Mesh node Sphere.048
+19:23:57 | INFO: Blender create Mesh node Sphere.049
+19:23:57 | INFO: Blender create Mesh node Sphere.050
+19:23:57 | INFO: Blender create Mesh node Sphere.051
+19:23:57 | INFO: Blender create Mesh node Sphere.052
+19:23:57 | INFO: glTF import finished in 0.21s
+19:23:57 | INFO: Data are loaded, start creating Blender stuff
+19:23:57 | INFO: Blender create Mesh node Sphere.070
+19:23:57 | INFO: Blender create Mesh node cardboard seam
+19:23:57 | INFO: Blender create Mesh node cardboard seam.001
+19:23:57 | INFO: Blender create Mesh node Sphere.066
+19:23:57 | INFO: Blender create Mesh node Sphere.069
+19:23:57 | INFO: Blender create Mesh node Sphere.064
+19:23:57 | INFO: Blender create Mesh node Sphere.067
+19:23:57 | INFO: Blender create Mesh node Cube.021
+19:23:57 | INFO: Blender create Mesh node Cube.020
+19:23:57 | INFO: Blender create Mesh node Sphere.065
+19:23:57 | INFO: Blender create Mesh node Sphere.068
+19:23:57 | INFO: Blender create Mesh node Cube.022
+19:23:57 | INFO: Blender create Mesh node Cube.023
+19:23:57 | INFO: Blender create Mesh node Cube.024
+19:23:57 | INFO: Blender create Mesh node Cube.025
+19:23:57 | INFO: Blender create Mesh node Cube.026
+19:23:57 | INFO: Blender create Mesh node worried eyebrow
+19:23:57 | INFO: Blender create Mesh node worried eyebrow.001
+19:23:57 | INFO: glTF import finished in 0.07s
+Blender 4.3.2
+Fra:1 Mem:37.77M (Peak 37.77M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Plane
+Fra:1 Mem:37.78M (Peak 37.78M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | backpack
+Fra:1 Mem:39.80M (Peak 39.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | worried eyebrow.001
+Fra:1 Mem:39.89M (Peak 39.89M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | worried eyebrow
+Fra:1 Mem:39.94M (Peak 39.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | top tape
+Fra:1 Mem:39.97M (Peak 39.97M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lid right
+Fra:1 Mem:40.03M (Peak 40.03M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lid left
+Fra:1 Mem:40.02M (Peak 40.03M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | backpack patch
+Fra:1 Mem:40.09M (Peak 40.09M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | side tape.001
+Fra:1 Mem:40.13M (Peak 40.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | side tape
+Fra:1 Mem:40.16M (Peak 40.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pupil.003
+Fra:1 Mem:40.19M (Peak 40.19M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | backpack pocket
+Fra:1 Mem:40.25M (Peak 40.25M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pupil.002
+Fra:1 Mem:40.33M (Peak 40.33M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | papelão
+Fra:1 Mem:40.37M (Peak 40.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | backpack strap
+Fra:1 Mem:40.41M (Peak 40.41M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | fold front
+Fra:1 Mem:40.44M (Peak 40.44M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eye white.003
+Fra:1 Mem:40.51M (Peak 40.51M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | backpack strap.001
+Fra:1 Mem:40.59M (Peak 40.59M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eye white.002
+Fra:1 Mem:40.66M (Peak 40.66M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | badge
+Fra:1 Mem:40.70M (Peak 40.70M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | badge portrait
+Fra:1 Mem:40.69M (Peak 40.70M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | catchlight.003
+Fra:1 Mem:40.77M (Peak 40.77M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | catchlight.002
+Fra:1 Mem:40.84M (Peak 40.84M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cardboard seam.001
+Fra:1 Mem:40.95M (Peak 40.95M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cardboard seam
+Fra:1 Mem:40.96M (Peak 40.96M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | boca animável
+Fra:1 Mem:40.97M (Peak 40.97M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cuff
+Fra:1 Mem:41.06M (Peak 41.06M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | curled finger
+Fra:1 Mem:41.11M (Peak 41.11M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | curled finger.001
+Fra:1 Mem:41.16M (Peak 41.16M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | uniform button.009
+Fra:1 Mem:41.19M (Peak 41.19M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | curled finger.002
+Fra:1 Mem:41.28M (Peak 41.28M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | elbow
+Fra:1 Mem:41.33M (Peak 41.33M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | uniform button.008
+Fra:1 Mem:41.42M (Peak 41.42M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | uniform button.007
+Fra:1 Mem:41.51M (Peak 41.51M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | fingerless glove
+Fra:1 Mem:41.50M (Peak 41.51M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | uniform button.006
+Fra:1 Mem:41.58M (Peak 41.58M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | uniform button.005
+Fra:1 Mem:41.72M (Peak 41.72M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | jacket sleeve
+Fra:1 Mem:41.78M (Peak 41.78M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | uniform button.004
+Fra:1 Mem:41.88M (Peak 41.88M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | thumb
+Fra:1 Mem:41.88M (Peak 41.88M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | uniform button.003
+Fra:1 Mem:42.02M (Peak 42.02M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | uniform button.002
+Fra:1 Mem:42.10M (Peak 42.10M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cuff.001
+Fra:1 Mem:42.12M (Peak 42.12M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | curled finger.003
+Fra:1 Mem:42.15M (Peak 42.15M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | uniform button.001
+Fra:1 Mem:42.23M (Peak 42.23M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | uniform button
+Fra:1 Mem:42.35M (Peak 42.35M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | sino no peito
+Fra:1 Mem:42.36M (Peak 42.36M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | polished shoe.001
+Fra:1 Mem:42.45M (Peak 42.45M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | curled finger.005
+Fra:1 Mem:42.45M (Peak 42.45M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long trouser.001
+Fra:1 Mem:42.52M (Peak 42.52M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | gold shoe trim.001
+Fra:1 Mem:42.57M (Peak 42.57M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | elbow.001
+Fra:1 Mem:42.65M (Peak 42.65M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | fingerless glove.001
+Fra:1 Mem:42.72M (Peak 42.72M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | polished shoe
+Fra:1 Mem:42.80M (Peak 42.80M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | jacket sleeve.001
+Fra:1 Mem:42.80M (Peak 42.80M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long trouser
+Fra:1 Mem:42.82M (Peak 42.82M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | gold shoe trim
+Fra:1 Mem:42.91M (Peak 42.91M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long coat
+Fra:1 Mem:42.94M (Peak 42.94M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | gold lapel.001
+Fra:1 Mem:43.02M (Peak 43.02M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | thumb.001
+Fra:1 Mem:43.02M (Peak 43.02M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | gold lapel
+Fra:1 Mem:43.11M (Peak 43.11M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | epaulette.001
+Fra:1 Mem:43.14M (Peak 43.14M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | epaulette
+Fra:1 Mem:43.20M (Peak 43.20M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | coat tail.001
+Fra:1 Mem:43.20M (Peak 43.20M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cap button
+Fra:1 Mem:43.23M (Peak 43.23M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | coat tail
+Fra:1 Mem:43.23M (Peak 43.23M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | metal grin
+Fra:1 Mem:43.33M (Peak 43.33M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | metal face
+Fra:1 Mem:43.35M (Peak 43.35M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cap dome
+Fra:1 Mem:43.39M (Peak 43.39M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | mask grille.006
+Fra:1 Mem:43.48M (Peak 43.48M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | mask grille.005
+Fra:1 Mem:43.53M (Peak 43.53M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cap emblem
+Fra:1 Mem:43.58M (Peak 43.58M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | mask grille.004
+Fra:1 Mem:43.61M (Peak 43.61M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cap piping
+Fra:1 Mem:43.87M (Peak 43.87M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | mask grille.003
+Fra:1 Mem:43.92M (Peak 43.92M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | mask grille.002
+Fra:1 Mem:43.97M (Peak 43.97M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | mask grille.001
+Fra:1 Mem:44.03M (Peak 44.03M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | mask grille
+Fra:1 Mem:44.22M (Peak 44.22M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hat visor
+Fra:1 Mem:44.26M (Peak 44.26M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hat emblem
+Fra:1 Mem:44.34M (Peak 44.34M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | catchlight
+Fra:1 Mem:44.35M (Peak 44.35M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hat band
+Fra:1 Mem:44.37M (Peak 44.37M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | glowing eye.001
+Fra:1 Mem:44.47M (Peak 44.47M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | glowing eye
+Fra:1 Mem:44.47M (Peak 44.47M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | catchlight.001
+Fra:1 Mem:44.62M (Peak 44.62M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eye core.001
+Fra:1 Mem:44.67M (Peak 44.67M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | curved cap visor
+Fra:1 Mem:44.71M (Peak 44.71M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ear
+Fra:1 Mem:44.76M (Peak 44.76M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eye core
+Fra:1 Mem:44.86M (Peak 44.86M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ear interior
+Fra:1 Mem:44.90M (Peak 44.90M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eye brass socket.001
+Fra:1 Mem:45.00M (Peak 45.00M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ear interior.001
+Fra:1 Mem:45.01M (Peak 45.01M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eye brass socket
+Fra:1 Mem:45.16M (Peak 45.16M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dark mask back
+Fra:1 Mem:45.23M (Peak 45.23M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ear.001
+Fra:1 Mem:45.31M (Peak 45.31M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dark eye rim.001
+Fra:1 Mem:45.35M (Peak 45.35M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eye white
+Fra:1 Mem:45.46M (Peak 45.46M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dark eye rim
+Fra:1 Mem:45.53M (Peak 45.53M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eye white.001
+Fra:1 Mem:45.61M (Peak 45.61M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | burgundy cap
+Fra:1 Mem:45.62M (Peak 45.62M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | metal palm.001
+Fra:1 Mem:45.69M (Peak 45.69M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eyebrow
+Fra:1 Mem:45.74M (Peak 45.74M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eyebrow.001
+Fra:1 Mem:45.79M (Peak 45.79M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long sleeve.001
+Fra:1 Mem:45.84M (Peak 45.84M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eyelid
+Fra:1 Mem:45.92M (Peak 45.92M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | eyelid.001
+Fra:1 Mem:45.96M (Peak 45.96M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long articulated finger.007
+Fra:1 Mem:46.02M (Peak 46.02M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | face
+Fra:1 Mem:46.12M (Peak 46.12M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long articulated finger.006
+Fra:1 Mem:46.17M (Peak 46.17M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hair back
+Fra:1 Mem:46.24M (Peak 46.24M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long articulated finger.005
+Fra:1 Mem:46.27M (Peak 46.27M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hair lock
+Fra:1 Mem:46.32M (Peak 46.32M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long articulated finger.004
+Fra:1 Mem:46.37M (Peak 46.37M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knuckle.007
+Fra:1 Mem:46.45M (Peak 46.45M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knuckle.006
+Fra:1 Mem:46.52M (Peak 46.52M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knuckle.005
+Fra:1 Mem:46.60M (Peak 46.60M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knuckle.004
+Fra:1 Mem:46.67M (Peak 46.67M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hooked thumb.001
+Fra:1 Mem:46.72M (Peak 46.72M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | gold cuff.003
+Fra:1 Mem:46.75M (Peak 46.75M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | gold cuff.002
+Fra:1 Mem:46.77M (Peak 46.77M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | metal palm
+Fra:1 Mem:46.85M (Peak 46.85M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long sleeve
+Fra:1 Mem:46.89M (Peak 46.89M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long articulated finger.003
+Fra:1 Mem:46.94M (Peak 46.94M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long articulated finger.002
+Fra:1 Mem:46.96M (Peak 46.96M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hair lock.001
+Fra:1 Mem:47.06M (Peak 47.06M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long articulated finger.001
+Fra:1 Mem:47.11M (Peak 47.11M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hair lock.002
+Fra:1 Mem:47.14M (Peak 47.14M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | long articulated finger
+Fra:1 Mem:47.21M (Peak 47.21M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hair lock.003
+Fra:1 Mem:47.24M (Peak 47.24M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knuckle.003
+Fra:1 Mem:47.34M (Peak 47.34M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hair lock.004
+Fra:1 Mem:47.39M (Peak 47.39M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hair lock.005
+Fra:1 Mem:47.42M (Peak 47.42M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knuckle.002
+Fra:1 Mem:47.44M (Peak 47.44M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hair lock.006
+Fra:1 Mem:47.56M (Peak 47.56M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | iris
+Fra:1 Mem:47.61M (Peak 47.61M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knuckle.001
+Fra:1 Mem:47.71M (Peak 47.71M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | iris.001
+Fra:1 Mem:47.76M (Peak 47.76M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knuckle
+Fra:1 Mem:47.86M (Peak 47.86M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hooked thumb
+Fra:1 Mem:47.91M (Peak 47.91M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | jaw
+Fra:1 Mem:47.99M (Peak 47.99M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | gold cuff.001
+Fra:1 Mem:48.01M (Peak 48.01M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | gold cuff
+Fra:1 Mem:48.02M (Peak 48.02M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower lip
+Fra:1 Mem:48.08M (Peak 48.08M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nose
+Fra:1 Mem:48.08M (Peak 48.08M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | bell clapper
+Fra:1 Mem:48.24M (Peak 48.24M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | bell chain
+Fra:1 Mem:48.28M (Peak 48.28M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pupil
+Fra:1 Mem:48.29M (Peak 48.29M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | zipper
+Fra:1 Mem:48.40M (Peak 48.40M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | toe cap.001
+Fra:1 Mem:48.41M (Peak 48.41M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pupil.001
+Fra:1 Mem:48.52M (Peak 48.52M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoe.001
+Fra:1 Mem:48.59M (Peak 48.59M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper lip
+Fra:1 Mem:48.64M (Peak 48.64M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoe lace.005
+Fra:1 Mem:48.64M (Peak 48.64M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | fitted jacket
+Fra:1 Mem:48.68M (Peak 48.68M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoe lace.004
+Fra:1 Mem:48.69M (Peak 48.69M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hem cuff
+Fra:1 Mem:48.72M (Peak 48.72M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoe lace.003
+Fra:1 Mem:48.74M (Peak 48.74M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pocket flap.001
+Fra:1 Mem:48.83M (Peak 48.83M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cream sole.001
+Fra:1 Mem:48.85M (Peak 48.85M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cargo trouser.001
+Fra:1 Mem:48.86M (Peak 48.86M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hood drawstring
+Fra:1 Mem:48.88M (Peak 48.88M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cargo pocket.001
+Fra:1 Mem:48.94M (Peak 48.94M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hood drawstring.001
+Fra:1 Mem:48.94M (Peak 48.94M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hood lining
+Fra:1 Mem:49.02M (Peak 49.02M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | jacket pocket
+Fra:1 Mem:49.07M (Peak 49.07M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | toe cap
+Fra:1 Mem:49.11M (Peak 49.11M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | jacket pocket.001
+Fra:1 Mem:49.07M (Peak 49.11M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoe lace.002
+Fra:1 Mem:49.17M (Peak 49.17M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoe lace.001
+Fra:1 Mem:49.17M (Peak 49.17M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoe lace
+Fra:1 Mem:49.22M (Peak 49.22M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoe
+Fra:1 Mem:49.19M (Peak 49.22M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | neck
+Fra:1 Mem:49.34M (Peak 49.34M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pocket flap
+Fra:1 Mem:49.40M (Peak 49.40M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pack stitching
+Fra:1 Mem:49.37M (Peak 49.40M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cream sole
+Fra:1 Mem:49.46M (Peak 49.46M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pack stitching.001
+Fra:1 Mem:49.45M (Peak 49.46M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cargo trouser
+Fra:1 Mem:49.47M (Peak 49.47M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | cargo pocket
+Fra:1 Mem:49.50M (Peak 49.50M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:42.20M (Peak 49.50M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:42.20M (Peak 49.50M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:42.20M (Peak 49.50M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:42.20M (Peak 49.50M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:42.30M (Peak 49.50M) | Time:00:00.08 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:42.30M (Peak 49.50M) | Time:00:00.08 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:42.30M (Peak 49.50M) | Time:00:00.08 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:42.30M (Peak 49.50M) | Time:00:00.08 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:42.30M (Peak 49.50M) | Time:00:00.08 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:42.30M (Peak 49.50M) | Time:00:00.08 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:42.35M (Peak 49.50M) | Time:00:00.08 | Mem:0.06M, Peak:0.06M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:42.35M (Peak 49.50M) | Time:00:00.08 | Mem:0.06M, Peak:0.06M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:42.35M (Peak 49.50M) | Time:00:00.08 | Mem:0.06M, Peak:0.06M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:42.35M (Peak 49.50M) | Time:00:00.08 | Mem:0.06M, Peak:0.06M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:43.73M (Peak 49.50M) | Time:00:00.08 | Mem:0.06M, Peak:0.06M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:44.49M (Peak 49.50M) | Time:00:00.08 | Mem:0.07M, Peak:0.07M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:44.46M (Peak 49.50M) | Time:00:00.08 | Mem:0.80M, Peak:0.80M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:44.46M (Peak 49.50M) | Time:00:00.08 | Mem:0.80M, Peak:0.80M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:44.46M (Peak 49.50M) | Time:00:00.09 | Mem:3.55M, Peak:3.55M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:44.46M (Peak 49.50M) | Time:00:00.12 | Mem:6.56M, Peak:9.31M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:44.46M (Peak 49.50M) | Time:00:00.12 | Mem:6.56M, Peak:9.31M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:48.12M (Peak 49.50M) | Time:00:00.12 | Mem:6.56M, Peak:9.31M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:48.12M (Peak 49.50M) | Time:00:00.12 | Mem:10.21M, Peak:10.21M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:48.12M (Peak 49.50M) | Time:00:00.12 | Mem:10.21M, Peak:10.21M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:48.12M (Peak 49.50M) | Time:00:00.12 | Mem:10.21M, Peak:10.21M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:48.12M (Peak 49.50M) | Time:00:00.12 | Mem:10.21M, Peak:10.21M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:48.12M (Peak 49.50M) | Time:00:00.12 | Mem:10.21M, Peak:10.21M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:48.12M (Peak 49.50M) | Time:00:00.12 | Mem:10.29M, Peak:10.29M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:48.12M (Peak 49.50M) | Time:00:00.12 | Mem:10.29M, Peak:10.29M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:49.20M (Peak 49.90M) | Time:00:00.18 | Mem:11.37M, Peak:11.37M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:49.20M (Peak 49.90M) | Time:00:00.18 | Mem:11.37M, Peak:11.37M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:49.20M (Peak 49.90M) | Time:00:00.18 | Mem:11.29M, Peak:11.37M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:49.20M (Peak 49.90M) | Time:00:00.18 | Mem:11.38M, Peak:11.38M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:49.20M (Peak 49.90M) | Time:00:00.18 | Mem:11.38M, Peak:11.38M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:49.20M (Peak 49.90M) | Time:00:00.18 | Mem:11.38M, Peak:11.38M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:81.69M (Peak 81.69M) | Time:00:03.50 | Remaining:01:43.11 | Mem:43.85M, Peak:43.85M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:81.69M (Peak 81.69M) | Time:00:28.18 | Remaining:01:11.57 | Mem:43.85M, Peak:43.85M | Scene, ViewLayer | Sample 9/32
+Fra:1 Mem:81.69M (Peak 81.69M) | Time:00:54.92 | Remaining:00:48.30 | Mem:43.85M, Peak:43.85M | Scene, ViewLayer | Sample 17/32
+Fra:1 Mem:81.69M (Peak 81.69M) | Time:01:18.52 | Remaining:00:21.93 | Mem:43.85M, Peak:43.85M | Scene, ViewLayer | Sample 25/32
+Fra:1 Mem:96.13M (Peak 125.00M) | Time:01:31.43 | Mem:43.85M, Peak:43.85M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:96.13M (Peak 125.00M) | Time:01:31.43 | Mem:43.85M, Peak:43.85M | Scene, ViewLayer | Finished
+Saved: '/workspace/333/bellmare-333/evidence/cartoon-models-blender.png'
+Time: 01:31.57 (Saving: 00:00.13)
+
+
+Blender quit

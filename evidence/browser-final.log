@@ -1,0 +1,133 @@
+
+> bellmare-333@0.1.0 test:browser
+> npm run build && playwright test
+
+
+> bellmare-333@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+[plugin rolldown:vite-resolve] Module "node:worker_threads" has been externalized for browser compatibility, imported by "/workspace/333/bellmare-333/node_modules/playcanvas/build/playcanvas/src/scene/gsplat/gsplat-sort-worker.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[plugin rolldown:vite-resolve] Module "node:worker_threads" has been externalized for browser compatibility, imported by "/workspace/333/bellmare-333/node_modules/playcanvas/build/playcanvas/src/framework/parsers/draco-worker.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[plugin rolldown:vite-resolve] Module "node:worker_threads" has been externalized for browser compatibility, imported by "/workspace/333/bellmare-333/node_modules/playcanvas/build/playcanvas/src/scene/gsplat-unified/gsplat-unified-sort-worker.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+✓ 1272 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.85 kB │ gzip:   0.52 kB
+dist/assets/index--78U7xCI.css      5.88 kB │ gzip:   1.96 kB
+dist/assets/index-DjGBAUvR.js   1,182.96 kB │ gzip: 317.70 kB
+
+✓ built in 450ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[2m[WebServer] [22m(node:5508) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:5527) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5527) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m3.5000000000000018[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m9.450099999999988[39m
+Indo para [33m-14.7[39m [33m6[39m
+Alcançado [33m-14.7[39m [33m6[39m [33m14.40029999999997[39m
+Indo para [33m-14.7[39m [33m5.1[39m
+Alcançado [33m-14.7[39m [33m5.1[39m [33m14.700299999999968[39m
+Indo para [33m0[39m [33m5.1[39m
+Alcançado [33m0[39m [33m5.1[39m [33m20.583500000000015[39m
+  ✓  1 tests/browser/capture.spec.ts:5:1 › captura real, reinício e giro por mouse (43.5s)
+  ✓  2 tests/browser/marco0.spec.ts:2:1 › Canvas atual: cena WebGL2 real (7.0s)
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m2.1334000000000004[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m7.932799999999993[39m
+Indo para [33m-14.7[39m [33m0[39m
+Alcançado [33m-14.7[39m [33m0[39m [33m10.365999999999982[39m
+Indo para [33m-14.7[39m [33m6[39m
+Alcançado [33m-14.7[39m [33m6[39m [33m13.082399999999977[39m
+Indo para [33m-10.5[39m [33m6[39m
+Alcançado [33m-10.5[39m [33m6[39m [33m14.99899999999997[39m
+Indo para [33m-14.7[39m [33m6[39m
+Alcançado [33m-14.7[39m [33m6[39m [33m16.582099999999976[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m19.382000000000016[39m
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m22.881900000000048[39m
+Indo para [33m0[39m [33m-12[39m
+Alcançado [33m0[39m [33m-12[39m [33m24.21510000000006[39m
+  ✓  3 tests/browser/marco1.spec.ts:5:1 › Marco 1: teclado conclui uma entrega, pausa, SHHH, câmera e reinício (42.8s)
+  ✓  4 tests/browser/marco1.spec.ts:57:1 › toque emulado permite joystick + SHHH sem girar câmera (18.6s)
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m2.800000000000001[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m8.7994[39m
+Indo para [33m-14.7[39m [33m6[39m
+Alcançado [33m-14.7[39m [33m6[39m [33m13.68229999999999[39m
+Indo para [33m-10.5[39m [33m6[39m
+Alcançado [33m-10.5[39m [33m6[39m [33m15.448899999999993[39m
+Indo para [33m-14.7[39m [33m6[39m
+Alcançado [33m-14.7[39m [33m6[39m [33m17.24879999999999[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m20.082199999999993[39m
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m23.465299999999996[39m
+Indo para [33m0[39m [33m-12[39m
+Alcançado [33m0[39m [33m-12[39m [33m24.931800000000013[39m
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m27.53160000000005[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m33.38130000000004[39m
+Indo para [33m-14.7[39m [33m5.1[39m
+Alcançado [33m-14.7[39m [33m5.1[39m [33m37.71400000000006[39m
+Indo para [33m0[39m [33m5.1[39m
+Alcançado [33m0[39m [33m5.1[39m [33m43.81350000000013[39m
+Indo para [33m0[39m [33m6.4[39m
+Alcançado [33m0[39m [33m6.4[39m [33m44.21350000000013[39m
+Indo para [33m0[39m [33m5.1[39m
+Alcançado [33m0[39m [33m5.1[39m [33m44.79670000000013[39m
+Indo para [33m14.7[39m [33m5.1[39m
+Alcançado [33m14.7[39m [33m5.1[39m [33m48.64640000000011[39m
+Indo para [33m14.7[39m [33m-6.8[39m
+Alcançado [33m14.7[39m [33m-6.8[39m [33m51.91270000000016[39m
+Indo para [33m0[39m [33m-6.8[39m
+Alcançado [33m0[39m [33m-6.8[39m [33m55.29570000000018[39m
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m55.595700000000186[39m
+Indo para [33m0[39m [33m-12[39m
+Alcançado [33m0[39m [33m-12[39m [33m57.3956000000002[39m
+Indo para [33m0[39m [33m-6.8[39m
+Alcançado [33m0[39m [33m-6.8[39m [33m59.795500000000224[39m
+Indo para [33m14.7[39m [33m-6.8[39m
+Alcançado [33m14.7[39m [33m-6.8[39m [33m65.71230000000025[39m
+Indo para [33m14.7[39m [33m-6[39m
+Alcançado [33m14.7[39m [33m-6[39m [33m66.02900000000025[39m
+Indo para [33m14.7[39m [33m5.1[39m
+Alcançado [33m14.7[39m [33m5.1[39m [33m70.3952[39m
+Indo para [33m10.5[39m [33m5.1[39m
+Alcançado [33m10.5[39m [33m5.1[39m [33m72.12839999999993[39m
+Indo para [33m10.5[39m [33m6.4[39m
+Alcançado [33m10.5[39m [33m6.4[39m [33m72.62839999999991[39m
+Indo para [33m10.5[39m [33m5.1[39m
+Alcançado [33m10.5[39m [33m5.1[39m [33m73.12839999999989[39m
+Indo para [33m14.7[39m [33m5.1[39m
+Alcançado [33m14.7[39m [33m5.1[39m [33m74.1449999999999[39m
+Indo para [33m14.7[39m [33m-6.8[39m
+Alcançado [33m14.7[39m [33m-6.8[39m [33m77.01149999999987[39m
+Indo para [33m0[39m [33m-6.8[39m
+Alcançado [33m0[39m [33m-6.8[39m [33m80.44479999999979[39m
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m80.92819999999978[39m
+Indo para [33m0[39m [33m-12[39m
+Alcançado [33m0[39m [33m-12[39m [33m82.34479999999972[39m
+  ✓  5 tests/browser/marco2.spec.ts:5:1 › três encomendas e retorno ao elevador, dificuldade normal (1.6m)
+  ✓  6 tests/browser/production.spec.ts:2:1 › produção: WebGL2, input real, pausa e nenhum snapshot de debug (25.2s)
+
+  6 passed (4.0m)

@@ -1,0 +1,370 @@
+ERROR Draco mesh compression is not available because library could not be found at /usr/bin/4.3/python/lib/python3.13/site-packages/libextern_draco.so
+19:20:02 | INFO: Starting glTF 2.0 export
+19:20:02 | INFO: Extracting primitive: Cube.012
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.014
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.013
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: backpack strap
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: backpack strap.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.015
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.010
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cylinder
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: curled finger
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: curled finger.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: curled finger.002
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.004
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.005
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: jacket sleeve
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.006
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cylinder.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: curled finger.003
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: curled finger.004
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: curled finger.005
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.007
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.008
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: jacket sleeve.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.009
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.030
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.029
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.016
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: cap piping
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.021
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.026
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: curved cap visor
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.013
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.014
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.016
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.015
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.018
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.023
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: eyebrow
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: eyebrow.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.017
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.022
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.011
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.028
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hair lock
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hair lock.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hair lock.002
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hair lock.003
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hair lock.004
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hair lock.005
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hair lock.006
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.019
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.024
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.012
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: lower lip
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.027
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.020
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.025
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: upper lip
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: fitted jacket
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.009
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hood drawstring
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hood drawstring.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.002
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.010
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.011
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.003
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: pack stitching
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: pack stitching.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: cargo trouser
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.003
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.002
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: shoe lace
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: shoe lace.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: shoe lace.002
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.004
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.005
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: cargo trouser.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.007
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.006
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: shoe lace.003
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: shoe lace.004
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: shoe lace.005
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.008
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: zipper
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Finished glTF 2.0 export in 0.1911311149597168 s
+
+19:20:02 | INFO: Starting glTF 2.0 export
+19:20:02 | INFO: Extracting primitive: bell chain
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.053
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: gold cuff
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: gold cuff.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hooked thumb
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.034
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.035
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.036
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.037
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long articulated finger
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long articulated finger.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long articulated finger.002
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long articulated finger.003
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long sleeve
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.033
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: gold cuff.002
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: gold cuff.003
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: hooked thumb.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.039
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.040
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.041
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.042
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long articulated finger.004
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long articulated finger.005
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long articulated finger.006
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long articulated finger.007
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long sleeve.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.038
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cylinder.002
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.056
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.060
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.054
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.055
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.059
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.058
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.062
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.057
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.061
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cylinder.003
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.019
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.063
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: mask grille
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: mask grille.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: mask grille.002
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: mask grille.003
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: mask grille.004
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: mask grille.005
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: mask grille.006
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: metal face
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: metal grin
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: coat tail
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: coat tail.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.017
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.018
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: gold lapel
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: gold lapel.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long coat
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: gold shoe trim
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long trouser
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.031
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: gold shoe trim.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: long trouser.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.032
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cone
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.043
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.044
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.045
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.046
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.047
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.048
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.049
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.050
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.051
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.052
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Finished glTF 2.0 export in 0.13900446891784668 s
+
+19:20:02 | INFO: Starting glTF 2.0 export
+19:20:02 | INFO: Extracting primitive: Sphere.070
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: cardboard seam
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: cardboard seam.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.066
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.069
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.064
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.067
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.021
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.020
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.065
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Sphere.068
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.022
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.023
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.024
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.025
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: Cube.026
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: worried eyebrow
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Extracting primitive: worried eyebrow.001
+19:20:02 | INFO: Primitives created: 1
+19:20:02 | INFO: Finished glTF 2.0 export in 0.05242323875427246 s
+
+BELLM ARE MODELS EXPORTED /workspace/333/bellmare-333/public/assets/models
+Blender 4.3.2
+
+Blender quit
