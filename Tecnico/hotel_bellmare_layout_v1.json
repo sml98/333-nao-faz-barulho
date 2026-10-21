@@ -1,0 +1,255 @@
+{
+  "project": "3:33 — Não Faz Barulho! | Hotel Bellmare",
+  "version": "1.2-preproduction",
+  "units": "meters",
+  "coordinate_system": {
+    "x": "east-west (positive east)",
+    "z": "north-south (positive north)",
+    "y": "height (positive up)"
+  },
+  "status": "design proposal; tune collisions against actual models",
+  "zones": [
+    {
+      "id": "corredor_principal",
+      "type": "walkable_rect",
+      "x_min": -16,
+      "x_max": 16,
+      "z_min": 4.5,
+      "z_max": 7.5,
+      "lighting": "warm"
+    },
+    {
+      "id": "corredor_servico",
+      "type": "walkable_rect",
+      "x_min": -16,
+      "x_max": 16,
+      "z_min": -7.25,
+      "z_max": -4.75,
+      "lighting": "cold"
+    },
+    {
+      "id": "conexao_oeste",
+      "type": "walkable_rect",
+      "x_min": -16,
+      "x_max": -13.5,
+      "z_min": -7.25,
+      "z_max": 7.5,
+      "lighting": "mixed"
+    },
+    {
+      "id": "conexao_leste",
+      "type": "walkable_rect",
+      "x_min": 13.5,
+      "x_max": 16,
+      "z_min": -7.25,
+      "z_max": 7.5,
+      "lighting": "mixed"
+    },
+    {
+      "id": "hall_elevador",
+      "type": "walkable_rect",
+      "x_min": -3,
+      "x_max": 3,
+      "z_min": -15,
+      "z_max": -9,
+      "lighting": "warm"
+    },
+    {
+      "id": "ligacao_hall",
+      "type": "walkable_rect",
+      "x_min": -1.5,
+      "x_max": 1.5,
+      "z_min": -9,
+      "z_max": -6,
+      "lighting": "warm"
+    }
+  ],
+  "doors": [
+    {
+      "id": "301",
+      "x": -10.5,
+      "z": 7.5,
+      "facing": "south",
+      "type": "delivery",
+      "requires_package": "caixa_nervosa"
+    },
+    {
+      "id": "302",
+      "x": 0,
+      "z": 7.5,
+      "facing": "south",
+      "type": "delivery",
+      "requires_package": "pacote_arrogante"
+    },
+    {
+      "id": "303",
+      "x": 10.5,
+      "z": 7.5,
+      "facing": "south",
+      "type": "delivery",
+      "requires_package": "caixa_paranoica"
+    },
+    {
+      "id": "elevador",
+      "x": 0,
+      "z": -15,
+      "facing": "north",
+      "type": "start_exit",
+      "requires_deliveries": 3
+    }
+  ],
+  "rooms_visual_only": [
+    {
+      "id": "quarto301",
+      "x_min": -13.5,
+      "x_max": -7.5,
+      "z_min": 8,
+      "z_max": 14
+    },
+    {
+      "id": "quarto302",
+      "x_min": -3,
+      "x_max": 3,
+      "z_min": 8,
+      "z_max": 14
+    },
+    {
+      "id": "quarto303",
+      "x_min": 7.5,
+      "x_max": 13.5,
+      "z_min": 8,
+      "z_max": 14
+    }
+  ],
+  "spawns": {
+    "nico": [
+      0,
+      0,
+      -12
+    ],
+    "porteiro": [
+      -7,
+      0,
+      6
+    ]
+  },
+  "hiding_spots": [
+    {
+      "id": "armario_oeste",
+      "x": -14.75,
+      "z": 0,
+      "blocks_vision": true,
+      "blocks_sound": false
+    },
+    {
+      "id": "carrinho_leste",
+      "x": 14.75,
+      "z": -1.8,
+      "blocks_vision": true,
+      "blocks_sound": false
+    },
+    {
+      "id": "alcova_servico",
+      "x": -4.5,
+      "z": -6,
+      "blocks_vision": true,
+      "blocks_sound": false
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "telefone",
+      "x": -4,
+      "z": 5.9,
+      "noise_if_hit": true
+    },
+    {
+      "id": "caixas",
+      "x": 5,
+      "z": -5.9,
+      "noise_if_hit": true
+    },
+    {
+      "id": "planta",
+      "x": 9.6,
+      "z": 6.6,
+      "noise_if_hit": false
+    }
+  ],
+  "porteiro_patrol_paths": {
+    "A": [
+      [
+        -12,
+        6
+      ],
+      [
+        -4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        14.7,
+        0
+      ],
+      [
+        14.7,
+        -6
+      ],
+      [
+        -14.7,
+        -6
+      ],
+      [
+        -14.7,
+        0
+      ],
+      [
+        -12,
+        6
+      ]
+    ],
+    "B": [
+      [
+        8,
+        6
+      ],
+      [
+        -12,
+        6
+      ],
+      [
+        -14.7,
+        0
+      ],
+      [
+        -14.7,
+        -6
+      ],
+      [
+        14.7,
+        -6
+      ],
+      [
+        14.7,
+        0
+      ],
+      [
+        8,
+        6
+      ]
+    ]
+  },
+  "tutorial_notes": {
+    "first_delivery": "301",
+    "intro_safe_zone": "hall_elevador",
+    "rooms_should_not_require_full_interior": true
+  },
+  "collision_notes": "Generate modular walls bordering walkable union except intentional connections; do not place full blockers across joins. Use navmesh/colliders fitted to scene."
+}

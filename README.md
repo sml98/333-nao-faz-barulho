@@ -1,6 +1,6 @@
 # 3:33 — Não Faz Barulho!
 
-Jogo 3D local single-player em **PlayCanvas + TypeScript + Vite**, com direção cartoon 3D. Marcos 0–2 verificados: uma entrega e três entregas jogáveis, vitória, captura e reinício. Arte/áudio finais e validação em Android físico continuam parciais. O kit original está no diretório pai; o JSON técnico é importado diretamente, sem cópia divergente. Concept arts não entram no bundle.
+Jogo 3D local single-player em **PlayCanvas + TypeScript + Vite**, com direção cartoon 3D. Marcos 0–2 verificados: uma entrega e três entregas jogáveis, vitória, captura e reinício. Arte/áudio finais e validação em Android físico continuam parciais. O repositório é autossuficiente para build; o JSON técnico versionado em `Tecnico/hotel_bellmare_layout_v1.json` é a única fonte geométrica do runtime; mantém os mesmos bytes do kit original. Concept arts não entram no bundle.
 
 ## Executar
 

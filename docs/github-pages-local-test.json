@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "url": "http://127.0.0.1:4174/333-nao-faz-barulho/",
+  "assets": [
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/index--78U7xCI.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/index-BIA7T4iq.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/characters/nico.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/environment/sideTableDrawers.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/characters/caixa_nervosa.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/characters/porteiro.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/characters/pacote_arrogante.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/characters/caixa_paranoica.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/environment/plantSmall1.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/environment/lampRoundTable.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4174/333-nao-faz-barulho/assets/textures/bellmare-atlas.png",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "WebGL game loaded under repository subpath",
+    "8 GLB files loaded",
+    "Picked up parcel with E",
+    "No debug snapshot in production"
+  ]
+}

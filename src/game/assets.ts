@@ -32,12 +32,17 @@ export async function loadAssets(app: AppBase): Promise<GameAssets> {
         app,
         id,
         'container',
-        `/assets/${ids.indexOf(id) < 5 ? 'characters' : 'environment'}/${id}.glb`,
+        `${import.meta.env.BASE_URL}assets/${ids.indexOf(id) < 5 ? 'characters' : 'environment'}/${id}.glb`,
       ),
     ),
   );
   const models = Object.fromEntries(ids.map((id, i) => [id, loaded[i]]));
-  const atlas = await load(app, 'Bellmare atlas', 'texture', '/assets/textures/bellmare-atlas.png');
+  const atlas = await load(
+    app,
+    'Bellmare atlas',
+    'texture',
+    `${import.meta.env.BASE_URL}assets/textures/bellmare-atlas.png`,
+  );
   const texture = atlas.resource as Texture;
   texture.anisotropy = 4;
   return { models, atlas: texture };

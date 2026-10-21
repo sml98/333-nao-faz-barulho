@@ -1,4 +1,4 @@
-import layout from '../../../Tecnico/hotel_bellmare_layout_v1.json';
+import layout from '../../Tecnico/hotel_bellmare_layout_v1.json';
 import { distance, type Point } from './config';
 export { layout };
 export function inside(p: Point) {
