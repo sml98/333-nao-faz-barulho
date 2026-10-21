@@ -1,0 +1,134 @@
+[
+  {
+    "file": "/tmp/bellmare-env-fixed/chairRounded.glb",
+    "aabb": {
+      "min": [
+        -0.2088,
+        0,
+        -0.2088
+      ],
+      "max": [
+        0.2088,
+        0.95,
+        0.2088
+      ]
+    },
+    "dims": [
+      0.4176,
+      0.95,
+      0.4176
+    ],
+    "center": [
+      0,
+      0.475,
+      0
+    ],
+    "groundOffset": 0,
+    "boundsSource": "vertices",
+    "boundsPose": "static",
+    "requiresRuntimeCheck": false,
+    "nodes": 1,
+    "nodePaths": [
+      "chairRounded(Clone)"
+    ],
+    "meshNodes": 1,
+    "materials": [
+      "chairRounded0",
+      "chairRounded1"
+    ],
+    "clips": [],
+    "joints": [],
+    "animationTargets": [],
+    "morphed": false,
+    "morphAnimated": false,
+    "skinned": false
+  },
+  {
+    "file": "/tmp/bellmare-env-fixed/plantSmall1.glb",
+    "aabb": {
+      "min": [
+        -0.3888,
+        0,
+        -0.3888
+      ],
+      "max": [
+        0.3888,
+        1.15,
+        0.3888
+      ]
+    },
+    "dims": [
+      0.7776,
+      1.15,
+      0.7776
+    ],
+    "center": [
+      0,
+      0.575,
+      0
+    ],
+    "groundOffset": 0,
+    "boundsSource": "vertices",
+    "boundsPose": "static",
+    "requiresRuntimeCheck": false,
+    "nodes": 1,
+    "nodePaths": [
+      "plantSmall1(Clone)"
+    ],
+    "meshNodes": 1,
+    "materials": [
+      "plantSmall10",
+      "plantSmall11"
+    ],
+    "clips": [],
+    "joints": [],
+    "animationTargets": [],
+    "morphed": false,
+    "morphAnimated": false,
+    "skinned": false
+  },
+  {
+    "file": "/tmp/bellmare-env-fixed/lampRoundTable.glb",
+    "aabb": {
+      "min": [
+        -0.0726,
+        0,
+        -0.0838
+      ],
+      "max": [
+        0.0726,
+        0.3,
+        0.0838
+      ]
+    },
+    "dims": [
+      0.1451,
+      0.3,
+      0.1676
+    ],
+    "center": [
+      0,
+      0.15,
+      0
+    ],
+    "groundOffset": 0,
+    "boundsSource": "vertices",
+    "boundsPose": "static",
+    "requiresRuntimeCheck": false,
+    "nodes": 1,
+    "nodePaths": [
+      "lampRoundTable(Clone)"
+    ],
+    "meshNodes": 1,
+    "materials": [
+      "lampRoundTable0",
+      "lampRoundTable1"
+    ],
+    "clips": [],
+    "joints": [],
+    "animationTargets": [],
+    "morphed": false,
+    "morphAnimated": false,
+    "skinned": false
+  }
+]

@@ -16,7 +16,41 @@
       "Stumble",
       "Relief"
     ],
-    "bytes": 1375312,
-    "triangles": 26338
+    "bytes": 1161652,
+    "triangles": 19772
+  },
+  {
+    "name": "porteiro",
+    "source": "KayKit Mage CC0, rig/body and compatible clips; remodeled mask, uniform, cap, gloves",
+    "clips": [
+      "Idle",
+      "Patrol",
+      "Listen",
+      "Investigate",
+      "Chase",
+      "Search",
+      "Return",
+      "Confused"
+    ],
+    "bytes": 802408,
+    "triangles": 14284
+  },
+  {
+    "name": "caixa_nervosa",
+    "source": "Original modeled carton/folds/face, no external source",
+    "bytes": 145188,
+    "triangles": 3956
+  },
+  {
+    "name": "pacote_arrogante",
+    "source": "Original modeled carton/folds/face, no external source",
+    "bytes": 133116,
+    "triangles": 3728
+  },
+  {
+    "name": "caixa_paranoica",
+    "source": "Original modeled carton/folds/face, no external source",
+    "bytes": 137248,
+    "triangles": 3860
   }
 ]

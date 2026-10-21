@@ -1,0 +1,142 @@
+
+> bellmare-333@0.1.0 test:browser
+> npm run build && playwright test
+
+
+> bellmare-333@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+[plugin rolldown:vite-resolve] Module "node:worker_threads" has been externalized for browser compatibility, imported by "/workspace/333/bellmare-333/node_modules/playcanvas/build/playcanvas/src/scene/gsplat/gsplat-sort-worker.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[plugin rolldown:vite-resolve] Module "node:worker_threads" has been externalized for browser compatibility, imported by "/workspace/333/bellmare-333/node_modules/playcanvas/build/playcanvas/src/framework/parsers/draco-worker.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[plugin rolldown:vite-resolve] Module "node:worker_threads" has been externalized for browser compatibility, imported by "/workspace/333/bellmare-333/node_modules/playcanvas/build/playcanvas/src/scene/gsplat-unified/gsplat-unified-sort-worker.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+✓ 1273 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.85 kB │ gzip:   0.52 kB
+dist/assets/index--78U7xCI.css      5.88 kB │ gzip:   1.96 kB
+dist/assets/index-m2HO2pHZ.js   1,234.31 kB │ gzip: 331.21 kB
+
+✓ built in 465ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[2m[WebServer] [22m(node:9264) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:9283) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:9283) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m2.683200000000003[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m8.466299999999995[39m
+Indo para [33m-14.7[39m [33m5.1[39m
+Alcançado [33m-14.7[39m [33m5.1[39m [33m12.932899999999982[39m
+CHASE EVIDENCE {"before":{"phase":"PLAYING","player":{"x":6.485033304703322,"z":4.968026695296646},"heading":1.5707963267948966,"porteiro":{"position":{"x":9.38424347134196,"z":5.768663901721934},"state":"CHASE","target":{"x":6.485033304703322,"z":4.968026695296646}},"delivered":0,"total":1,"held":true,"hidden":null,"agitation":94.09840000000007,"lastNoise":{"id":30,"sourceId":"passos","position":{"x":6.045033304703321,"z":4.968026695296646,"y":0.65},"loudness":0.65,"radius":8,"timestamp":17.63279999999999,"ttl":2},"time":17.73279999999999,"fps":5,"input":{"quiet":false,"stick":{"x":0,"y":0},"yaw":0},"drawCalls":112,"monsterAnimation":{"state":"Chase","left":150.0458261069638,"right":59.88763727831772},"animation":{"state":"CarryRun","clips":["Carry","CarryRun","CarryWalk","Crouch","Hide","Idle","LookBack","Panic","Relief","Run","Stumble","Walk"],"time":4.699899999999994},"joints":{"left":116.37764901328208,"right":42.99801455249153},"camera":{"x":6.593726350253706,"y":3.05,"z":4.718026695296646}},"a":{"phase":"PLAYING","player":{"x":6.485033304703322,"z":4.968026695296646},"heading":1.5707963267948966,"porteiro":{"position":{"x":7.718464918105936,"z":5.30864747975542},"state":"CHASE","target":{"x":6.485033304703322,"z":4.968026695296646}},"delivered":0,"total":1,"held":true,"hidden":null,"agitation":90.6988000000001,"lastNoise":{"id":30,"sourceId":"passos","position":{"x":6.045033304703321,"z":4.968026695296646,"y":0.65},"loudness":0.65,"radius":8,"timestamp":17.63279999999999,"ttl":2},"time":18.299399999999995,"fps":2,"input":{"quiet":false,"stick":{"x":0,"y":0},"yaw":1.755},"drawCalls":117,"monsterAnimation":{"state":"Chase","left":175.00406598367954,"right":91.0609474222443},"animation":{"state":"Carry","clips":["Carry","CarryRun","CarryWalk","Crouch","Hide","Idle","LookBack","Panic","Relief","Run","Stumble","Walk"],"time":0.46659999999999857},"joints":{"left":169.1975672084513,"right":46.54484420543873},"camera":{"x":3.7873546679510057,"y":2.0926979589005787,"z":5.226248315920615}},"final":{"phase":"PLAYING","player":{"x":4.682571348345865,"z":5.303853743468774},"heading":-1.3865926535897934,"porteiro":{"position":{"x":6.462733456139061,"z":5.112651893959436},"state":"CHASE","target":{"x":4.682571348345865,"z":5.303853743468774}},"delivered":0,"total":1,"held":true,"hidden":null,"agitation":60.60039999999997,"lastNoise":{"id":32,"sourceId":"passos","position":{"x":5.115127613370456,"z":5.223261699270998,"y":0.65},"loudness":0.65,"radius":8,"timestamp":18.616099999999996,"ttl":2},"time":18.716099999999997,"fps":2,"input":{"quiet":false,"stick":{"x":0,"y":0},"yaw":1.755},"drawCalls":174,"monsterAnimation":{"state":"Chase","left":112.47828604236571,"right":56.24718682600223},"animation":{"state":"CarryRun","clips":["Carry","CarryRun","CarryWalk","Crouch","Hide","Idle","LookBack","Panic","Relief","Run","Stumble","Walk"],"time":0.3166999999999971},"joints":{"left":174.2138510345166,"right":83.44991539466736},"camera":{"x":1.4406144324114472,"y":1.8508369537017195,"z":5.68406923803}}}
+  ✓  1 tests/browser/art-chase.spec.ts:3:1 › slice: caixa viva e perseguição com corrida esquelética do Porteiro (1.1m)
+  ✓  2 tests/browser/art-nico.spec.ts:2:1 › Nico: Run esquelético, rosto frontal e câmera segura (55.2s)
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m3.333200000000002[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m9.182299999999996[39m
+Indo para [33m-14.7[39m [33m6[39m
+Alcançado [33m-14.7[39m [33m6[39m [33m13.948599999999983[39m
+Indo para [33m-14.7[39m [33m5.1[39m
+Alcançado [33m-14.7[39m [33m5.1[39m [33m14.248599999999982[39m
+Indo para [33m0[39m [33m5.1[39m
+Alcançado [33m0[39m [33m5.1[39m [33m20.031600000000022[39m
+  ✓  3 tests/browser/capture.spec.ts:5:1 › captura real, reinício e giro por mouse (41.6s)
+  ✓  4 tests/browser/marco0.spec.ts:2:1 › Canvas atual: cena WebGL2 real (6.7s)
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m2.133400000000001[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m7.916299999999992[39m
+Indo para [33m-14.7[39m [33m0[39m
+Alcançado [33m-14.7[39m [33m0[39m [33m10.332599999999983[39m
+Indo para [33m-14.7[39m [33m6[39m
+Alcançado [33m-14.7[39m [33m6[39m [33m12.999099999999972[39m
+Indo para [33m-10.5[39m [33m6[39m
+Alcançado [33m-10.5[39m [33m6[39m [33m14.799099999999962[39m
+Indo para [33m-14.7[39m [33m6[39m
+Alcançado [33m-14.7[39m [33m6[39m [33m16.46549999999996[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m19.248899999999995[39m
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m22.631900000000012[39m
+Indo para [33m0[39m [33m-12[39m
+Alcançado [33m0[39m [33m-12[39m [33m23.93190000000003[39m
+  ✓  5 tests/browser/marco1.spec.ts:5:1 › Marco 1: teclado conclui uma entrega, pausa, SHHH, câmera e reinício (40.1s)
+  ✓  6 tests/browser/marco1.spec.ts:57:1 › toque emulado permite joystick + SHHH sem girar câmera (19.6s)
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m3.383300000000003[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m9.483100000000002[39m
+Indo para [33m-14.7[39m [33m6[39m
+Alcançado [33m-14.7[39m [33m6[39m [33m14.3663[39m
+Indo para [33m-10.5[39m [33m6[39m
+Alcançado [33m-10.5[39m [33m6[39m [33m16.049599999999998[39m
+Indo para [33m-14.7[39m [33m6[39m
+Alcançado [33m-14.7[39m [33m6[39m [33m17.0827[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m21.44880000000001[39m
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m25.2487[39m
+Indo para [33m0[39m [33m-12[39m
+Alcançado [33m0[39m [33m-12[39m [33m26.681800000000013[39m
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m29.065100000000047[39m
+Indo para [33m-14.7[39m [33m-6[39m
+Alcançado [33m-14.7[39m [33m-6[39m [33m35.06450000000004[39m
+Indo para [33m-14.7[39m [33m5.1[39m
+Alcançado [33m-14.7[39m [33m5.1[39m [33m39.430500000000045[39m
+Indo para [33m0[39m [33m5.1[39m
+Alcançado [33m0[39m [33m5.1[39m [33m45.44670000000007[39m
+Indo para [33m0[39m [33m6.4[39m
+Alcançado [33m0[39m [33m6.4[39m [33m46.01330000000007[39m
+Indo para [33m0[39m [33m5.1[39m
+Alcançado [33m0[39m [33m5.1[39m [33m46.86330000000008[39m
+Indo para [33m14.7[39m [33m5.1[39m
+Alcançado [33m14.7[39m [33m5.1[39m [33m51.079900000000116[39m
+Indo para [33m14.7[39m [33m-6.8[39m
+Alcançado [33m14.7[39m [33m-6.8[39m [33m54.079600000000106[39m
+Indo para [33m0[39m [33m-6.8[39m
+Alcançado [33m0[39m [33m-6.8[39m [33m58.61270000000014[39m
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m58.81270000000014[39m
+Indo para [33m0[39m [33m-12[39m
+Alcançado [33m0[39m [33m-12[39m [33m60.37920000000017[39m
+Indo para [33m0[39m [33m-6.8[39m
+Alcançado [33m0[39m [33m-6.8[39m [33m62.62930000000021[39m
+Indo para [33m14.7[39m [33m-6.8[39m
+Alcançado [33m14.7[39m [33m-6.8[39m [33m68.54560000000014[39m
+Indo para [33m14.7[39m [33m-6[39m
+Alcançado [33m14.7[39m [33m-6[39m [33m68.92900000000013[39m
+Indo para [33m14.7[39m [33m5.1[39m
+Alcançado [33m14.7[39m [33m5.1[39m [33m73.42850000000004[39m
+Indo para [33m10.5[39m [33m5.1[39m
+Alcançado [33m10.5[39m [33m5.1[39m [33m75.07829999999996[39m
+Indo para [33m10.5[39m [33m6.4[39m
+Alcançado [33m10.5[39m [33m6.4[39m [33m75.57829999999993[39m
+Indo para [33m10.5[39m [33m5.1[39m
+Alcançado [33m10.5[39m [33m5.1[39m [33m75.9782999999999[39m
+Indo para [33m14.7[39m [33m5.1[39m
+Alcançado [33m14.7[39m [33m5.1[39m [33m76.94499999999987[39m
+Indo para [33m14.7[39m [33m-6.8[39m
+Alcançado [33m14.7[39m [33m-6.8[39m [33m79.66159999999974[39m
+Indo para [33m0[39m [33m-6.8[39m
+Alcançado [33m0[39m [33m-6.8[39m [33m83.07819999999957[39m
+Indo para [33m0[39m [33m-6[39m
+Alcançado [33m0[39m [33m-6[39m [33m83.27819999999956[39m
+Indo para [33m0[39m [33m-12[39m
+Alcançado [33m0[39m [33m-12[39m [33m84.6113999999995[39m
+  ✓  7 tests/browser/marco2.spec.ts:5:1 › três encomendas e retorno ao elevador, dificuldade normal (1.7m)
+  ✓  8 tests/browser/production.spec.ts:2:1 › produção: WebGL2, input real, pausa e nenhum snapshot de debug (24.0s)
+
+  8 passed (5.9m)

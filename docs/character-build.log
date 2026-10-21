@@ -1,0 +1,227 @@
+20:34:57 | INFO: Data are loaded, start creating Blender stuff
+20:34:57 | INFO: Blender create Mesh node Cube.199
+20:34:57 | INFO: Blender create Mesh node Cube.202
+20:34:57 | INFO: Blender create Mesh node PrototypePete_body.025
+20:34:57 | INFO: Blender create Mesh node Cube.210
+20:34:57 | INFO: Blender create Mesh node Cube.194
+20:34:57 | INFO: Blender create Mesh node Cube.187
+20:34:57 | INFO: Blender create Mesh node Cylinder.002
+20:34:57 | INFO: Blender create Mesh node Cube.015
+20:34:57 | INFO: Blender create Mesh node Cube.004
+20:34:57 | INFO: Blender create Mesh node Cylinder.008
+20:34:57 | INFO: Blender create Mesh node Cylinder.006
+20:34:57 | INFO: Blender create Mesh node Plane.007
+20:34:57 | INFO: glTF import finished in 0.72s
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Saved "nico-remodeled.blend"
+ERROR Draco mesh compression is not available because library could not be found at /usr/bin/4.3/python/lib/python3.13/site-packages/libextern_draco.so
+20:35:03 | INFO: Starting glTF 2.0 export
+20:35:03 | INFO: Extracting primitive: DeliveryHoodie
+20:35:03 | INFO: Primitives created: 4
+20:35:03 | INFO: Extracting primitive: Cube.002
+20:35:03 | INFO: Primitives created: 1
+20:35:03 | INFO: Extracting primitive: Cube.001
+20:35:03 | INFO: Primitives created: 1
+20:35:03 | INFO: Extracting primitive: Cube.010
+20:35:03 | INFO: Primitives created: 3
+20:35:03 | INFO: Extracting primitive: Brow.L
+20:35:03 | INFO: Primitives created: 1
+20:35:03 | INFO: Extracting primitive: Brow.R
+20:35:03 | INFO: Primitives created: 1
+20:35:03 | INFO: Extracting primitive: Sphere.006
+20:35:03 | INFO: Primitives created: 7
+20:35:03 | INFO: Extracting primitive: Sphere.001
+20:35:03 | INFO: Primitives created: 1
+20:35:03 | INFO: Extracting primitive: Sphere.008
+20:35:03 | INFO: Primitives created: 1
+20:35:03 | INFO: Extracting primitive: Sphere
+20:35:03 | INFO: Primitives created: 1
+20:35:03 | INFO: Extracting primitive: Sphere.007
+20:35:03 | INFO: Primitives created: 1
+20:35:03 | INFO: Extracting primitive: Sphere.015
+20:35:03 | INFO: Primitives created: 1
+20:35:03 | INFO: Extracting primitive: Sphere.002
+20:35:03 | INFO: Primitives created: 1
+20:35:03 | INFO: Extracting primitive: Sphere.009
+20:35:03 | INFO: Primitives created: 1
+20:35:05 | INFO: Finished glTF 2.0 export in 1.7566864490509033 s
+
+20:35:05 | INFO: Data are loaded, start creating Blender stuff
+20:35:05 | INFO: Blender create Mesh node Cube.157
+20:35:05 | INFO: Blender create Mesh node Cube.158
+20:35:05 | INFO: Blender create Mesh node Cube.155
+20:35:05 | INFO: Blender create Mesh node Cube.159
+20:35:05 | INFO: Blender create Mesh node Cube.153
+20:35:05 | INFO: Blender create Mesh node Cube.154
+20:35:05 | INFO: Blender create Mesh node Cube.12901
+20:35:05 | INFO: Blender create Mesh node Cube.12902
+20:35:05 | INFO: Blender create Mesh node Cylinder.018
+20:35:05 | INFO: Blender create Mesh node Cylinder.039
+20:35:05 | INFO: Blender create Mesh node Cube.156
+20:35:05 | INFO: Blender create Mesh node Plane.030
+20:35:06 | INFO: glTF import finished in 0.63s
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Saved "porteiro-remodeled.blend"
+20:35:10 | INFO: Starting glTF 2.0 export
+20:35:10 | INFO: Extracting primitive: Cube.157
+20:35:10 | INFO: Primitives created: 2
+20:35:10 | INFO: Extracting primitive: Sphere.023
+20:35:10 | INFO: Primitives created: 1
+20:35:10 | INFO: Extracting primitive: Sphere.034
+20:35:10 | INFO: Primitives created: 1
+20:35:10 | INFO: Extracting primitive: Sphere.027
+20:35:10 | INFO: Primitives created: 1
+20:35:10 | INFO: Extracting primitive: Cube.026
+20:35:10 | INFO: Primitives created: 5
+20:35:10 | INFO: Extracting primitive: Sphere.020
+20:35:10 | INFO: Primitives created: 1
+20:35:10 | INFO: Extracting primitive: Sphere.021
+20:35:10 | INFO: Primitives created: 1
+20:35:11 | INFO: Finished glTF 2.0 export in 0.9284703731536865 s
+
+Info: Saved "caixa_nervosa.blend"
+20:35:11 | INFO: Starting glTF 2.0 export
+20:35:11 | INFO: Extracting primitive: Cube.033
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.034
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.035
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.043
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Brow
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Brow.001
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.029
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.037
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.040
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.030
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.038
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.041
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.039
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.042
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.032
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.045
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.046
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.031
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.044
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Finished glTF 2.0 export in 0.04213690757751465 s
+
+Info: Saved "pacote_arrogante.blend"
+20:35:11 | INFO: Starting glTF 2.0 export
+20:35:11 | INFO: Extracting primitive: Cube.040
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.041
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.042
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.053
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Brow.002
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Brow.003
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.036
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.047
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.050
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.043
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.037
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.048
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.051
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.049
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.052
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.039
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.038
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.054
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Finished glTF 2.0 export in 0.03615856170654297 s
+
+Info: Saved "caixa_paranoica.blend"
+20:35:11 | INFO: Starting glTF 2.0 export
+20:35:11 | INFO: Extracting primitive: Cube.048
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.049
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.050
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.061
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Brow.004
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Brow.005
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.044
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.055
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.058
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.045
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.056
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.059
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.057
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.060
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.047
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Cube.046
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: TapeCross
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: TapeCross.001
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Extracting primitive: Sphere.062
+20:35:11 | INFO: Primitives created: 1
+20:35:11 | INFO: Finished glTF 2.0 export in 0.03555917739868164 s
+
+BUILD COMPLETE [{'name': 'nico', 'source': 'KayKit Rogue CC0, authored body/rig/animation; remodeled face, wardrobe and carry IK', 'clips': ['Idle', 'Walk', 'Run', 'Carry', 'CarryWalk', 'CarryRun', 'Crouch', 'Hide', 'LookBack', 'Panic', 'Stumble', 'Relief'], 'bytes': 1161652, 'triangles': 19772}, {'name': 'porteiro', 'source': 'KayKit Mage CC0, rig/body and compatible clips; remodeled mask, uniform, cap, gloves', 'clips': ['Idle', 'Patrol', 'Listen', 'Investigate', 'Chase', 'Search', 'Return', 'Confused'], 'bytes': 801600, 'triangles': 14284}, {'name': 'caixa_nervosa', 'source': 'Original modeled carton/folds/face, no external source', 'bytes': 144468, 'triangles': 3956}, {'name': 'pacote_arrogante', 'source': 'Original modeled carton/folds/face, no external source', 'bytes': 141276, 'triangles': 3808}, {'name': 'caixa_paranoica', 'source': 'Original modeled carton/folds/face, no external source', 'bytes': 136108, 'triangles': 3860}]
+Blender 4.3.2
+
+Blender quit

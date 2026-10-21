@@ -1,15 +1,23 @@
-import { AppBase, Color, Entity, TONEMAP_NEUTRAL } from 'playcanvas';
+import {
+  BLEND_NORMAL,
+  BLEND_NONE,
+  AppBase,
+  Color,
+  Entity,
+  Vec3,
+  TONEMAP_NEUTRAL,
+} from 'playcanvas';
 import { Art, animate } from './scene';
 import { Player } from './player';
 import { Input } from './input';
-import {animateRig} from './characterAnimation';
+import { animateRig } from './characterAnimation';
 import { FollowCamera } from './camera';
 import { GameState } from './gameState';
 import { Porteiro } from './porteiro';
 import { AudioBus, type NoiseEvent } from './sound';
 import { tickPackage, personalities } from './packages';
-import { ParcelSkin } from './parcelArt';
-import { makeActor, atlasMaterial, type GameAssets } from './assets';
+import { ParcelSkin, animateParcel } from './parcelArt';
+import { makeActor, instantiate, atlasMaterial, type GameAssets } from './assets';
 import { interaction } from './interaction';
 import { UI } from './ui';
 import { distance } from './config';
@@ -61,10 +69,31 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
   const actorGroup = app.batcher.addGroup('Personagens articulados', true, 4);
   for (const root of [nico.root, monster.root, supply])
     for (const component of root.findComponents('render'))
-      if(!(component as import('playcanvas').RenderComponent).meshInstances.some(m=>m.skinInstance||m.morphInstance))(component as import('playcanvas').RenderComponent).batchGroupId = actorGroup.id;
+      if (
+        !root.findComponent('anim') &&
+        !(component as import('playcanvas').RenderComponent).meshInstances.some(
+          (m) => m.skinInstance || m.morphInstance,
+        )
+      )
+        (component as import('playcanvas').RenderComponent).batchGroupId = actorGroup.id;
   let lastSkin = 0;
 
-  art.part(app.root, 'mesa de encomendas', 'box', [0.85, 0.37, -12], [0.85, 0.74, 0.65], '#493025');
+  const furnish = (id: string, x: number, z: number, scale: number, y = 0) => {
+    const e = instantiate(assets, id);
+    e.setLocalPosition(x, y, z);
+    e.setLocalScale(scale, scale, scale);
+    hotel.addChild(e);
+    return e;
+  };
+  furnish('sideTableDrawers', 0.85, -12, 1);
+  for (const o of layout.obstacles) {
+    hotel.findByName(o.id)?.destroy();
+    furnish(o.id === 'planta' ? 'plantSmall1' : 'sideTableDrawers', o.x, o.z, 1.0);
+  }
+  // Decorative furniture stays against walls, outside the existing walking route.
+  // Chair exported for later dressing; left out to preserve canonical collision paths.
+  furnish('lampRoundTable', 1.08, -12.12, 1, 0.74);
+  app.batcher.generate();
 
   const camera = new Entity('Câmera terceira pessoa');
   camera.addComponent('camera', {
@@ -76,9 +105,9 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
   });
   app.root.addChild(camera);
   const follow = new FollowCamera(camera);
-  app.scene.ambientLight = new Color(0.3, 0.34, 0.39);
+  app.scene.ambientLight = new Color(0.39, 0.29, 0.46);
   app.scene.fog.type = 'linear';
-  app.scene.fog.color = new Color(0.05, 0.12, 0.15);
+  app.scene.fog.color = new Color(0.13, 0.045, 0.2);
   app.scene.fog.start = 14;
   app.scene.fog.end = 38;
   const light = new Entity('Luz principal');
@@ -97,7 +126,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
   const fill = new Entity('Preenchimento frio');
   fill.addComponent('light', {
     type: 'directional',
-    color: new Color(0.3, 0.65, 0.83),
+    color: new Color(0.68, 0.32, 0.95),
     intensity: 0.35,
   });
   fill.setEulerAngles(25, 210, 0);
@@ -113,7 +142,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     const lamp = new Entity('Luz ambiente local');
     lamp.addComponent('light', {
       type: 'omni',
-      color: new Color(warm ? 1 : 0.35, warm ? 0.79 : 0.66, warm ? 0.5 : 0.87),
+      color: new Color(warm ? 1 : 0.35, warm ? 0.72 : 0.25, warm ? 0.45 : 0.95),
       intensity: 0.85,
       range: 5.2,
       castShadows: false,
@@ -159,7 +188,10 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     frames = 0,
     frameTime = performance.now(),
     fps = 0,
-    lastJoke = -20;
+    lastJoke = -20,
+    reactionUntil = 0,
+    reactionName = 'Panic',
+    visualTime = 0;
   const useCaption = () => document.querySelector<HTMLInputElement>('#subtitles')!.checked;
   const caption = (text: string) => {
     if (useCaption()) {
@@ -196,6 +228,8 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
   };
   const start = () => {
     input.clear();
+    reactionUntil = 0;
+    visualTime = 0;
     player = new Player();
     ai = new Porteiro();
     g.reset(Number(document.querySelector<HTMLSelectElement>('#mode')!.value));
@@ -209,7 +243,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     bumpCooldown = 0;
     captionUntil = 0;
     noiseUntil = 0;
-    lastJoke = -20;
+    ((lastJoke = -20), (reactionUntil = 0), (reactionName = 'Panic'), (visualTime = 0));
     lastAI = ai.state;
     follow.initialized = false;
     input.yaw = 0;
@@ -232,7 +266,9 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     .addEventListener('change', (e) => (audio.enabled = (e.target as HTMLInputElement).checked));
   document.querySelector('#quality')!.addEventListener('change', (e) => {
     app.graphicsDevice.maxPixelRatio =
-      (e.target as HTMLSelectElement).value === 'low' ? 1 : Math.min(devicePixelRatio, 1.5);
+      (e.target as HTMLSelectElement).value === 'low'
+        ? Math.min(devicePixelRatio, 1)
+        : Math.min(devicePixelRatio, 1.5);
     app.resizeCanvas();
     light.light!.castShadows = (e.target as HTMLSelectElement).value !== 'low';
   });
@@ -257,6 +293,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
   ui.menu('MENU');
   app.on('update', (dt: number) => {
     frames++;
+    if (g.phase !== 'PAUSED') visualTime += dt;
     const now = performance.now();
     if (now - frameTime >= 1000) {
       fps = Math.round((frames * 1000) / (now - frameTime));
@@ -284,6 +321,10 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
         bumpCooldown <= 0 &&
         layout.obstacles.some((o) => distance(o, player.position) < 1 && o.noise_if_hit)
       ) {
+        if (input.running) {
+          reactionName = 'Stumble';
+          reactionUntil = g.time + 0.48;
+        }
         emit('colisão', 0.75, 12);
         bumpCooldown = 2;
       }
@@ -322,6 +363,8 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
           if (i.kind === 'pickup' && g.pickup())
             caption(`${personalities[g.delivered].name}: “${personalities[g.delivered].pickup}”`);
           else if (i.kind === 'deliver' && g.deliver(i.id)) {
+            reactionName = 'Relief';
+            reactionUntil = g.time + 0.7;
             caption(
               g.delivered === g.total
                 ? 'Última entrega concluída. Volte ao elevador!'
@@ -387,10 +430,73 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     nico.root.enabled = !g.hidden;
     monster.root.setPosition(ai.position.x, 0, ai.position.z);
     monster.root.setEulerAngles(0, (ai.heading * 180) / Math.PI, 0);
-    if(nico.rig)animateRig(nico.rig,g.hidden?'Hide':g.held?(player.moving?(input.running&&!input.quiet?'CarryRun':'CarryWalk'):'Carry'):player.moving?(input.running&&!input.quiet?'Run':'Walk'):'Idle',g.phase!=='PLAYING',g.time,ai.state==='CHASE'?1:g.box.agitation/100);
+    const nicoState =
+      g.phase === 'WON'
+        ? 'Relief'
+        : g.phase === 'LOST'
+          ? 'Panic'
+          : g.hidden
+            ? 'Hide'
+            : g.time < reactionUntil
+              ? reactionName
+              : !player.moving && input.quiet
+                ? 'Crouch'
+                : g.held
+                  ? player.moving
+                    ? input.running && !input.quiet
+                      ? 'CarryRun'
+                      : 'CarryWalk'
+                    : 'Carry'
+                  : player.moving
+                    ? input.running && !input.quiet
+                      ? 'Run'
+                      : 'Walk'
+                    : ai.state === 'INVESTIGATE' || ai.state === 'SEARCH'
+                      ? 'LookBack'
+                      : 'Idle';
+    if (nico.rig)
+      animateRig(
+        nico.rig,
+        nicoState,
+        g.phase === 'PAUSED' || g.phase === 'MENU',
+        visualTime,
+        ai.state === 'CHASE' ? 1 : g.box.agitation / 100,
+      );
     animate(nico, g.time, player.moving && g.phase === 'PLAYING', input.quiet, g.box.agitation);
+    if (g.held) {
+      // Carry IK was baked in actor space. Counter the chest lean at the socket
+      // to keep the parcel between the baked hands, upright and readable.
+      const grip = nico.root
+        .getWorldTransform()
+        .transformPoint(new Vec3(0, 0.98 * (1.78 / 1.984), 0.48 * (1.78 / 1.984)));
+      nico.box.setPosition(grip);
+      nico.box.setEulerAngles(
+        Math.sin(g.time * 20) * g.box.agitation * 0.025,
+        (player.heading * 180) / Math.PI,
+        Math.cos(g.time * 17) * g.box.agitation * 0.025,
+      );
+    }
+
+    if (monster.rig)
+      animateRig(
+        monster.rig,
+        (
+          {
+            PATROL: 'Patrol',
+            LISTEN: 'Listen',
+            INVESTIGATE: 'Investigate',
+            CHASE: 'Chase',
+            SEARCH: ai.timer < 1 ? 'Confused' : 'Search',
+            RETURN: 'Return',
+          } as const
+        )[ai.state],
+        g.phase !== 'PLAYING',
+        g.time,
+        ai.state === 'CHASE' ? 1 : 0,
+      );
+    animateParcel(supply, g.time, g.box.agitation);
     animate(monster, g.time, ai.state !== 'LISTEN' && g.phase === 'PLAYING', false, 0, true);
-    if (ai.state === 'LISTEN') {
+    if (ai.state === 'LISTEN' && !monster.rig) {
       const angle =
         ((Math.atan2(ai.target.x - ai.position.x, ai.target.z - ai.position.z) - ai.heading) *
           180) /
@@ -402,7 +508,15 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
       );
     }
     follow.tick(dt, player.position, input.yaw, input.pitch);
-    nico.root.enabled=!g.hidden&&!follow.hideNico;
+    nico.root.enabled = !g.hidden && !follow.hideNico;
+    for (const material of nico.fadeMaterials ?? []) {
+      if (Math.abs(material.opacity - follow.avatarOpacity) > 0.04) {
+        material.opacity = follow.avatarOpacity;
+        material.blendType = follow.avatarOpacity < 0.99 ? BLEND_NORMAL : BLEND_NONE;
+        material.depthWrite = follow.avatarOpacity >= 0.99;
+        material.update();
+      }
+    }
     ui.update(g, interaction(g, player.position), ai.state, input.quiet);
   });
   if (import.meta.env.DEV) {
@@ -425,12 +539,29 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
             fps,
             input: { quiet: input.quiet, stick: input.stick, yaw: input.yaw },
             drawCalls: app.stats.drawCallCount,
-            animation: nico.rig?{state:nico.rig.state,clips:nico.rig.clips,time:nico.rig.host.anim?.baseLayer?.activeStateCurrentTime}:null,
-              joints: {
+            monsterAnimation: {
+              state: monster.rig?.state,
+              left: monster.legs[0].getLocalEulerAngles().x,
+              right: monster.legs[1].getLocalEulerAngles().x,
+            },
+            animation: nico.rig
+              ? {
+                  state: nico.rig.state,
+                  clips: nico.rig.clips,
+                  time: nico.rig.host.anim?.baseLayer?.activeStateCurrentTime,
+                }
+              : null,
+            joints: {
               left: nico.legs[0].getLocalEulerAngles().x,
               right: nico.legs[1].getLocalEulerAngles().x,
             },
-            camera: { x: follow.position.x, y: follow.position.y, z: follow.position.z },
+            camera: {
+              x: follow.position.x,
+              y: follow.position.y,
+              z: follow.position.z,
+              avatarOpacity: follow.avatarOpacity,
+              fov: camera.camera!.fov,
+            },
           }),
         ),
     });

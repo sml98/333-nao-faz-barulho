@@ -1,0 +1,50 @@
+20:38:47 | INFO: Data are loaded, start creating Blender stuff
+20:38:47 | INFO: Blender create Mesh node Cube.199
+20:38:47 | INFO: Blender create Mesh node Cube.202
+20:38:47 | INFO: Blender create Mesh node PrototypePete_body.025
+20:38:47 | INFO: Blender create Mesh node Cube.210
+20:38:47 | INFO: Blender create Mesh node Cube.194
+20:38:47 | INFO: Blender create Mesh node Cube.187
+20:38:47 | INFO: Blender create Mesh node Cylinder.002
+20:38:47 | INFO: Blender create Mesh node Cube.015
+20:38:47 | INFO: Blender create Mesh node Cube.004
+20:38:47 | INFO: Blender create Mesh node Cylinder.008
+20:38:47 | INFO: Blender create Mesh node Cylinder.006
+20:38:47 | INFO: Blender create Mesh node Plane.007
+20:38:49 | INFO: glTF import finished in 1.51s
+20:38:49 | INFO: Data are loaded, start creating Blender stuff
+20:38:49 | INFO: Blender create Mesh node Cube.157
+20:38:50 | INFO: Blender create Mesh node Cube.158
+20:38:50 | INFO: Blender create Mesh node Cube.155
+20:38:50 | INFO: Blender create Mesh node Cube.159
+20:38:50 | INFO: Blender create Mesh node Cube.153
+20:38:50 | INFO: Blender create Mesh node Cube.154
+20:38:50 | INFO: Blender create Mesh node Cube.12901
+20:38:50 | INFO: Blender create Mesh node Cube.12902
+20:38:50 | INFO: Blender create Mesh node Cylinder.018
+20:38:50 | INFO: Blender create Mesh node Cylinder.039
+20:38:50 | INFO: Blender create Mesh node Cube.156
+20:38:50 | INFO: Blender create Mesh node Plane.030
+20:38:52 | INFO: glTF import finished in 2.65s
+20:38:52 | INFO: Data are loaded, start creating Blender stuff
+20:38:52 | INFO: Blender create Mesh node Face
+Blender 4.3.2
+Error: Cannot read '/workspace/333/bellmare-333/art_sources/quaternius/T_Hair_1_BaseColor.png': No such file or directory
+20:38:52 | ERROR: Missing image file (index 1): /workspace/333/bellmare-333/art_sources/quaternius/T_Hair_1_BaseColor.png
+Error: Cannot read '/workspace/333/bellmare-333/art_sources/quaternius/T_Hair_1_Normal_png.png': No such file or directory
+20:38:52 | ERROR: Missing image file (index 0): /workspace/333/bellmare-333/art_sources/quaternius/T_Hair_1_Normal_png.png
+20:38:52 | INFO: Blender create Mesh node Face.001
+Error: Cannot read '/workspace/333/bellmare-333/art_sources/quaternius/T_Eye_Brown.png': No such file or directory
+20:38:52 | ERROR: Missing image file (index 3): /workspace/333/bellmare-333/art_sources/quaternius/T_Eye_Brown.png
+Error: Cannot read '/workspace/333/bellmare-333/art_sources/quaternius/T_Eye_Normal_png.png': No such file or directory
+20:38:52 | ERROR: Missing image file (index 2): /workspace/333/bellmare-333/art_sources/quaternius/T_Eye_Normal_png.png
+20:38:52 | INFO: Blender create Mesh node Sphere.005_Retopology.004
+Error: Cannot read '/workspace/333/bellmare-333/art_sources/quaternius/T_Superhero_Male_Dark.png': No such file or directory
+20:38:52 | ERROR: Missing image file (index 5): /workspace/333/bellmare-333/art_sources/quaternius/T_Superhero_Male_Dark.png
+Error: Cannot read '/workspace/333/bellmare-333/art_sources/quaternius/T_Superhero_Male_Roughness.png': No such file or directory
+20:38:52 | ERROR: Missing image file (index 6): /workspace/333/bellmare-333/art_sources/quaternius/T_Superhero_Male_Roughness.png
+Error: Cannot read '/workspace/333/bellmare-333/art_sources/quaternius/T_Superhero_Male_Normal.png': No such file or directory
+20:38:52 | ERROR: Missing image file (index 4): /workspace/333/bellmare-333/art_sources/quaternius/T_Superhero_Male_Normal.png
+20:38:52 | INFO: glTF import finished in 0.29s
+
+Blender quit

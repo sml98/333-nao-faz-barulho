@@ -1,0 +1,1136 @@
+[
+  {
+    "file": "art_sources/kaykit/Rogue.glb",
+    "aabb": {
+      "min": [
+        -1.9417,
+        0,
+        -0.4963
+      ],
+      "max": [
+        1.0033,
+        2.187,
+        0.9809
+      ]
+    },
+    "dims": [
+      2.945,
+      2.187,
+      1.4772
+    ],
+    "center": [
+      -0.4692,
+      1.0935,
+      0.2423
+    ],
+    "groundOffset": 0,
+    "boundsSource": "vertices",
+    "boundsPose": "bind",
+    "requiresRuntimeCheck": true,
+    "nodes": 54,
+    "nodePaths": [
+      "Rig",
+      "Rig/Rogue_ArmLeft",
+      "Rig/Rogue_ArmRight",
+      "Rig/Rogue_Body",
+      "Rig/Rogue_Head",
+      "Rig/Rogue_LegLeft",
+      "Rig/Rogue_LegRight",
+      "Rig/root",
+      "Rig/root/control-toe-roll.l",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/IK-toe.l",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/IK-foot.l",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/heelIK.l",
+      "Rig/root/control-toe-roll.r",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/IK-toe.r",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/IK-foot.r",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/heelIK.r",
+      "Rig/root/elbowIK.l",
+      "Rig/root/elbowIK.r",
+      "Rig/root/handIK.l",
+      "Rig/root/handIK.r",
+      "Rig/root/hips",
+      "Rig/root/hips/spine",
+      "Rig/root/hips/spine/chest",
+      "Rig/root/hips/spine/chest/Rogue_Cape",
+      "Rig/root/hips/spine/chest/head",
+      "Rig/root/hips/spine/chest/upperarm.l",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l/Knife_Offhand",
+      "Rig/root/hips/spine/chest/upperarm.r",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r/1H_Crossbow",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r/2H_Crossbow",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r/Knife",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r/Throwable",
+      "Rig/root/hips/upperleg.l",
+      "Rig/root/hips/upperleg.l/lowerleg.l",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l/toes.l",
+      "Rig/root/hips/upperleg.r",
+      "Rig/root/hips/upperleg.r/lowerleg.r",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r/toes.r",
+      "Rig/root/kneeIK.l",
+      "Rig/root/kneeIK.r"
+    ],
+    "meshNodes": 12,
+    "materials": [
+      "rogue_texture"
+    ],
+    "clips": [
+      {
+        "name": "1H_Melee_Attack_Chop",
+        "duration": 1.0667
+      },
+      {
+        "name": "1H_Melee_Attack_Slice_Diagonal",
+        "duration": 1
+      },
+      {
+        "name": "1H_Melee_Attack_Slice_Horizontal",
+        "duration": 1.0667
+      },
+      {
+        "name": "1H_Melee_Attack_Stab",
+        "duration": 1.6
+      },
+      {
+        "name": "1H_Ranged_Aiming",
+        "duration": 1.0667
+      },
+      {
+        "name": "1H_Ranged_Reload",
+        "duration": 1.1667
+      },
+      {
+        "name": "1H_Ranged_Shoot",
+        "duration": 1.0667
+      },
+      {
+        "name": "1H_Ranged_Shooting",
+        "duration": 1.6
+      },
+      {
+        "name": "2H_Melee_Attack_Chop",
+        "duration": 1.6333
+      },
+      {
+        "name": "2H_Melee_Attack_Slice",
+        "duration": 1.1
+      },
+      {
+        "name": "2H_Melee_Attack_Spin",
+        "duration": 2.4
+      },
+      {
+        "name": "2H_Melee_Attack_Spinning",
+        "duration": 0.6667
+      },
+      {
+        "name": "2H_Melee_Attack_Stab",
+        "duration": 1.6
+      },
+      {
+        "name": "2H_Melee_Idle",
+        "duration": 1.0667
+      },
+      {
+        "name": "2H_Ranged_Aiming",
+        "duration": 1.6
+      },
+      {
+        "name": "2H_Ranged_Reload",
+        "duration": 1.6
+      },
+      {
+        "name": "2H_Ranged_Shoot",
+        "duration": 1.0667
+      },
+      {
+        "name": "2H_Ranged_Shooting",
+        "duration": 1.0667
+      },
+      {
+        "name": "Block",
+        "duration": 1.0667
+      },
+      {
+        "name": "Block_Attack",
+        "duration": 1.0667
+      },
+      {
+        "name": "Block_Hit",
+        "duration": 1.0667
+      },
+      {
+        "name": "Blocking",
+        "duration": 1.0667
+      },
+      {
+        "name": "Cheer",
+        "duration": 1.6667
+      },
+      {
+        "name": "Death_A",
+        "duration": 0.8
+      },
+      {
+        "name": "Death_A_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Death_B",
+        "duration": 2.6333
+      },
+      {
+        "name": "Death_B_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Dodge_Backward",
+        "duration": 0.4
+      },
+      {
+        "name": "Dodge_Forward",
+        "duration": 0.4
+      },
+      {
+        "name": "Dodge_Left",
+        "duration": 0.4
+      },
+      {
+        "name": "Dodge_Right",
+        "duration": 0.4
+      },
+      {
+        "name": "Dualwield_Melee_Attack_Chop",
+        "duration": 1.2667
+      },
+      {
+        "name": "Dualwield_Melee_Attack_Slice",
+        "duration": 1.1667
+      },
+      {
+        "name": "Dualwield_Melee_Attack_Stab",
+        "duration": 1.6
+      },
+      {
+        "name": "Hit_A",
+        "duration": 0.6667
+      },
+      {
+        "name": "Hit_B",
+        "duration": 0.8667
+      },
+      {
+        "name": "Idle",
+        "duration": 1.0667
+      },
+      {
+        "name": "Interact",
+        "duration": 1.3
+      },
+      {
+        "name": "Jump_Full_Long",
+        "duration": 2.3333
+      },
+      {
+        "name": "Jump_Full_Short",
+        "duration": 1.1667
+      },
+      {
+        "name": "Jump_Idle",
+        "duration": 1.0667
+      },
+      {
+        "name": "Jump_Land",
+        "duration": 0.6667
+      },
+      {
+        "name": "Jump_Start",
+        "duration": 0.6
+      },
+      {
+        "name": "Lie_Down",
+        "duration": 3
+      },
+      {
+        "name": "Lie_Idle",
+        "duration": 2.6667
+      },
+      {
+        "name": "Lie_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Lie_StandUp",
+        "duration": 2.3333
+      },
+      {
+        "name": "PickUp",
+        "duration": 1.3
+      },
+      {
+        "name": "Running_A",
+        "duration": 0.8
+      },
+      {
+        "name": "Running_B",
+        "duration": 1.0667
+      },
+      {
+        "name": "Running_Strafe_Left",
+        "duration": 0.8
+      },
+      {
+        "name": "Running_Strafe_Right",
+        "duration": 0.8
+      },
+      {
+        "name": "Sit_Chair_Down",
+        "duration": 0.8
+      },
+      {
+        "name": "Sit_Chair_Idle",
+        "duration": 3.6
+      },
+      {
+        "name": "Sit_Chair_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Sit_Chair_StandUp",
+        "duration": 0.8
+      },
+      {
+        "name": "Sit_Floor_Down",
+        "duration": 1
+      },
+      {
+        "name": "Sit_Floor_Idle",
+        "duration": 4
+      },
+      {
+        "name": "Sit_Floor_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Sit_Floor_StandUp",
+        "duration": 1.1333
+      },
+      {
+        "name": "Spellcast_Long",
+        "duration": 2.5333
+      },
+      {
+        "name": "Spellcast_Raise",
+        "duration": 2.1
+      },
+      {
+        "name": "Spellcast_Shoot",
+        "duration": 0.9333
+      },
+      {
+        "name": "Spellcasting",
+        "duration": 0.6667
+      },
+      {
+        "name": "T-Pose",
+        "duration": 0
+      },
+      {
+        "name": "Throw",
+        "duration": 1.3667
+      },
+      {
+        "name": "Unarmed_Idle",
+        "duration": 1.0667
+      },
+      {
+        "name": "Unarmed_Melee_Attack_Kick",
+        "duration": 0.9333
+      },
+      {
+        "name": "Unarmed_Melee_Attack_Punch_A",
+        "duration": 1.4667
+      },
+      {
+        "name": "Unarmed_Melee_Attack_Punch_B",
+        "duration": 1.6667
+      },
+      {
+        "name": "Unarmed_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Use_Item",
+        "duration": 1.6
+      },
+      {
+        "name": "Walking_A",
+        "duration": 1.0667
+      },
+      {
+        "name": "Walking_B",
+        "duration": 1.0667
+      },
+      {
+        "name": "Walking_Backwards",
+        "duration": 1.0667
+      },
+      {
+        "name": "Walking_C",
+        "duration": 1.6
+      }
+    ],
+    "joints": [
+      "IK-foot.l",
+      "IK-foot.r",
+      "IK-toe.l",
+      "IK-toe.r",
+      "chest",
+      "control-foot-roll.l",
+      "control-foot-roll.r",
+      "control-heel-roll.l",
+      "control-heel-roll.r",
+      "control-toe-roll.l",
+      "control-toe-roll.r",
+      "elbowIK.l",
+      "elbowIK.r",
+      "foot.l",
+      "foot.r",
+      "hand.l",
+      "hand.r",
+      "handIK.l",
+      "handIK.r",
+      "handslot.l",
+      "handslot.r",
+      "head",
+      "heelIK.l",
+      "heelIK.r",
+      "hips",
+      "kneeIK.l",
+      "kneeIK.r",
+      "lowerarm.l",
+      "lowerarm.r",
+      "lowerleg.l",
+      "lowerleg.r",
+      "root",
+      "spine",
+      "toes.l",
+      "toes.r",
+      "upperarm.l",
+      "upperarm.r",
+      "upperleg.l",
+      "upperleg.r",
+      "wrist.l",
+      "wrist.r"
+    ],
+    "animationTargets": [
+      "Rig/root.rotation",
+      "Rig/root.scale",
+      "Rig/root.translation",
+      "Rig/root/control-toe-roll.l.rotation",
+      "Rig/root/control-toe-roll.l.scale",
+      "Rig/root/control-toe-roll.l.translation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l.rotation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l.scale",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l.translation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/IK-toe.l.rotation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/IK-toe.l.scale",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/IK-toe.l.translation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l.rotation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l.scale",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l.translation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/IK-foot.l.rotation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/IK-foot.l.scale",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/IK-foot.l.translation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/heelIK.l.rotation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/heelIK.l.scale",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/heelIK.l.translation",
+      "Rig/root/control-toe-roll.r.rotation",
+      "Rig/root/control-toe-roll.r.scale",
+      "Rig/root/control-toe-roll.r.translation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r.rotation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r.scale",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r.translation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/IK-toe.r.rotation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/IK-toe.r.scale",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/IK-toe.r.translation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r.rotation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r.scale",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r.translation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/IK-foot.r.rotation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/IK-foot.r.scale",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/IK-foot.r.translation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/heelIK.r.rotation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/heelIK.r.scale",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/heelIK.r.translation",
+      "Rig/root/elbowIK.l.rotation",
+      "Rig/root/elbowIK.l.scale",
+      "Rig/root/elbowIK.l.translation",
+      "Rig/root/elbowIK.r.rotation",
+      "Rig/root/elbowIK.r.scale",
+      "Rig/root/elbowIK.r.translation",
+      "Rig/root/handIK.l.rotation",
+      "Rig/root/handIK.l.scale",
+      "Rig/root/handIK.l.translation",
+      "Rig/root/handIK.r.rotation",
+      "Rig/root/handIK.r.scale",
+      "Rig/root/handIK.r.translation",
+      "Rig/root/hips.rotation",
+      "Rig/root/hips.scale",
+      "Rig/root/hips.translation",
+      "Rig/root/hips/spine.rotation",
+      "Rig/root/hips/spine.scale",
+      "Rig/root/hips/spine.translation",
+      "Rig/root/hips/spine/chest.rotation",
+      "Rig/root/hips/spine/chest.scale",
+      "Rig/root/hips/spine/chest.translation",
+      "Rig/root/hips/spine/chest/head.rotation",
+      "Rig/root/hips/spine/chest/head.scale",
+      "Rig/root/hips/spine/chest/head.translation",
+      "Rig/root/hips/spine/chest/upperarm.l.rotation",
+      "Rig/root/hips/spine/chest/upperarm.l.scale",
+      "Rig/root/hips/spine/chest/upperarm.l.translation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l.rotation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l.scale",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l.translation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l.rotation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l.scale",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l.translation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l.rotation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l.scale",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l.translation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l.rotation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l.scale",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l.translation",
+      "Rig/root/hips/spine/chest/upperarm.r.rotation",
+      "Rig/root/hips/spine/chest/upperarm.r.scale",
+      "Rig/root/hips/spine/chest/upperarm.r.translation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r.rotation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r.scale",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r.translation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r.rotation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r.scale",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r.translation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r.rotation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r.scale",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r.translation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r.rotation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r.scale",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r.translation",
+      "Rig/root/hips/upperleg.l.rotation",
+      "Rig/root/hips/upperleg.l.scale",
+      "Rig/root/hips/upperleg.l.translation",
+      "Rig/root/hips/upperleg.l/lowerleg.l.rotation",
+      "Rig/root/hips/upperleg.l/lowerleg.l.scale",
+      "Rig/root/hips/upperleg.l/lowerleg.l.translation",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l.rotation",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l.scale",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l.translation",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l/toes.l.rotation",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l/toes.l.scale",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l/toes.l.translation",
+      "Rig/root/hips/upperleg.r.rotation",
+      "Rig/root/hips/upperleg.r.scale",
+      "Rig/root/hips/upperleg.r.translation",
+      "Rig/root/hips/upperleg.r/lowerleg.r.rotation",
+      "Rig/root/hips/upperleg.r/lowerleg.r.scale",
+      "Rig/root/hips/upperleg.r/lowerleg.r.translation",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r.rotation",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r.scale",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r.translation",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r/toes.r.rotation",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r/toes.r.scale",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r/toes.r.translation",
+      "Rig/root/kneeIK.l.rotation",
+      "Rig/root/kneeIK.l.scale",
+      "Rig/root/kneeIK.l.translation",
+      "Rig/root/kneeIK.r.rotation",
+      "Rig/root/kneeIK.r.scale",
+      "Rig/root/kneeIK.r.translation"
+    ],
+    "morphed": false,
+    "morphAnimated": false,
+    "skinned": true
+  },
+  {
+    "file": "art_sources/kaykit/Mage.glb",
+    "aabb": {
+      "min": [
+        -1.1285,
+        0,
+        -1.0172
+      ],
+      "max": [
+        1.2972,
+        2.7156,
+        1.2543
+      ]
+    },
+    "dims": [
+      2.4257,
+      2.7157,
+      2.2714
+    ],
+    "center": [
+      0.0844,
+      1.3578,
+      0.1186
+    ],
+    "groundOffset": 0,
+    "boundsSource": "vertices",
+    "boundsPose": "bind",
+    "requiresRuntimeCheck": true,
+    "nodes": 54,
+    "nodePaths": [
+      "Rig",
+      "Rig/Mage_ArmLeft",
+      "Rig/Mage_ArmRight",
+      "Rig/Mage_Body",
+      "Rig/Mage_Head",
+      "Rig/Mage_LegLeft",
+      "Rig/Mage_LegRight",
+      "Rig/root",
+      "Rig/root/control-toe-roll.l",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/IK-toe.l",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/IK-foot.l",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/heelIK.l",
+      "Rig/root/control-toe-roll.r",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/IK-toe.r",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/IK-foot.r",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/heelIK.r",
+      "Rig/root/elbowIK.l",
+      "Rig/root/elbowIK.r",
+      "Rig/root/handIK.l",
+      "Rig/root/handIK.r",
+      "Rig/root/hips",
+      "Rig/root/hips/spine",
+      "Rig/root/hips/spine/chest",
+      "Rig/root/hips/spine/chest/Mage_Cape",
+      "Rig/root/hips/spine/chest/head",
+      "Rig/root/hips/spine/chest/head/Mage_Hat",
+      "Rig/root/hips/spine/chest/upperarm.l",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l/Spellbook",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l/Spellbook_open",
+      "Rig/root/hips/spine/chest/upperarm.r",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r/1H_Wand",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r/2H_Staff",
+      "Rig/root/hips/upperleg.l",
+      "Rig/root/hips/upperleg.l/lowerleg.l",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l/toes.l",
+      "Rig/root/hips/upperleg.r",
+      "Rig/root/hips/upperleg.r/lowerleg.r",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r/toes.r",
+      "Rig/root/kneeIK.l",
+      "Rig/root/kneeIK.r"
+    ],
+    "meshNodes": 12,
+    "materials": [
+      "mage_texture"
+    ],
+    "clips": [
+      {
+        "name": "1H_Melee_Attack_Chop",
+        "duration": 1.0667
+      },
+      {
+        "name": "1H_Melee_Attack_Slice_Diagonal",
+        "duration": 1
+      },
+      {
+        "name": "1H_Melee_Attack_Slice_Horizontal",
+        "duration": 1.0667
+      },
+      {
+        "name": "1H_Melee_Attack_Stab",
+        "duration": 1.6
+      },
+      {
+        "name": "1H_Ranged_Aiming",
+        "duration": 1.0667
+      },
+      {
+        "name": "1H_Ranged_Reload",
+        "duration": 1.1667
+      },
+      {
+        "name": "1H_Ranged_Shoot",
+        "duration": 1.0667
+      },
+      {
+        "name": "1H_Ranged_Shooting",
+        "duration": 1.6
+      },
+      {
+        "name": "2H_Melee_Attack_Chop",
+        "duration": 1.6333
+      },
+      {
+        "name": "2H_Melee_Attack_Slice",
+        "duration": 1.1
+      },
+      {
+        "name": "2H_Melee_Attack_Spin",
+        "duration": 2.4
+      },
+      {
+        "name": "2H_Melee_Attack_Spinning",
+        "duration": 0.6667
+      },
+      {
+        "name": "2H_Melee_Attack_Stab",
+        "duration": 1.6
+      },
+      {
+        "name": "2H_Melee_Idle",
+        "duration": 1.0667
+      },
+      {
+        "name": "2H_Ranged_Aiming",
+        "duration": 1.6
+      },
+      {
+        "name": "2H_Ranged_Reload",
+        "duration": 1.6
+      },
+      {
+        "name": "2H_Ranged_Shoot",
+        "duration": 1.0667
+      },
+      {
+        "name": "2H_Ranged_Shooting",
+        "duration": 1.0667
+      },
+      {
+        "name": "Block",
+        "duration": 1.0667
+      },
+      {
+        "name": "Block_Attack",
+        "duration": 1.0667
+      },
+      {
+        "name": "Block_Hit",
+        "duration": 1.0667
+      },
+      {
+        "name": "Blocking",
+        "duration": 1.0667
+      },
+      {
+        "name": "Cheer",
+        "duration": 1.6667
+      },
+      {
+        "name": "Death_A",
+        "duration": 0.8
+      },
+      {
+        "name": "Death_A_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Death_B",
+        "duration": 2.6333
+      },
+      {
+        "name": "Death_B_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Dodge_Backward",
+        "duration": 0.4
+      },
+      {
+        "name": "Dodge_Forward",
+        "duration": 0.4
+      },
+      {
+        "name": "Dodge_Left",
+        "duration": 0.4
+      },
+      {
+        "name": "Dodge_Right",
+        "duration": 0.4
+      },
+      {
+        "name": "Dualwield_Melee_Attack_Chop",
+        "duration": 1.2667
+      },
+      {
+        "name": "Dualwield_Melee_Attack_Slice",
+        "duration": 1.1667
+      },
+      {
+        "name": "Dualwield_Melee_Attack_Stab",
+        "duration": 1.6
+      },
+      {
+        "name": "Hit_A",
+        "duration": 0.6667
+      },
+      {
+        "name": "Hit_B",
+        "duration": 0.8667
+      },
+      {
+        "name": "Idle",
+        "duration": 1.0667
+      },
+      {
+        "name": "Interact",
+        "duration": 1.3
+      },
+      {
+        "name": "Jump_Full_Long",
+        "duration": 2.3333
+      },
+      {
+        "name": "Jump_Full_Short",
+        "duration": 1.1667
+      },
+      {
+        "name": "Jump_Idle",
+        "duration": 1.0667
+      },
+      {
+        "name": "Jump_Land",
+        "duration": 0.6667
+      },
+      {
+        "name": "Jump_Start",
+        "duration": 0.6
+      },
+      {
+        "name": "Lie_Down",
+        "duration": 3
+      },
+      {
+        "name": "Lie_Idle",
+        "duration": 2.6667
+      },
+      {
+        "name": "Lie_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Lie_StandUp",
+        "duration": 2.3333
+      },
+      {
+        "name": "PickUp",
+        "duration": 1.3
+      },
+      {
+        "name": "Running_A",
+        "duration": 0.8
+      },
+      {
+        "name": "Running_B",
+        "duration": 1.0667
+      },
+      {
+        "name": "Running_Strafe_Left",
+        "duration": 0.8
+      },
+      {
+        "name": "Running_Strafe_Right",
+        "duration": 0.8
+      },
+      {
+        "name": "Sit_Chair_Down",
+        "duration": 0.8
+      },
+      {
+        "name": "Sit_Chair_Idle",
+        "duration": 3.6
+      },
+      {
+        "name": "Sit_Chair_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Sit_Chair_StandUp",
+        "duration": 0.8
+      },
+      {
+        "name": "Sit_Floor_Down",
+        "duration": 1
+      },
+      {
+        "name": "Sit_Floor_Idle",
+        "duration": 4
+      },
+      {
+        "name": "Sit_Floor_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Sit_Floor_StandUp",
+        "duration": 1.1333
+      },
+      {
+        "name": "Spellcast_Long",
+        "duration": 2.5333
+      },
+      {
+        "name": "Spellcast_Raise",
+        "duration": 2.1
+      },
+      {
+        "name": "Spellcast_Shoot",
+        "duration": 0.9333
+      },
+      {
+        "name": "Spellcasting",
+        "duration": 0.6667
+      },
+      {
+        "name": "T-Pose",
+        "duration": 0
+      },
+      {
+        "name": "Throw",
+        "duration": 1.3667
+      },
+      {
+        "name": "Unarmed_Idle",
+        "duration": 1.0667
+      },
+      {
+        "name": "Unarmed_Melee_Attack_Kick",
+        "duration": 0.9333
+      },
+      {
+        "name": "Unarmed_Melee_Attack_Punch_A",
+        "duration": 1.4667
+      },
+      {
+        "name": "Unarmed_Melee_Attack_Punch_B",
+        "duration": 1.6667
+      },
+      {
+        "name": "Unarmed_Pose",
+        "duration": 0
+      },
+      {
+        "name": "Use_Item",
+        "duration": 1.6
+      },
+      {
+        "name": "Walking_A",
+        "duration": 1.0667
+      },
+      {
+        "name": "Walking_B",
+        "duration": 1.0667
+      },
+      {
+        "name": "Walking_Backwards",
+        "duration": 1.0667
+      },
+      {
+        "name": "Walking_C",
+        "duration": 1.6
+      }
+    ],
+    "joints": [
+      "IK-foot.l",
+      "IK-foot.r",
+      "IK-toe.l",
+      "IK-toe.r",
+      "chest",
+      "control-foot-roll.l",
+      "control-foot-roll.r",
+      "control-heel-roll.l",
+      "control-heel-roll.r",
+      "control-toe-roll.l",
+      "control-toe-roll.r",
+      "elbowIK.l",
+      "elbowIK.r",
+      "foot.l",
+      "foot.r",
+      "hand.l",
+      "hand.r",
+      "handIK.l",
+      "handIK.r",
+      "handslot.l",
+      "handslot.r",
+      "head",
+      "heelIK.l",
+      "heelIK.r",
+      "hips",
+      "kneeIK.l",
+      "kneeIK.r",
+      "lowerarm.l",
+      "lowerarm.r",
+      "lowerleg.l",
+      "lowerleg.r",
+      "root",
+      "spine",
+      "toes.l",
+      "toes.r",
+      "upperarm.l",
+      "upperarm.r",
+      "upperleg.l",
+      "upperleg.r",
+      "wrist.l",
+      "wrist.r"
+    ],
+    "animationTargets": [
+      "Rig/root.rotation",
+      "Rig/root.scale",
+      "Rig/root.translation",
+      "Rig/root/control-toe-roll.l.rotation",
+      "Rig/root/control-toe-roll.l.scale",
+      "Rig/root/control-toe-roll.l.translation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l.rotation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l.scale",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l.translation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/IK-toe.l.rotation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/IK-toe.l.scale",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/IK-toe.l.translation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l.rotation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l.scale",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l.translation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/IK-foot.l.rotation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/IK-foot.l.scale",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/IK-foot.l.translation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/heelIK.l.rotation",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/heelIK.l.scale",
+      "Rig/root/control-toe-roll.l/control-heel-roll.l/control-foot-roll.l/heelIK.l.translation",
+      "Rig/root/control-toe-roll.r.rotation",
+      "Rig/root/control-toe-roll.r.scale",
+      "Rig/root/control-toe-roll.r.translation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r.rotation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r.scale",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r.translation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/IK-toe.r.rotation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/IK-toe.r.scale",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/IK-toe.r.translation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r.rotation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r.scale",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r.translation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/IK-foot.r.rotation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/IK-foot.r.scale",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/IK-foot.r.translation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/heelIK.r.rotation",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/heelIK.r.scale",
+      "Rig/root/control-toe-roll.r/control-heel-roll.r/control-foot-roll.r/heelIK.r.translation",
+      "Rig/root/elbowIK.l.rotation",
+      "Rig/root/elbowIK.l.scale",
+      "Rig/root/elbowIK.l.translation",
+      "Rig/root/elbowIK.r.rotation",
+      "Rig/root/elbowIK.r.scale",
+      "Rig/root/elbowIK.r.translation",
+      "Rig/root/handIK.l.rotation",
+      "Rig/root/handIK.l.scale",
+      "Rig/root/handIK.l.translation",
+      "Rig/root/handIK.r.rotation",
+      "Rig/root/handIK.r.scale",
+      "Rig/root/handIK.r.translation",
+      "Rig/root/hips.rotation",
+      "Rig/root/hips.scale",
+      "Rig/root/hips.translation",
+      "Rig/root/hips/spine.rotation",
+      "Rig/root/hips/spine.scale",
+      "Rig/root/hips/spine.translation",
+      "Rig/root/hips/spine/chest.rotation",
+      "Rig/root/hips/spine/chest.scale",
+      "Rig/root/hips/spine/chest.translation",
+      "Rig/root/hips/spine/chest/head.rotation",
+      "Rig/root/hips/spine/chest/head.scale",
+      "Rig/root/hips/spine/chest/head.translation",
+      "Rig/root/hips/spine/chest/upperarm.l.rotation",
+      "Rig/root/hips/spine/chest/upperarm.l.scale",
+      "Rig/root/hips/spine/chest/upperarm.l.translation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l.rotation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l.scale",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l.translation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l.rotation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l.scale",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l.translation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l.rotation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l.scale",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l.translation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l.rotation",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l.scale",
+      "Rig/root/hips/spine/chest/upperarm.l/lowerarm.l/wrist.l/hand.l/handslot.l.translation",
+      "Rig/root/hips/spine/chest/upperarm.r.rotation",
+      "Rig/root/hips/spine/chest/upperarm.r.scale",
+      "Rig/root/hips/spine/chest/upperarm.r.translation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r.rotation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r.scale",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r.translation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r.rotation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r.scale",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r.translation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r.rotation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r.scale",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r.translation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r.rotation",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r.scale",
+      "Rig/root/hips/spine/chest/upperarm.r/lowerarm.r/wrist.r/hand.r/handslot.r.translation",
+      "Rig/root/hips/upperleg.l.rotation",
+      "Rig/root/hips/upperleg.l.scale",
+      "Rig/root/hips/upperleg.l.translation",
+      "Rig/root/hips/upperleg.l/lowerleg.l.rotation",
+      "Rig/root/hips/upperleg.l/lowerleg.l.scale",
+      "Rig/root/hips/upperleg.l/lowerleg.l.translation",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l.rotation",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l.scale",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l.translation",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l/toes.l.rotation",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l/toes.l.scale",
+      "Rig/root/hips/upperleg.l/lowerleg.l/foot.l/toes.l.translation",
+      "Rig/root/hips/upperleg.r.rotation",
+      "Rig/root/hips/upperleg.r.scale",
+      "Rig/root/hips/upperleg.r.translation",
+      "Rig/root/hips/upperleg.r/lowerleg.r.rotation",
+      "Rig/root/hips/upperleg.r/lowerleg.r.scale",
+      "Rig/root/hips/upperleg.r/lowerleg.r.translation",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r.rotation",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r.scale",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r.translation",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r/toes.r.rotation",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r/toes.r.scale",
+      "Rig/root/hips/upperleg.r/lowerleg.r/foot.r/toes.r.translation",
+      "Rig/root/kneeIK.l.rotation",
+      "Rig/root/kneeIK.l.scale",
+      "Rig/root/kneeIK.l.translation",
+      "Rig/root/kneeIK.r.rotation",
+      "Rig/root/kneeIK.r.scale",
+      "Rig/root/kneeIK.r.translation"
+    ],
+    "morphed": false,
+    "morphAnimated": false,
+    "skinned": true
+  }
+]

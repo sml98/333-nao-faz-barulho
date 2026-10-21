@@ -1,0 +1,161 @@
+[
+  {
+    "file": "art_sources/kaykit/Rogue.glb",
+    "triangles": 6457,
+    "bones": 41,
+    "meshes": [
+      [
+        "1H_Crossbow",
+        678
+      ],
+      [
+        "2H_Crossbow",
+        942
+      ],
+      [
+        "Icosphere",
+        42
+      ],
+      [
+        "Knife",
+        207
+      ],
+      [
+        "Knife_Offhand",
+        207
+      ],
+      [
+        "Rogue_ArmLeft",
+        440
+      ],
+      [
+        "Rogue_ArmRight",
+        440
+      ],
+      [
+        "Rogue_Body",
+        1124
+      ],
+      [
+        "Rogue_Cape",
+        56
+      ],
+      [
+        "Rogue_Head",
+        907
+      ],
+      [
+        "Rogue_LegLeft",
+        300
+      ],
+      [
+        "Rogue_LegRight",
+        300
+      ],
+      [
+        "Throwable",
+        300
+      ]
+    ],
+    "actions": 76,
+    "shape_keys": []
+  },
+  {
+    "file": "art_sources/kaykit/Mage.glb",
+    "triangles": 5843,
+    "bones": 41,
+    "meshes": [
+      [
+        "1H_Wand",
+        158
+      ],
+      [
+        "2H_Staff",
+        498
+      ],
+      [
+        "Icosphere",
+        42
+      ],
+      [
+        "Icosphere.001",
+        42
+      ],
+      [
+        "Mage_ArmLeft",
+        330
+      ],
+      [
+        "Mage_ArmRight",
+        330
+      ],
+      [
+        "Mage_Body",
+        1275
+      ],
+      [
+        "Mage_Cape",
+        56
+      ],
+      [
+        "Mage_Hat",
+        402
+      ],
+      [
+        "Mage_Head",
+        761
+      ],
+      [
+        "Mage_LegLeft",
+        326
+      ],
+      [
+        "Mage_LegRight",
+        326
+      ],
+      [
+        "Spellbook",
+        399
+      ],
+      [
+        "Spellbook_open",
+        418
+      ]
+    ],
+    "actions": 76,
+    "shape_keys": []
+  },
+  {
+    "file": "art_sources/quaternius/Superhero_Male_FullBody.gltf",
+    "triangles": 14558,
+    "bones": 65,
+    "meshes": [
+      [
+        "Eyebrows",
+        646
+      ],
+      [
+        "Eyes",
+        556
+      ],
+      [
+        "Icosphere",
+        42
+      ],
+      [
+        "Icosphere.001",
+        42
+      ],
+      [
+        "Icosphere.002",
+        42
+      ],
+      [
+        "SuperHero_Male",
+        7281
+      ]
+    ],
+    "actions": 0,
+    "shape_keys": []
+  }
+]

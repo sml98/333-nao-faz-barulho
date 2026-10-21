@@ -1,0 +1,213 @@
+Skip to main content
+itch.io
+Browse Games
+Game Jams
+Upload Game
+Developer Logs
+Community
+Log in
+Register
+Download Universal Base Characters
+Asset Pack page
+Download
+Universal Base Characters[Standard].zip
+122 MB
+ Dec 16, 2025
+Downloads not starting?
+
+Download and install instructions from Quaternius:
+
+First-Time Setup for Source Version
+
+The first time opening a project is going to be slower, due to the engines having to remake the cache/temp files which are deleted to make the projects lighter, after that it will open as any other project.
+
+UNREAL ENGINE:
+
+The kits are developed in an older version of Unreal Engine to let people who are not using the latest version still use the kit. If you use a newer version you need to follow these two steps just the first time you open it.
+
+
+The Unreal Engine models were exported in GLTF because of a known scaling bug when importing rigged FBXs from Blender. It recognizes the units wrong and breaks retargeting in some cases.
+
+Strongly suggest also using GLTF if you want to re-export.
+
+To import just drag and drop the .glTF.
+
+SHARE & FOLLOW
+Follow Quaternius
+Add asset pack to collection
+or share on
+Share on Bluesky
+Share on Twitter
+Share on Facebook
+NEW
+itch.io is on YouTube!
+
+Subscribe for game recommendations, clips, and more
+
+View Channel
+More you might be interested in
+Add to collection
+FREE
+Universal Animation Library
+Quaternius
+Average rating 4.93 out of 5
+ (135
+total ratings
+)
+#Game assets
+More than 120 animations, ready to retarget in any engine
+Add to collection
+FREE
+Universal Animation Library 2
+Quaternius
+Average rating 4.98 out of 5
+ (42
+total ratings
+)
+#Game assets
+130+ animations compatible with Godot, Unity and Unreal. Combat, Parkour, Farming and much more!
+Add to collection
+FREE
+KayKit - Character Pack : Skeletons
+Kay Lousberg
+Average rating 4.82 out of 5
+ (153
+total ratings
+)
+#Game assets
+3D lowpoly rigged and animated skeleton character model game assets
+Add to collection
+FREE
+Sci-Fi Essentials Kit
+Quaternius
+Average rating 5.00 out of 5
+ (10
+total ratings
+)
+#Game assets
+Guns, Props, animated enemies and a lot more for your sci fi project!
+Add to collection
+FREE
+Stylized Nature MegaKit
+Quaternius
+Average rating 4.98 out of 5
+ (82
+total ratings
+)
+#Game assets
+110+ Unique nature models. Ideal for creating enchanting, Ghibli-inspired scenes. With projects in UE, Godot and Unity.
+Add to collection
+FREE
+Fantasy Props MegaKit
+Quaternius
+Average rating 4.79 out of 5
+ (14
+total ratings
+)
+#Game assets
+200+ fully textured stylized props to build your medieval worlds
+ 
+Add to collection
+$19.95
+Kenney Game Assets All-in-1
+Kenney
+Average rating 4.95 out of 5
+ (595
+total ratings
+)
+#Game assets
+Includes 60,000+ game assets including 2D sprites, 3D models and more!
+50%
+OFF
+ 
+Add to collection
+FREE
+Modern Interiors - RPG Tileset [16X16]
+LimeZu
+Average rating 4.89 out of 5
+ (611
+total ratings
+)
+#Game assets
+16x16 tilesets for your top-down game
+GIF
+ 
+Add to collection
+$9.99
+Godot VFX & Effects collection
+Bukkbeek
+Average rating 4.87 out of 5
+ (15
+total ratings
+)
+#Game assets
+Godot VFX | visual effects collection | lowpoly & stylized
+Add to collection
+FREE
+Medieval Village MegaKit
+Quaternius
+Average rating 4.91 out of 5
+ (33
+total ratings
+)
+#Game assets
+300+ models to create your own fully textured medieval town
+Add to collection
+FREE
+KayKit - Dungeon Pack
+Kay Lousberg
+Average rating 4.95 out of 5
+ (199
+total ratings
+)
+#Game assets
+3D lowpoly modular dungeon themed 3D game assets.
+50%
+OFF
+Add to collection
+$2.50
+Modern Exteriors - RPG Tileset [16X16]
+LimeZu
+Average rating 4.93 out of 5
+ (390
+total ratings
+)
+#Game assets
+16x16 tilesets for your top-down game
+ITCH.IO ON TWITTER
+ITCH.IO ON FACEBOOK
+ABOUT
+FAQ
+BLOG
+CONTACT US
+Copyright © 2026 itch corp · Directory · Terms · Privacy · Cookies
+[
+  {
+    text: 'Skip to main content',
+    url: 'https://quaternius.itch.io/universal-base-characters/download/eyJleHBpcmVzIjoxNzkyNjEzNzkwLCJpZCI6MzgyMjI1OX0%3D.PidmL9PhQugInKi2yj4yyhTaTN4%3D#game_download_3306163'
+  },
+  {
+    text: 'Downloads not starting?',
+    url: 'https://quaternius.itch.io/universal-base-characters/download/eyJleHBpcmVzIjoxNzkyNjEzNzkwLCJpZCI6MzgyMjI1OX0%3D.PidmL9PhQugInKi2yj4yyhTaTN4%3D'
+  },
+  {
+    text: 'Follow QuaterniusFollowing QuaterniusUnfollow Quaternius',
+    url: 'https://itch.io/login?return_to=https%3A%2F%2Fquaternius.itch.io%2Funiversal-base-characters%2Fdownload%2FeyJleHBpcmVzIjoxNzkyNjEzNzkwLCJpZCI6MzgyMjI1OX0%253D.PidmL9PhQugInKi2yj4yyhTaTN4%253D&intent=follow_user'
+  },
+  {
+    text: 'Add asset pack to collection',
+    url: 'https://quaternius.itch.io/universal-base-characters/add-to-collection?source=download'
+  },
+  {
+    text: 'Share on Bluesky',
+    url: 'https://bsky.app/intent/compose?text=I%20just%20downloaded%20Universal%20Base%20Characters%20by%20Quaternius%0Ahttps%3A%2F%2Fquaternius.itch.io%2Funiversal-base-characters'
+  },
+  {
+    text: 'Share on Twitter',
+    url: 'https://twitter.com/intent/tweet?hashtags=indiegames&url=https%3A%2F%2Fquaternius.itch.io%2Funiversal-base-characters&text=I%20just%20downloaded%20Universal%20Base%20Characters%20by%20Quaternius&via=itchio'
+  },
+  {
+    text: 'Share on Facebook',
+    url: 'https://www.facebook.com/dialog/share?app_id=537395183072744&display=popup&href=https%3A%2F%2Fquaternius.itch.io%2Funiversal-base-characters&quote=I%20just%20downloaded%20Universal%20Base%20Characters%20by%20Quaternius'
+  }
+]

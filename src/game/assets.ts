@@ -1,7 +1,7 @@
 import { Asset, AppBase, Entity, Texture, StandardMaterial, Color, Vec2 } from 'playcanvas';
 import type { ContainerResource } from 'playcanvas';
 import type { Actor } from './scene';
-import {attachAnimation} from './characterAnimation';
+import { attachAnimation } from './characterAnimation';
 export interface GameAssets {
   models: Record<string, Asset>;
   atlas: Texture;
@@ -16,15 +16,31 @@ function load(app: AppBase, name: string, type: string, url: string): Promise<As
   });
 }
 export async function loadAssets(app: AppBase): Promise<GameAssets> {
-  const [nico, porteiro, box, atlas] = await Promise.all([
-    load(app, 'Nico', 'container', '/assets/characters/nico.glb'),
-    load(app, 'Porteiro', 'container', '/assets/models/porteiro.glb'),
-    load(app, 'Caixa', 'container', '/assets/models/box.glb'),
-    load(app, 'Bellmare atlas', 'texture', '/assets/textures/bellmare-atlas.png'),
-  ]);
+  const ids = [
+    'nico',
+    'porteiro',
+    'caixa_nervosa',
+    'pacote_arrogante',
+    'caixa_paranoica',
+    'sideTableDrawers',
+    'lampRoundTable',
+    'plantSmall1',
+  ];
+  const loaded = await Promise.all(
+    ids.map((id) =>
+      load(
+        app,
+        id,
+        'container',
+        `/assets/${ids.indexOf(id) < 5 ? 'characters' : 'environment'}/${id}.glb`,
+      ),
+    ),
+  );
+  const models = Object.fromEntries(ids.map((id, i) => [id, loaded[i]]));
+  const atlas = await load(app, 'Bellmare atlas', 'texture', '/assets/textures/bellmare-atlas.png');
   const texture = atlas.resource as Texture;
   texture.anisotropy = 4;
-  return { models: { nico, porteiro, box }, atlas: texture };
+  return { models, atlas: texture };
 }
 export function instantiate(assets: GameAssets, id: string) {
   return (assets.models[id].resource as ContainerResource).instantiateRenderEntity({
@@ -39,23 +55,44 @@ export function makeActor(app: AppBase, assets: GameAssets, monster = false): Ac
   root.addChild(yaw);
   yaw.addChild(visual);
   app.root.addChild(root);
-  const scale=monster?2.7/2.67:1.78/1.8767;
-  visual.setLocalScale(scale,scale,scale);visual.setLocalPosition(0,monster?-.005*scale:-.0008*scale,monster?-.1425*scale:0);
-  const get=(name:string)=>{const e=visual.findByName(name) as Entity|null;if(!e)throw new Error('Nó GLB ausente: '+name);return e;};
-  const body=get(monster?'corpo animável':'NicoRig'),head=get(monster?'cabeça':'head'),legs=[get(monster?'perna0':'upperleg.l'),get(monster?'perna1':'lowerleg.l')],arms=[get(monster?'braço0':'upperarm.l'),get(monster?'braço1':'upperarm.r')];
-  const rig=monster?undefined:attachAnimation(visual,assets.models.nico);
-  const box = instantiate(assets, 'box');
-  if(monster){box.setLocalPosition(0,1,.44);body.addChild(box);}else{get('PackageSocket').addChild(box);box.setLocalPosition(0,0,0);}
-  const lid = box.findByName('tampa') as Entity,
-    mouth = box.findByName('boca animável') as Entity;
-  const eyes = ['eye white', 'eye white.001']
-    .map((name) => box.findByName(name) as Entity)
-    .filter(Boolean);
-  const eyesBase = eyes.map((e) => {
-    const s = e.getLocalScale();
-    return [s.x, s.y, s.z];
-  });
-  const ms = mouth.getLocalScale();
+  const scale = monster ? 2.7 / 2.7937 : 1.78 / 1.984;
+  visual.setLocalScale(scale, scale, scale);
+  visual.setLocalPosition(0, 0, 0);
+  const get = (name: string) => {
+    const e = visual.findByName(name) as Entity | null;
+    if (!e) throw new Error('Nó GLB ausente: ' + name);
+    return e;
+  };
+  const body = get(monster ? 'PorteiroRig' : 'NicoRig'),
+    head = get('head'),
+    legs = [get('upperleg.l'), get('lowerleg.l')],
+    arms = [get('upperarm.l'), get('upperarm.r')];
+  const rig = attachAnimation(visual, assets.models[monster ? 'porteiro' : 'nico']);
+  const fadeMaterials: StandardMaterial[] = [];
+  if (!monster) {
+    const clones = new Map<StandardMaterial, StandardMaterial>();
+    for (const c of head.findComponents('render'))
+      for (const mi of (c as import('playcanvas').RenderComponent).meshInstances) {
+        const original = mi.material as StandardMaterial;
+        let clone = clones.get(original);
+        if (!clone) {
+          clone = original.clone();
+          clones.set(original, clone);
+          fadeMaterials.push(clone);
+        }
+        mi.material = clone;
+      }
+  }
+  const box = new Entity('Living parcels');
+  if (!monster)
+    ['caixa_nervosa', 'pacote_arrogante', 'caixa_paranoica'].forEach((id, i) => {
+      const child = instantiate(assets, id);
+      child.name = `Parcel${i}`;
+      child.enabled = i === 0;
+      box.addChild(child);
+    });
+  if (monster) body.addChild(box);
+  else get('PackageSocket').addChild(box);
   return {
     root,
     body,
@@ -63,13 +100,9 @@ export function makeActor(app: AppBase, assets: GameAssets, monster = false): Ac
     legs,
     arms,
     box,
-    lid,
-    mouth,
-    eyes,
-    eyesBase,
     glb: true,
     rig,
-    mouthBase: [ms.x, ms.y, ms.z],
+    fadeMaterials,
   };
 }
 // Atlas generated from the supplied hotel references; the horizontal split is at y=580/1254.
@@ -90,6 +123,26 @@ export function atlasMaterial(atlas: Texture, kind: 'wall' | 'carpet' | 'door' |
           : [0.5, 0, 0.5, 1 - top];
   m.diffuseMapTiling = new Vec2(bounds[2] - margin * 2, bounds[3] - margin * 2);
   m.diffuseMapOffset = new Vec2(bounds[0] + margin, bounds[1] + margin);
+  if (kind === 'wall') {
+    // Preserve gold pixels, shift teal panels to the reference's purple in the material.
+    // This is a shader on the existing 3D walls, not a background image.
+    m.shaderChunksVersion = '2.23';
+    m.getShaderChunks().set(
+      'diffusePS',
+      `
+      uniform vec3 material_diffuse;
+      void getAlbedo() {
+        dAlbedo=material_diffuse;
+        #ifdef STD_DIFFUSE_TEXTURE
+          vec3 tex={STD_DIFFUSE_TEXTURE_DECODE}(texture2DBias({STD_DIFFUSE_TEXTURE_NAME}, {STD_DIFFUSE_TEXTURE_UV}, {STD_TEXTURE_BIAS})).{STD_DIFFUSE_TEXTURE_CHANNEL};
+          float teal=smoothstep(0.003,0.025,min(tex.g-tex.r,tex.b-tex.r));
+          float luminance=dot(tex,vec3(0.2126,0.7152,0.0722));
+          dAlbedo*=mix(tex,vec3(0.46,0.10,0.68)*max(0.12,luminance*3.5),teal);
+        #endif
+      }
+    `,
+    );
+  }
   m.update();
   return m;
 }

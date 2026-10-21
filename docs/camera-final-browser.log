@@ -1,0 +1,49 @@
+[1A[2K[2m[WebServer] [22m(node:10831) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 2 tests using 1 worker
+
+[1A[2K(node:10850) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:10850) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K[1/2] tests/browser/art-nico.spec.ts:2:1 › Nico: Run esquelético, rosto frontal e câmera segura
+[1A[2K  1) tests/browser/art-nico.spec.ts:2:1 › Nico: Run esquelético, rosto frontal e câmera segura ─────
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeLessThan[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected: < [32m0.95[39m
+    Received:   [31m1[39m
+
+    Call Log:
+    - Timeout 15000ms exceeded while waiting on the predicate
+
+      52 |   await page.mouse.move(286, 190, { steps: 6 });
+      53 |   await page.mouse.up();
+    > 54 |   await expect
+         |   ^
+      55 |     .poll(async () => (await snap()).camera.avatarOpacity, { timeout: 15000 })
+      56 |     .toBeLessThan(0.95);
+      57 |   await page.screenshot({ path: 'evidence/art-camera-near.png' });
+        at /workspace/333/bellmare-333/tests/browser/art-nico.spec.ts:54:3
+
+    Error Context: test-results/art-nico-Nico-Run-esquelético-rosto-frontal-e-câmera-segura/error-context.md
+
+
+[1A[2K(node:11058) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:11058) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K[2/2] tests/browser/production.spec.ts:2:1 › produção: WebGL2, input real, pausa e nenhum snapshot de debug
+[1A[2K  1 failed
+    tests/browser/art-nico.spec.ts:2:1 › Nico: Run esquelético, rosto frontal e câmera segura ──────
+  1 passed (1.6m)

@@ -42,3 +42,14 @@
 - IA: sons sucessivos não congelam escuta; fontes coladas a obstáculo têm destino alcançável e a investigação termina. Dois testes acrescentados.
 - Produção validada em servidor estático: WebGL2 real, input, pausa, zero exceções/console.error capturados e debug `snapshot` ausente.
 - Direção cartoon 3D aplicada; Marco 3 continua parcial (rig/polimento/áudio final). Marco 4 tem build/QA local/empacotamento; aparelho físico e benchmarks permanecem NOT RUN.
+
+
+## 2026-10-21 — revisão MEME/VIRAL com KayKit/Kenney
+
+- Salvaguarda e branch art/meme-viral antes da troca; licença/procedência e SHA-256 registrados.
+- Nico e Porteiro com rigs KayKit, skin e clipes reais, uniformes/rostos remodelados em Blender, carry IK e morph targets.
+- Três GLBs de encomendas com malhas/expressões próprias; mesa/luminária/planta Kenney normalizadas.
+- Câmera mais baixa com colisão, proteção da cabeça, FOV e transparência de proximidade; caixa estabilizada em corrida.
+- Parede violeta/dourada e luz cartoon; regras de mapa, ruído, entregas, IA e controles preservadas.
+- 15 testes puros, regressão browser de 8 testes e verificações visuais adicionais PASS; capturas reais e renders dos GLBs.
+- Android físico/30 FPS e acabamento equivalente à concept art permanecem sem validação.

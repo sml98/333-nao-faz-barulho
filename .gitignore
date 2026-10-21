@@ -6,3 +6,6 @@ art_sources/*.zip
 art_sources/kaykit/*.glb
 art_sources/kenney/*.glb
 art_sources/quaternius/
+art_sources/*.blend*
+
+evidence/raw-video/

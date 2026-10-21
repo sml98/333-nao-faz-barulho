@@ -1,0 +1,47 @@
+{
+  "file": "public/assets/environment/sideTableDrawers.glb",
+  "aabb": {
+    "min": [
+      -0.0193,
+      0,
+      -0.9235
+    ],
+    "max": [
+      1.4121,
+      1.7297,
+      0.0193
+    ]
+  },
+  "dims": [
+    1.4313,
+    1.7297,
+    0.9427
+  ],
+  "center": [
+    0.6964,
+    0.8648,
+    -0.4521
+  ],
+  "groundOffset": 0,
+  "boundsSource": "vertices",
+  "boundsPose": "static",
+  "requiresRuntimeCheck": false,
+  "nodes": 3,
+  "nodePaths": [
+    "drawerLeft",
+    "drawerRight",
+    "sideTableDrawers(Clone)"
+  ],
+  "meshNodes": 3,
+  "materials": [
+    "sideTableDrawers0.002",
+    "sideTableDrawers1.002",
+    "sideTableDrawers0.001"
+  ],
+  "clips": [],
+  "joints": [],
+  "animationTargets": [],
+  "morphed": false,
+  "morphAnimated": false,
+  "skinned": false
+}

@@ -1,40 +1,41 @@
-import { Entity } from 'playcanvas';
-import { Art, palette } from './scene';
+import type { Entity, RenderComponent } from 'playcanvas';
+import type { Art } from './scene';
 export class ParcelSkin {
-  box: Entity;
-  art: Art;
-  glasses: Entity;
-  bow: Entity;
-  labels: Entity[];
   current = -1;
-  constructor(art: Art, box: Entity) {
-    this.art = art;
+  box: Entity;
+  constructor(_art: Art, box: Entity) {
     this.box = box;
-    this.glasses = new Entity('óculos escuros PREMIUM');
-    box.addChild(this.glasses);
-    for (const x of [-0.13, 0.13])
-      art.part(this.glasses, 'lente', 'sphere', [x, 0.045, 0.26], [0.2, 0.15, 0.07], '#16212a');
-    art.part(this.glasses, 'ponte', 'box', [0, 0.045, 0.26], [0.12, 0.035, 0.04], palette.gold);
-    this.bow = new Entity('laço rosa');
-    box.addChild(this.bow);
-    for (const x of [-0.09, 0.09])
-      art.part(this.bow, 'orelha', 'sphere', [x, 0.31, 0], [0.16, 0.14, 0.09], '#c57891');
-    this.labels = ['FRÁGIL', 'PREMIUM', 'NÃO ABRA'].map((t) =>
-      art.text(box, t, [0, -0.17, 0.229], 0.4, 0.09, true),
-    );
   }
   set(index: number) {
     if (index === this.current) return;
     this.current = index;
-    const colors = ['#b9844d', '#1d2632', '#9f816b'];
-    const m = this.art.material(colors[index]);
-    for (const name of ['papelão', 'fold front', 'lid left', 'lid right']) {
-      const body = this.box.findByName(name) as Entity | null;
-      if (body?.render) body.render.material = m;
-    }
-    this.glasses.enabled = index === 1;
-    this.bow.enabled = index === 2;
-    this.labels.forEach((l, i) => (l.enabled = i === index));
-    this.box.setLocalScale(index === 1 ? 0.93 : 1, index === 1 ? 1.15 : 1, 1);
+    if (this.box.name === 'Encomenda no elevador')
+      this.box.setLocalPosition(0.85, 0.745 + [0.48, 0.59, 0.42][index] / 2, -12);
+    for (let i = 0; i < 3; i++) this.box.findByName(`Parcel${i}`)!.enabled = i === index;
   }
+}
+export function animateParcel(box: Entity, time: number, agitation: number) {
+  const current = box.children.find((c) => c.enabled) as Entity | undefined;
+  if (!current) return;
+  const index = Number(current.name.slice(-1));
+  const strength = agitation / 100;
+  box.setLocalEulerAngles(
+    Math.sin(time * (index === 2 ? 27 : 20)) * strength * 4,
+    0,
+    Math.cos(time * 17) * strength * 3,
+  );
+  const lid = current.findByName('tampa') as Entity;
+  lid?.setLocalEulerAngles(agitation > 60 ? Math.max(0, Math.sin(time * 15)) * 12 : 0, 0, 0);
+  const blink = Math.max(0, 1 - Math.abs(((time + index * 0.7) % 3.8) - 3.5) / 0.09);
+  for (const c of current.findComponents('render'))
+    for (const mi of (c as RenderComponent).meshInstances) {
+      const morph = mi.morphInstance;
+      if (!morph) continue;
+      for (const target of morph.morph.targets) {
+        if (target.name === 'Blink') morph.setWeight('Blink', blink);
+        else if (target.name === 'Panic') morph.setWeight('Panic', strength);
+        else if (target.name === 'Look')
+          morph.setWeight('Look', index === 2 ? (1 + Math.sin(time * 6)) * 0.5 : 0.2);
+      }
+    }
 }

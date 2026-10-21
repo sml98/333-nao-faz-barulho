@@ -1,0 +1,48 @@
+{
+  "file": "/tmp/bellmare-env-fixed/sideTableDrawers.glb",
+  "aabb": {
+    "min": [
+      -0.5144,
+      0,
+      -0.214
+    ],
+    "max": [
+      0.5144,
+      0.74,
+      0.214
+    ]
+  },
+  "dims": [
+    1.0289,
+    0.74,
+    0.4279
+  ],
+  "center": [
+    0,
+    0.37,
+    0
+  ],
+  "groundOffset": 0,
+  "boundsSource": "vertices",
+  "boundsPose": "static",
+  "requiresRuntimeCheck": false,
+  "nodes": 3,
+  "nodePaths": [
+    "drawerLeft",
+    "drawerRight",
+    "sideTableDrawers(Clone)"
+  ],
+  "meshNodes": 3,
+  "materials": [
+    "sideTableDrawers0.002",
+    "sideTableDrawers1.002",
+    "sideTableDrawers0",
+    "sideTableDrawers0.001"
+  ],
+  "clips": [],
+  "joints": [],
+  "animationTargets": [],
+  "morphed": false,
+  "morphAnimated": false,
+  "skinned": false
+}

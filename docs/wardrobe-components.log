@@ -1,0 +1,58 @@
+20:33:50 | INFO: Data are loaded, start creating Blender stuff
+20:33:50 | INFO: Blender create Mesh node Cube.199
+20:33:50 | INFO: Blender create Mesh node Cube.202
+20:33:50 | INFO: Blender create Mesh node PrototypePete_body.025
+20:33:50 | INFO: Blender create Mesh node Cube.210
+20:33:50 | INFO: Blender create Mesh node Cube.194
+20:33:50 | INFO: Blender create Mesh node Cube.187
+20:33:50 | INFO: Blender create Mesh node Cylinder.002
+20:33:50 | INFO: Blender create Mesh node Cube.015
+20:33:50 | INFO: Blender create Mesh node Cube.004
+20:33:50 | INFO: Blender create Mesh node Cylinder.008
+20:33:50 | INFO: Blender create Mesh node Cylinder.006
+20:33:50 | INFO: Blender create Mesh node Plane.007
+20:33:52 | INFO: glTF import finished in 2.36s
+COMPONENTS [
+  {
+    "verts": 536,
+    "min": [
+      -0.38483741879463196,
+      -0.3723374903202057,
+      0.37641170620918274
+    ],
+    "max": [
+      0.4882558584213257,
+      0.3268965780735016,
+      1.2481188774108887
+    ]
+  },
+  {
+    "verts": 48,
+    "min": [
+      -0.10781582444906235,
+      -0.3496203124523163,
+      0.49871304631233215
+    ],
+    "max": [
+      0.10870382189750671,
+      -0.23015698790550232,
+      0.6589563488960266
+    ]
+  },
+  {
+    "verts": 16,
+    "min": [
+      -0.08710958808660507,
+      -0.33462855219841003,
+      0.5567514896392822
+    ],
+    "max": [
+      0.006331413984298706,
+      -0.2991320788860321,
+      0.5944669842720032
+    ]
+  }
+]
+Blender 4.3.2
+
+Blender quit

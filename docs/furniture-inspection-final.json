@@ -1,0 +1,138 @@
+[
+  {
+    "file": "public/assets/environment/sideTableDrawers.glb",
+    "aabb": {
+      "min": [
+        -0.3395,
+        0,
+        -0.214
+      ],
+      "max": [
+        0.3395,
+        0.74,
+        0.214
+      ]
+    },
+    "dims": [
+      0.6791,
+      0.74,
+      0.4279
+    ],
+    "center": [
+      0,
+      0.37,
+      0
+    ],
+    "groundOffset": 0,
+    "boundsSource": "vertices",
+    "boundsPose": "static",
+    "requiresRuntimeCheck": false,
+    "nodes": 3,
+    "nodePaths": [
+      "drawerLeft",
+      "drawerRight",
+      "sideTableDrawers(Clone)"
+    ],
+    "meshNodes": 3,
+    "materials": [
+      "sideTableDrawers0.002",
+      "sideTableDrawers1.002",
+      "sideTableDrawers0",
+      "sideTableDrawers0.001"
+    ],
+    "clips": [],
+    "joints": [],
+    "animationTargets": [],
+    "morphed": false,
+    "morphAnimated": false,
+    "skinned": false
+  },
+  {
+    "file": "public/assets/environment/lampRoundTable.glb",
+    "aabb": {
+      "min": [
+        -0.0726,
+        0,
+        -0.0838
+      ],
+      "max": [
+        0.0726,
+        0.3,
+        0.0838
+      ]
+    },
+    "dims": [
+      0.1451,
+      0.3,
+      0.1676
+    ],
+    "center": [
+      0,
+      0.15,
+      0
+    ],
+    "groundOffset": 0,
+    "boundsSource": "vertices",
+    "boundsPose": "static",
+    "requiresRuntimeCheck": false,
+    "nodes": 1,
+    "nodePaths": [
+      "lampRoundTable(Clone)"
+    ],
+    "meshNodes": 1,
+    "materials": [
+      "lampRoundTable0",
+      "lampRoundTable1"
+    ],
+    "clips": [],
+    "joints": [],
+    "animationTargets": [],
+    "morphed": false,
+    "morphAnimated": false,
+    "skinned": false
+  },
+  {
+    "file": "public/assets/environment/plantSmall1.glb",
+    "aabb": {
+      "min": [
+        -0.3305,
+        0,
+        -0.3305
+      ],
+      "max": [
+        0.3305,
+        1.15,
+        0.3305
+      ]
+    },
+    "dims": [
+      0.6609,
+      1.15,
+      0.6609
+    ],
+    "center": [
+      0,
+      0.575,
+      0
+    ],
+    "groundOffset": 0,
+    "boundsSource": "vertices",
+    "boundsPose": "static",
+    "requiresRuntimeCheck": false,
+    "nodes": 1,
+    "nodePaths": [
+      "plantSmall1(Clone)"
+    ],
+    "meshNodes": 1,
+    "materials": [
+      "plantSmall10",
+      "plantSmall11"
+    ],
+    "clips": [],
+    "joints": [],
+    "animationTargets": [],
+    "morphed": false,
+    "morphAnimated": false,
+    "skinned": false
+  }
+]

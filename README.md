@@ -36,7 +36,7 @@ npm start
 ## Estrutura
 
 - `src/main.ts`: WebGL2, engine, resize e falha de inicialização.
-- `src/game/scene.ts`: meshes, materiais e personagens procedurais.
+- `src/game/scene.ts`: arquitetura canônica e materiais; `assets.ts` e `characterAnimation.ts`: GLBs skinnados e estados Anim.
 - `src/game/level.ts`: união canônica, colisões, oclusão e navegação.
 - `src/game/player.ts`, `input.ts`, `camera.ts`: movimento, Pointer Events e câmera.
 - `packages.ts`, `sound.ts`, `perception.ts`, `porteiro.ts`: agitação, eventos acústicos e IA.
@@ -50,11 +50,33 @@ Depois de `npm run build`, hospede **somente o conteúdo de `dist/`** em servido
 
 ## Limitações
 
-Personagens são modelos GLB originais gerados no Blender (`tools/build_models.py`), com pivôs de peças; o hotel combina geometria procedural e atlas cartoon gerado a partir das referências. Não são modelos premium finais. A fidelidade às referências premium ainda não foi alcançada. Não houve teste em Android físico, benchmark de GPU, teste em Safari/iOS ou publicação pública. Áudio inicial por síntese Web Audio; depende de gesto do jogador e dispõe de sinais visuais equivalentes. Consulte `QA_REPORT.md`, `MARCOS.md` e `ART_DIRECTION.md` para evidências, pendências e a direção cartoon solicitada. Para refazer os modelos é necessário Blender 4.3; ele não é necessário para executar o jogo.
+Personagens foram reconstruídos a partir de bases KayKit **CC0**, com rig e corrida reais, uniformes/rostos remodelados em Blender, morph targets e transições `Anim`. Móveis selecionados são Kenney CC0. A comparação Quaternius não entrou no produto. Fontes, licenças e SHA-256: `docs/ASSET_AUDIT.md` e `docs/ASSET_MANIFEST.csv`.
 
-## Evidências finais
+O visual segue a terceira referência MEME/VIRAL, mas não corresponde exatamente à ilustração. A expressão e o movimento ainda precisam de polimento artístico. Não houve validação em Android físico ou comprovação de 30 FPS. Chromium/SwiftShader deste ambiente renderiza por software e não representa um telefone ou PC com GPU. Áudio continua sintetizado, sem dublagem/música final. Não foi criada uma URL pública.
 
-- 14 testes de lógica, 6 testes de navegador (4,0 min), typecheck, build e formatação passaram. Detalhes e tentativas anteriores em `QA_REPORT.md`.
-- `evidence/cartoon-gameplay-producao.png`: jogo real no navegador, build de produção.
-- `evidence/cartoon-models-blender.png`: revisão dos GLBs em estúdio, separada do gameplay.
-- `dist/`: pacote estático pronto para hospedagem; nenhuma URL pública foi criada.
+## Pipeline de arte executado
+
+Blender **4.3.2**, sem serviços pagos. Os GLBs prontos já estão no projeto; Blender só é necessário para refazê-los:
+
+```bash
+python scripts/fetch_art_sources.py
+blender -b --python scripts/character_build.py -- all
+blender -b --python scripts/prepare_kenney.py
+blender -b --python scripts/render_character_qa.py
+python scripts/asset_manifest.py
+```
+
+O script de aquisição usa URLs oficiais verificadas e confere SHA-256. O pack Quaternius baixado para comparação não é necessário para reproduzir os personagens escolhidos. Os renders Blender são inspeção de assets; as capturas do gameplay estão separadas.
+
+## Evidências desta revisão
+
+- `evidence/nico-running.webm`: gravação real da corrida e reação SHHH; `docs/nico-recording-proof.json` registra articulações e ausência de erros.
+- `evidence/art-nico-front.png`: Nico de frente no navegador.
+- `evidence/art-nico-run-a.png` e `art-nico-run-b.png`: frames distintos; teste verifica duas articulações não raiz.
+- `evidence/art-nico-carry.png`: caixa sustentada durante a partida.
+- `evidence/art-chase.png`: perseguição real com caixa e Porteiro em CHASE.
+- `evidence/art-camera-near.png`: transparência da cabeça quando a câmera é comprimida pela parede.
+- 15 testes de lógica/câmera, regressão de 8 testes de navegador, 3 verificações após polimento e teste específico de proximidade passaram; detalhes e tentativas em `docs/ART_QA.md`.
+- `evidence/blender/`: frente, perfil, costas e rosto dos GLBs.
+- `docs/ART_QA.md`: testes e limitações desta revisão. `QA_REPORT.md` registra a versão anterior.
+- `dist/`: build estática; prévia local na porta 4173.

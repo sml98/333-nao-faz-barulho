@@ -22,7 +22,12 @@ try {
   const options = new AppOptions();
   options.graphicsDevice = device;
   options.batchManager = BatchManager;
-  options.componentSystems = [RenderComponentSystem, CameraComponentSystem, LightComponentSystem, AnimComponentSystem];
+  options.componentSystems = [
+    RenderComponentSystem,
+    CameraComponentSystem,
+    LightComponentSystem,
+    AnimComponentSystem,
+  ];
   options.resourceHandlers = [TextureHandler, ContainerHandler];
   const app = new AppBase(canvas);
   app.init(options);

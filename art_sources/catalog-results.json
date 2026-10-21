@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://kaylousberg.itch.io/furniture-bits",
+    "status": 200,
+    "bytes": 33579,
+    "saved": "art_sources/catalog-furniture-bits.html"
+  },
+  {
+    "url": "https://kaylousberg.itch.io/prototype-bits",
+    "status": 200,
+    "bytes": 33325,
+    "saved": "art_sources/catalog-prototype-bits.html"
+  },
+  {
+    "url": "https://quaternius.com/packs/universalanimationlibrary2.html",
+    "status": 200,
+    "bytes": 19528,
+    "saved": "art_sources/catalog-universalanimationlibrary2.html.html"
+  },
+  {
+    "url": "https://quaternius.com/packs/ultimatemonsters.html",
+    "status": 200,
+    "bytes": 14972,
+    "saved": "art_sources/catalog-ultimatemonsters.html.html"
+  },
+  {
+    "url": "https://quaternius.com/packs/toonshootergamekit.html",
+    "status": 200,
+    "bytes": 15361,
+    "saved": "art_sources/catalog-toonshootergamekit.html.html"
+  },
+  {
+    "url": "https://kenney.nl/assets/building-kit",
+    "status": 200,
+    "bytes": 18142,
+    "saved": "art_sources/catalog-building-kit.html"
+  },
+  {
+    "url": "https://kenney.nl/assets/castle-kit",
+    "status": 200,
+    "bytes": 17717,
+    "saved": "art_sources/catalog-castle-kit.html"
+  },
+  {
+    "url": "https://kenney.nl/assets/prototype-kit",
+    "status": 200,
+    "bytes": 17694,
+    "saved": "art_sources/catalog-prototype-kit.html"
+  },
+  {
+    "url": "https://kenney.nl/assets/ui-pack",
+    "status": 200,
+    "bytes": 17757,
+    "saved": "art_sources/catalog-ui-pack.html"
+  },
+  {
+    "url": "https://kenney.nl/support",
+    "status": 200,
+    "bytes": 11950,
+    "saved": "art_sources/catalog-support.html"
+  },
+  {
+    "url": "https://polyhaven.com",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://api.polyhaven.com/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://sketchfab.com/developers/download-api",
+    "status": 200,
+    "bytes": 67173,
+    "saved": "art_sources/catalog-download-api.html"
+  },
+  {
+    "url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+    "status": 200,
+    "bytes": 132988,
+    "saved": "art_sources/catalog-mixamo-faq.html.html"
+  }
+]

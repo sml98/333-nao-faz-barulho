@@ -1,0 +1,32 @@
+[1A[2K[2m[WebServer] [22m(node:8706) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 2 tests using 1 worker
+
+[1A[2K(node:8725) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K(node:8725) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1A[2K[1/2] tests/browser/art-chase.spec.ts:3:1 › slice: caixa viva e perseguição com corrida esquelética do Porteiro
+[1A[2Ktests/browser/art-chase.spec.ts:3:1 › slice: caixa viva e perseguição com corrida esquelética do Porteiro
+Indo para [33m0[39m [33m-6[39m
+
+[1A[2KAlcançado [33m0[39m [33m-6[39m [33m2.750100000000003[39m
+
+[1A[2KIndo para [33m-14.7[39m [33m-6[39m
+
+[1A[2KAlcançado [33m-14.7[39m [33m-6[39m [33m8.733299999999993[39m
+
+[1A[2KIndo para [33m-14.7[39m [33m5.1[39m
+
+[1A[2KAlcançado [33m-14.7[39m [33m5.1[39m [33m13.166499999999981[39m
+
+[1A[2KCHASE EVIDENCE {"before":{"phase":"PLAYING","player":{"x":5.898520000000001,"z":4.978553390593286},"heading":1.5707963267948966,"porteiro":{"position":{"x":9.488654720441458,"z":5.737800893638679},"state":"CHASE","target":{"x":5.898520000000001,"z":4.978553390593286}},"delivered":0,"total":1,"held":true,"hidden":null,"agitation":93.66600000000018,"lastNoise":{"id":30,"sourceId":"passos","position":{"x":5.458520000000001,"z":4.978553390593286,"y":0.65},"loudness":0.65,"radius":8,"timestamp":17.7498,"ttl":2},"time":17.849800000000002,"fps":4,"input":{"quiet":false,"stick":{"x":0,"y":0},"yaw":0},"drawCalls":109,"monsterAnimation":{"state":"Chase","left":149.65689535559056,"right":60.936979128451235},"animation":{"state":"CarryRun","clips":["Carry","CarryRun","CarryWalk","Crouch","Hide","Idle","LookBack","Panic","Relief","Run","Stumble","Walk"],"time":4.583300000000004},"joints":{"left":110.096541134183,"right":93.38165616370578},"camera":{"x":6.006883633929746,"y":3.05,"z":4.728553390593286}},"a":{"phase":"PLAYING","player":{"x":5.898520000000001,"z":4.978553390593286},"heading":1.5707963267948966,"porteiro":{"position":{"x":6.454820970806171,"z":5.09620082054109},"state":"CHASE","target":{"x":5.898520000000001,"z":4.978553390593286}},"delivered":0,"total":1,"held":true,"hidden":null,"agitation":56.8,"lastNoise":{"id":31,"sourceId":"grito","position":{"x":5.898520000000001,"z":4.978553390593286,"y":0.65},"loudness":1,"radius":17,"timestamp":18.66650000000001,"ttl":2},"time":18.866500000000013,"fps":4,"input":{"quiet":false,"stick":{"x":0,"y":0},"yaw":1.575},"drawCalls":139,"monsterAnimation":{"state":"Chase","left":116.52600470824888,"right":42.786751161437316},"animation":{"state":"Carry","clips":["Carry","CarryRun","CarryWalk","Crouch","Hide","Idle","LookBack","Panic","Relief","Run","Stumble","Walk"],"time":0.916699999999997},"joints":{"left":175.58621593671003,"right":29.0219080425988},"camera":{"x":3.114765258313492,"y":2.216249428087182,"z":4.751306001727948}},"final":{"phase":"PLAYING","player":{"x":3.2589833216244006,"z":4.989649205559699},"heading":-1.5665926535897934,"porteiro":{"position":{"x":4.932898531747776,"z":4.98261257159543},"state":"CHASE","target":{"x":3.2589833216244006,"z":4.989649205559699}},"delivered":0,"total":1,"held":true,"hidden":null,"agitation":63.99879999999994,"lastNoise":{"id":32,"sourceId":"passos","position":{"x":4.65201101352925,"z":4.983793337884476,"y":0.65},"loudness":0.65,"radius":8,"timestamp":19.14980000000001,"ttl":2},"time":19.46640000000001,"fps":2,"input":{"quiet":false,"stick":{"x":0,"y":0},"yaw":1.575},"drawCalls":161,"monsterAnimation":{"state":"Chase","left":177.65775769383038,"right":85.93151378000073},"animation":{"state":"CarryRun","clips":["Carry","CarryRun","CarryWalk","Crouch","Hide","Idle","LookBack","Panic","Relief","Run","Stumble","Walk"],"time":0.49989999999999424},"joints":{"left":168.48171154845903,"right":98.52512253321686},"camera":{"x":0.0007438862710912875,"y":2.020542202658486,"z":4.783342630891656}}}
+
+[1A[2K[2/2] tests/browser/art-nico.spec.ts:2:1 › Nico: Run esquelético, rosto frontal e câmera segura
+[1A[2K  2 passed (2.1m)

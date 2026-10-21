@@ -1,4 +1,5 @@
-import type {RigAnimation} from './characterAnimation';
+import { animateParcel } from './parcelArt';
+import type { RigAnimation } from './characterAnimation';
 import { AppBase, Color, Entity, StandardMaterial, Texture } from 'playcanvas';
 import { boundaries, layout, inside } from './level';
 export const palette = {
@@ -286,6 +287,8 @@ export class Art {
     for (const z of [-7.1, 7.35])
       for (let x = -12; x <= 12; x += 4) {
         const south = z < 0;
+        // Do not hang a wall fixture across the open hall/corridor junction.
+        if (inside({ x, z: south ? -7.5 : 7.7 })) continue;
         this.part(root, 'suporte arandela', 'box', [x, 2.25, z], [0.25, 0.55, 0.18], palette.gold);
         this.part(
           root,
@@ -298,11 +301,11 @@ export class Art {
         );
         this.part(
           root,
-          'aura estilizada',
-          'cone',
-          [x, 2.32, z + (south ? 0.18 : -0.18)],
-          [0.5, 0.6, 0.45],
-          palette.ivory,
+          'acabamento arandela',
+          'box',
+          [x, 2.58, z + (south ? 0.18 : -0.18)],
+          [0.3, 0.055, 0.18],
+          palette.gold,
         );
       }
     for (const h of layout.hiding_spots) {
@@ -320,54 +323,22 @@ export class Art {
       this.part(r, 'acabamento', 'box', [-0.72, 2.05, 0], [0.48, 0.08, 1], palette.gold);
       this.text(r, 'ESCONDER', [-0.72, 1.65, 0.48], 0.8, 0.2, true);
     }
-    for (const o of layout.obstacles) {
-      this.part(
-        root,
-        o.id,
-        'box',
-        [o.x, 0.4, o.z],
-        [0.68, 0.8, 0.68],
-        o.id === 'planta' ? '#736543' : palette.wood,
-      );
-      if (o.id === 'planta')
-        for (let n = 0; n < 5; n++) {
-          const leaf = this.part(
-            root,
-            'folhagem',
-            'sphere',
-            [o.x + Math.sin(n) * 0.17, 1.1 + n * 0.07, o.z + Math.cos(n) * 0.17],
-            [0.24, 0.65, 0.22],
-            '#427259',
-          );
-          leaf.setEulerAngles(n * 15, 0, n * 25);
-        }
-      else
-        this.part(
-          root,
-          'objeto ruidoso',
-          'sphere',
-          [o.x, 0.95, o.z],
-          [0.4, 0.27, 0.35],
-          palette.gold,
-        );
-    }
+    // Canonical obstacle colliders/noise remain in level.ts; their visual meshes
+    // are furnished with the normalized Kenney assets by runtime.ts.
+
     return root;
   }
 }
 export interface Actor {
   rig?: RigAnimation;
+  fadeMaterials?: StandardMaterial[];
   root: Entity;
   body: Entity;
   legs: Entity[];
   arms: Entity[];
   head: Entity;
   box: Entity;
-  lid: Entity;
-  mouth: Entity;
-  eyes: Entity[];
   glb?: boolean;
-  mouthBase?: number[];
-  eyesBase?: number[][];
 }
 export function animate(
   a: Actor,
@@ -378,29 +349,17 @@ export function animate(
   monster = false,
 ) {
   const gait = moving ? Math.sin(time * (monster ? 6 : 10)) : 0;
-  if(!a.rig)for (let i = 0; i < 2; i++) {
-    a.legs[i].setLocalEulerAngles(gait * 25 * (i ? 1 : -1), 0, 0);
-    a.arms[i].setLocalEulerAngles(
-      monster ? gait * 20 * (i ? 1 : -1) : shush && i === 1 ? -45 : a.glb ? 0 : -35,
-      0,
-      0,
-    );
-  }
-  a.eyes.forEach((eye, i) => {
-    const base = a.eyesBase?.[i];
-    if (base) eye.setLocalScale(base[0], base[1] * (1 + agitation * 0.002), base[2]);
-  });
-  if(!a.rig)a.body.setLocalPosition(0, moving ? Math.abs(gait) * 0.035 : Math.sin(time * 2) * 0.01, 0);
-  if(!a.rig)a.head.setLocalEulerAngles(shush ? 8 : 0, Math.sin(time) * 4, 0);
-  a.box.setLocalEulerAngles(
-    Math.sin(time * 20) * agitation * 0.04,
-    0,
-    Math.cos(time * 17) * agitation * 0.04,
-  );
-  a.lid.setLocalEulerAngles(agitation > 60 ? Math.sin(time * 15) * 12 : 0, 0, 0);
-  a.mouth.setLocalScale(
-    a.mouthBase?.[0] ?? 0.12,
-    a.mouthBase ? a.mouthBase[1] * (1 + agitation * 0.03) : 0.04 + agitation * 0.0014,
-    a.mouthBase?.[2] ?? 0.025,
-  );
+  if (!a.rig)
+    for (let i = 0; i < 2; i++) {
+      a.legs[i].setLocalEulerAngles(gait * 25 * (i ? 1 : -1), 0, 0);
+      a.arms[i].setLocalEulerAngles(
+        monster ? gait * 20 * (i ? 1 : -1) : shush && i === 1 ? -45 : a.glb ? 0 : -35,
+        0,
+        0,
+      );
+    }
+  if (!a.rig)
+    a.body.setLocalPosition(0, moving ? Math.abs(gait) * 0.035 : Math.sin(time * 2) * 0.01, 0);
+  if (!a.rig) a.head.setLocalEulerAngles(shush ? 8 : 0, Math.sin(time) * 4, 0);
+  animateParcel(a.box, time, agitation);
 }

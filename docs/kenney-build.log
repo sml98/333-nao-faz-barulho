@@ -1,0 +1,41 @@
+20:47:09 | INFO: Data are loaded, start creating Blender stuff
+20:47:09 | INFO: Blender create Mesh node Mesh chairRounded
+20:47:09 | INFO: glTF import finished in 0.00s
+ERROR Draco mesh compression is not available because library could not be found at /usr/bin/4.3/python/lib/python3.13/site-packages/libextern_draco.so
+20:47:09 | INFO: Starting glTF 2.0 export
+20:47:09 | INFO: Extracting primitive: Mesh chairRounded.001
+20:47:09 | INFO: Primitives created: 2
+20:47:09 | INFO: Finished glTF 2.0 export in 0.006482839584350586 s
+
+20:47:09 | INFO: Data are loaded, start creating Blender stuff
+20:47:09 | INFO: Blender create Mesh node Mesh sideTableDrawers
+20:47:09 | INFO: Blender create Mesh node Mesh drawer
+20:47:09 | INFO: glTF import finished in 0.00s
+20:47:09 | INFO: Starting glTF 2.0 export
+20:47:09 | INFO: Extracting primitive: Mesh sideTableDrawers.001
+20:47:09 | INFO: Primitives created: 2
+20:47:09 | INFO: Extracting primitive: Mesh drawer.001
+20:47:09 | INFO: Primitives created: 1
+20:47:09 | INFO: Extracting primitive: Mesh drawer.002
+20:47:09 | INFO: Primitives created: 1
+20:47:09 | INFO: Finished glTF 2.0 export in 0.01286935806274414 s
+
+20:47:09 | INFO: Data are loaded, start creating Blender stuff
+20:47:09 | INFO: Blender create Mesh node Mesh lampRoundTable
+20:47:09 | INFO: glTF import finished in 0.00s
+20:47:09 | INFO: Starting glTF 2.0 export
+20:47:09 | INFO: Extracting primitive: Mesh lampRoundTable.001
+20:47:09 | INFO: Primitives created: 2
+20:47:09 | INFO: Finished glTF 2.0 export in 0.005652189254760742 s
+
+20:47:09 | INFO: Data are loaded, start creating Blender stuff
+20:47:09 | INFO: Blender create Mesh node Mesh plantSmall1
+20:47:09 | INFO: glTF import finished in 0.00s
+20:47:09 | INFO: Starting glTF 2.0 export
+20:47:09 | INFO: Extracting primitive: Mesh plantSmall1.001
+20:47:09 | INFO: Primitives created: 2
+20:47:09 | INFO: Finished glTF 2.0 export in 0.007220029830932617 s
+
+Blender 4.3.2
+
+Blender quit

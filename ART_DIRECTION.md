@@ -1,18 +1,9 @@
-# Direção visual — ajuste solicitado em 21/10/2026
+# Direção visual vigente — MEME / VIRAL, referência 3
 
-O usuário pediu um **cartoon 3D mais evidente, com menos realismo**. Esta orientação complementa as referências originais: conservar Nico (boné/jaqueta azul, capuz mostarda), Porteiro (bordô, máscara e sino), caixas expressivas e paleta do Bellmare; simplificar superfícies e privilegiar formas arredondadas, proporções expressivas e materiais pintados.
+A ordem anexada `docs/COMANDO_CODEX_ASSETS_CARTOON_333.md` substitui a direção anterior: Nico tem boné vermelho/branco, moletom vinho, mochila e olhos grandes; o Porteiro é vermelho, alto, com máscara escura, olhos amarelos e língua. A prancha recebida está em `docs/reference/cartoon-meme-viral.jpg`.
 
-## Implementado
+O runtime usa cinco GLBs em `public/assets/characters`. Nico e Porteiro têm skin, rig humanoide real KayKit e clipes compatíveis, modificados no Blender por `scripts/character_build.py`. Rosto, cabelo, bonés, uniformes e caixas foram remodelados em 3D; os uniformes recebem pesos transferidos da base. Não se usa a prancha como cenário/plano ou personagem 2D. O hotel preserva o JSON canônico, com paredes violetas/douradas, carpete vermelho e iluminação quente com preenchimento roxo. Mesa, luminária e planta CC0 Kenney foram normalizadas e integradas; uma cadeira também foi preparada para uso futuro.
 
-- Modelos GLB originais criados no **Blender 4.3.2**, fonte reproduzível em `tools/build_models.py`.
-- Nico: silhueta, boné com aba curva, rosto com olhos/íris/pupilas, nariz, orelhas, sobrancelhas, mechas, capuz, mochila, alças, crachá, calça cargo, luvas e tênis com cadarços.
-- Porteiro: corpo alongado, paletó/caudas, quepe, máscara afunilada, olhos luminosos, grade facial, sino e dedos articulados visuais.
-- Caixa: papelão chanfrado, dobras, tampa com pivô, fita, olhos e boca. Óculos/dourado e laço rosa diferenciam as duas outras personalidades.
-- Atlas de hotel gerado com a ferramenta de imagens usando referências fornecidas. Revisão **cartoon** substituiu a primeira versão mais realista: menos grão, formas mais grossas, sombras pintadas suaves e cores legíveis. Quatro regiões (parede, carpete, porta, madeira) amostradas por UV, sem recortar as referências do usuário para uso como cenário.
-- Luz ambiente e preenchimento, sombras opcionais, tone mapping Neutral, baixa metalicidade e superfícies foscas. Batch estático no hotel e dinâmico nos modelos articulados.
+O sistema `Anim` faz blends de 130 ms. Morph targets controlam piscar, olhar e pânico; as caixas usam também pivô de tampa e tremor proporcional à agitação. Detalhes rígidos do mesmo osso foram unidos no Blender para reduzir chamadas, preservando as malhas com morph e skin.
 
-## Limites reais
-
-Não houve geração automática imagem→mesh. A busca por integração não encontrou uma ferramenta conectada específica de geração 3D. Blender foi usado para modelagem procedural original. A textura gerada não substitui a geometria jogável: mapa, avatares, caixa e NPC são 3D, com input e colisões.
-
-As silhuetas e cores foram seguidas, mas os rostos, cabelo, tecidos e animações continuam simplificados. Não declarar igualdade às pranchas nem acabamento premium final. Não há rig esquelético/blendshapes nem iluminação global assada: as animações usam pivôs de peças e a iluminação é aproximada, com sombreamento pintado nos materiais.
+As capturas `evidence/art-*.png` são do jogo em Chromium; `evidence/blender/` contém renders separados de QA dos GLBs exportados. Não há promessa de equivalência exata à concept art nem de acabamento cinematográfico final. Consulte `docs/ART_QA.md` para critérios, medições e limitações.

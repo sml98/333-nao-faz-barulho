@@ -1,0 +1,26 @@
+[
+  {
+    "name": "chairRounded",
+    "targetHeight": 0.95,
+    "sourceHeight": 0.45499998331069946,
+    "triangles": 280
+  },
+  {
+    "name": "sideTableDrawers",
+    "targetHeight": 0.74,
+    "sourceHeight": 0.38440755009651184,
+    "triangles": 238
+  },
+  {
+    "name": "lampRoundTable",
+    "targetHeight": 0.3,
+    "sourceHeight": 0.31424999237060547,
+    "triangles": 76
+  },
+  {
+    "name": "plantSmall1",
+    "targetHeight": 1.15,
+    "sourceHeight": 0.14000000059604645,
+    "triangles": 102
+  }
+]

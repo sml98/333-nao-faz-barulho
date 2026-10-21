@@ -1,0 +1,6 @@
+
+> bellmare-333@0.1.0 fmt
+> prettier --check src tests *.ts index.html
+
+Checking formatting...
+All matched files use Prettier code style!

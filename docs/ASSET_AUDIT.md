@@ -20,3 +20,9 @@ Páginas de Cute Monsters e Animated Monster examinadas: estilização é útil 
 KayKit: `art_sources/kaykit/LICENSE.txt`, CC0 1.0, autor Kay Lousberg. Download via árvore do repositório oficial fixada por commit. Kenney: licença CC0 dentro do ZIP oficial; somente quatro móveis selecionados. Quaternius: página QAL v1.0 datada 28/08/2026 preservada localmente e aviso CC0 dentro de Standard observado; sem redistribuição do arquivo bruto nem uso no runtime nesta escolha. Downloads itch.io usaram o botão gratuito público "No thanks…" e Download, sem login, pagamento ou bypass.
 
 A biblioteca KayKit Character Animations atual foi consultada; a prova usa as animações já incluídas no GLB oficial Adventure 1.0 e não a versão Source paga. Não foi necessário Mixamo/login. Não foram usados Sketchfab/Poly Haven ou outros recursos externos nesta prova.
+
+## Consultas complementares
+
+Furniture Bits, Prototype Bits, UAL2, Ultimate Monsters, Toon Shooter, Building/Castle/Prototype/UI Kit, suporte Kenney e páginas opcionais foram consultados e registrados em [CATALOG_REVIEW.md](CATALOG_REVIEW.md). Foram evitados downloads extras desnecessários: já há rig/clipes compatíveis no pack escolhido. Poly Haven não fornece aqui um personagem adequado; Sketchfab/Mixamo não foram usados. Sem compras, login ou retarget presumido.
+
+O comparador Blender foi corrigido para limpar ações entre importações: Rogue e Mage importam 76 ações cada (75 nomeadas mais a ação padrão de importação); Quaternius Male tem 65 bones e zero ações no glTF examinado. `art_sources/base-comparison.json` registra essa inspeção isolada.

@@ -1,3 +1,5 @@
+> Histórico da versão anterior. A revisão atual MEME/VIRAL com rigs KayKit, novos GLBs e testes posteriores está em [docs/ART_QA.md](docs/ART_QA.md).
+
 # QA — 3:33 — Não Faz Barulho!
 
 Ambiente: Linux x64, Node 24.19.0, npm 11.9.0, PlayCanvas 2.23.1, Chromium `/usr/bin/chromium`, Playwright 1.58.2. Renderização de browser: WebGL2 em **SwiftShader/software**. Não representa GPU de PC nem Android físico.

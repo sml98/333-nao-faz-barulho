@@ -1,0 +1,238 @@
+{
+  "start": {
+    "phase": "PLAYING",
+    "player": {
+      "x": 0.0007007672832543999,
+      "z": -11.560000558039883
+    },
+    "heading": 0.0015926535897935583,
+    "porteiro": {
+      "position": {
+        "x": -5.804559432710056,
+        "z": 6.398480189096648
+      },
+      "state": "PATROL",
+      "target": {
+        "x": -4,
+        "z": 7
+      }
+    },
+    "delivered": 0,
+    "total": 1,
+    "held": false,
+    "hidden": null,
+    "agitation": 12,
+    "lastNoise": null,
+    "time": 1.2001000000000004,
+    "fps": 3,
+    "input": {
+      "quiet": false,
+      "stick": {
+        "x": 0,
+        "y": 0
+      },
+      "yaw": -3.1399999999999997
+    },
+    "drawCalls": 78,
+    "monsterAnimation": {
+      "state": "Patrol",
+      "left": 145.20762059725203,
+      "right": 72.24976079256922
+    },
+    "animation": {
+      "state": "Run",
+      "clips": [
+        "Carry",
+        "CarryRun",
+        "CarryWalk",
+        "Crouch",
+        "Hide",
+        "Idle",
+        "LookBack",
+        "Panic",
+        "Relief",
+        "Run",
+        "Stumble",
+        "Walk"
+      ],
+      "time": 0
+    },
+    "joints": {
+      "left": 177.10235442559463,
+      "right": 25.001498445091446
+    },
+    "camera": {
+      "x": -0.13723989590830504,
+      "y": 1.8495045286753538,
+      "z": -8.312276733033178,
+      "avatarOpacity": 1,
+      "fov": 65
+    }
+  },
+  "end": {
+    "phase": "PLAYING",
+    "player": {
+      "x": 0.0046720154774570885,
+      "z": -9.066523720451897
+    },
+    "heading": 0.0015926535897935583,
+    "porteiro": {
+      "position": {
+        "x": -5.240059666454567,
+        "z": 6.586646777848477
+      },
+      "state": "PATROL",
+      "target": {
+        "x": -4,
+        "z": 7
+      }
+    },
+    "delivered": 0,
+    "total": 1,
+    "held": false,
+    "hidden": null,
+    "agitation": 12,
+    "lastNoise": {
+      "id": 1,
+      "sourceId": "passos",
+      "position": {
+        "x": 0.0024526854913903993,
+        "z": -10.46000195313959,
+        "y": 0.65
+      },
+      "loudness": 0.65,
+      "radius": 8,
+      "timestamp": 1.4501000000000006,
+      "ttl": 2
+    },
+    "time": 1.7668000000000017,
+    "fps": 3,
+    "input": {
+      "quiet": false,
+      "stick": {
+        "x": 0,
+        "y": 0
+      },
+      "yaw": -3.1399999999999997
+    },
+    "drawCalls": 90,
+    "monsterAnimation": {
+      "state": "Patrol",
+      "left": 175.84680741077815,
+      "right": 131.34084906276843
+    },
+    "animation": {
+      "state": "Run",
+      "clips": [
+        "Carry",
+        "CarryRun",
+        "CarryWalk",
+        "Crouch",
+        "Hide",
+        "Idle",
+        "LookBack",
+        "Panic",
+        "Relief",
+        "Run",
+        "Stumble",
+        "Walk"
+      ],
+      "time": 0.5667000000000006
+    },
+    "joints": {
+      "left": 129.54546040038508,
+      "right": 132.89608795693016
+    },
+    "camera": {
+      "x": -0.21013090215839006,
+      "y": 1.8505288073254125,
+      "z": -5.8087625285849604,
+      "avatarOpacity": 1,
+      "fov": 65
+    }
+  },
+  "crouch": {
+    "phase": "PLAYING",
+    "player": {
+      "x": 0.0068906446962405075,
+      "z": -7.673485487206173
+    },
+    "heading": 0.0015926535897935583,
+    "porteiro": {
+      "position": {
+        "x": -4.7254653850930275,
+        "z": 6.75817820496899
+      },
+      "state": "PATROL",
+      "target": {
+        "x": -4,
+        "z": 7
+      }
+    },
+    "delivered": 0,
+    "total": 1,
+    "held": false,
+    "hidden": null,
+    "agitation": 12,
+    "lastNoise": {
+      "id": 2,
+      "sourceId": "passos",
+      "position": {
+        "x": 0.005372782760711488,
+        "z": -8.62652427849178,
+        "y": 0.65
+      },
+      "loudness": 0.65,
+      "radius": 8,
+      "timestamp": 1.8668000000000018,
+      "ttl": 2
+    },
+    "time": 2.2834000000000008,
+    "fps": 2,
+    "input": {
+      "quiet": true,
+      "stick": {
+        "x": 0,
+        "y": 0
+      },
+      "yaw": -3.1399999999999997
+    },
+    "drawCalls": 97,
+    "monsterAnimation": {
+      "state": "Patrol",
+      "left": 145.20088076534202,
+      "right": 72.24482332683654
+    },
+    "animation": {
+      "state": "Crouch",
+      "clips": [
+        "Carry",
+        "CarryRun",
+        "CarryWalk",
+        "Crouch",
+        "Hide",
+        "Idle",
+        "LookBack",
+        "Panic",
+        "Relief",
+        "Run",
+        "Stumble",
+        "Walk"
+      ],
+      "time": 0
+    },
+    "joints": {
+      "left": 175.47748157347166,
+      "right": 40.12021184294411
+    },
+    "camera": {
+      "x": -0.20876255965039145,
+      "y": 1.7749027263236468,
+      "z": -4.944035251440677,
+      "avatarOpacity": 1,
+      "fov": 65
+    }
+  },
+  "errors": [],
+  "method": "Native Playwright video, Chromium SwiftShader; real inputs, no state setters"
+}
