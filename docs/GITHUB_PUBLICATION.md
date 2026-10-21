@@ -8,8 +8,14 @@ O usuário solicitou envio ao seu GitHub e escolheu explicitamente repositório 
 - `.github/workflows/pages.yml` faz instalação, typecheck, 15 testes, build e deploy da pasta dist no Pages; apenas a build pública é publicada como site.
 - Testes locais executados: typecheck PASS, 15 testes PASS, build PASS, formatação PASS. Navegador Chromium executou a build na subpasta `/333-nao-faz-barulho/`: oito GLBs HTTP 200, textura e bundles carregados, pegar caixa por E, sem erros e sem snapshot de debug na produção. Registro: `github-pages-local-test.json`; captura em `../evidence/github-pages-subpath.png`.
 
-## Bloqueio atual
+## Estado atual após conectar GitHub
 
-Não há remote configurado nem publicação remota realizada. `gh auth status` falhou e `gh api user` retornou HTTP 401 Bad credentials. A consulta do gerenciador de plugins encontrou o GitHub disponível, com `installed: false`; o pedido de conexão anterior não concluiu a instalação. Nenhum valor de credencial foi impresso ou alterado.
+Conta autenticada confirmada: `sml98`. O conector e o GitHub CLI funcionam. A falha anterior HTTP 401 foi resolvida.
 
-Após a conexão válida: identificar a conta autenticada, criar o repositório público sem sobrescrever repositórios existentes, enviar a branch local para main, definir main como padrão, habilitar Pages com GitHub Actions, acompanhar o workflow e verificar a URL real publicada. Não há URL pública confirmada neste registro.
+A criação do repositório público `333-nao-faz-barulho` foi tentada por GraphQL (`gh repo create`) e REST (`POST /user/repos`); ambas foram recusadas por `Resource not accessible by integration`, HTTP 403 no REST. O repositório não foi criado e nenhum arquivo foi enviado.
+
+A instalação da conta oferece `contents: write` e `workflows: write`, com acesso a todos os repositórios; não anuncia permissões de `administration` ou `pages`. O usuário precisa criar o repositório vazio na própria conta. A ativação inicial de Pages também pode exigir a configuração pelo proprietário; verificar depois da criação sem prometer uma publicação ainda inexistente.
+
+Atalho de criação: https://github.com/new?name=333-nao-faz-barulho&visibility=public
+
+Depois da criação: conectar remote, enviar o projeto para main sem sobrescrever trabalho remoto existente, acompanhar o workflow e verificar a URL real. Se Pages exigir administração, orientar somente esse ajuste específico em Settings → Pages → Source: GitHub Actions. Nenhum valor de credencial foi impresso ou alterado.
