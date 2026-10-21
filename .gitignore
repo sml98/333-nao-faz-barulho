@@ -2,3 +2,7 @@ node_modules/
 dist/
 test-results/
 playwright-report/
+art_sources/*.zip
+art_sources/kaykit/*.glb
+art_sources/kenney/*.glb
+art_sources/quaternius/

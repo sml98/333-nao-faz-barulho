@@ -1,0 +1,22 @@
+[
+  {
+    "name": "nico",
+    "source": "KayKit Rogue CC0, authored body/rig/animation; remodeled face, wardrobe and carry IK",
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Carry",
+      "CarryWalk",
+      "CarryRun",
+      "Crouch",
+      "Hide",
+      "LookBack",
+      "Panic",
+      "Stumble",
+      "Relief"
+    ],
+    "bytes": 1375312,
+    "triangles": 26338
+  }
+]

@@ -1,6 +1,7 @@
 import { Asset, AppBase, Entity, Texture, StandardMaterial, Color, Vec2 } from 'playcanvas';
 import type { ContainerResource } from 'playcanvas';
 import type { Actor } from './scene';
+import {attachAnimation} from './characterAnimation';
 export interface GameAssets {
   models: Record<string, Asset>;
   atlas: Texture;
@@ -16,7 +17,7 @@ function load(app: AppBase, name: string, type: string, url: string): Promise<As
 }
 export async function loadAssets(app: AppBase): Promise<GameAssets> {
   const [nico, porteiro, box, atlas] = await Promise.all([
-    load(app, 'Nico', 'container', '/assets/models/nico.glb'),
+    load(app, 'Nico', 'container', '/assets/characters/nico.glb'),
     load(app, 'Porteiro', 'container', '/assets/models/porteiro.glb'),
     load(app, 'Caixa', 'container', '/assets/models/box.glb'),
     load(app, 'Bellmare atlas', 'texture', '/assets/textures/bellmare-atlas.png'),
@@ -38,25 +39,13 @@ export function makeActor(app: AppBase, assets: GameAssets, monster = false): Ac
   root.addChild(yaw);
   yaw.addChild(visual);
   app.root.addChild(root);
-  const scale = monster ? 2.7 / 2.67 : 1.78 / 1.785;
-  visual.setLocalScale(scale, scale, scale);
-  visual.setLocalPosition(
-    0,
-    monster ? -0.005 * scale : -0.007 * scale,
-    monster ? -0.1425 * scale : 0.0059 * scale,
-  );
-  const get = (name: string) => {
-    const e = visual.findByName(name) as Entity | null;
-    if (!e) throw new Error('Nó GLB ausente: ' + name);
-    return e;
-  };
-  const body = get('corpo animável'),
-    head = get('cabeça'),
-    legs = [get('perna0'), get('perna1')],
-    arms = [get('braço0'), get('braço1')];
+  const scale=monster?2.7/2.67:1.78/1.8767;
+  visual.setLocalScale(scale,scale,scale);visual.setLocalPosition(0,monster?-.005*scale:-.0008*scale,monster?-.1425*scale:0);
+  const get=(name:string)=>{const e=visual.findByName(name) as Entity|null;if(!e)throw new Error('Nó GLB ausente: '+name);return e;};
+  const body=get(monster?'corpo animável':'NicoRig'),head=get(monster?'cabeça':'head'),legs=[get(monster?'perna0':'upperleg.l'),get(monster?'perna1':'lowerleg.l')],arms=[get(monster?'braço0':'upperarm.l'),get(monster?'braço1':'upperarm.r')];
+  const rig=monster?undefined:attachAnimation(visual,assets.models.nico);
   const box = instantiate(assets, 'box');
-  box.setLocalPosition(0, 1, 0.44);
-  body.addChild(box);
+  if(monster){box.setLocalPosition(0,1,.44);body.addChild(box);}else{get('PackageSocket').addChild(box);box.setLocalPosition(0,0,0);}
   const lid = box.findByName('tampa') as Entity,
     mouth = box.findByName('boca animável') as Entity;
   const eyes = ['eye white', 'eye white.001']
@@ -79,6 +68,7 @@ export function makeActor(app: AppBase, assets: GameAssets, monster = false): Ac
     eyes,
     eyesBase,
     glb: true,
+    rig,
     mouthBase: [ms.x, ms.y, ms.z],
   };
 }

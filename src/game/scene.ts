@@ -1,3 +1,4 @@
+import type {RigAnimation} from './characterAnimation';
 import { AppBase, Color, Entity, StandardMaterial, Texture } from 'playcanvas';
 import { boundaries, layout, inside } from './level';
 export const palette = {
@@ -354,6 +355,7 @@ export class Art {
   }
 }
 export interface Actor {
+  rig?: RigAnimation;
   root: Entity;
   body: Entity;
   legs: Entity[];
@@ -376,7 +378,7 @@ export function animate(
   monster = false,
 ) {
   const gait = moving ? Math.sin(time * (monster ? 6 : 10)) : 0;
-  for (let i = 0; i < 2; i++) {
+  if(!a.rig)for (let i = 0; i < 2; i++) {
     a.legs[i].setLocalEulerAngles(gait * 25 * (i ? 1 : -1), 0, 0);
     a.arms[i].setLocalEulerAngles(
       monster ? gait * 20 * (i ? 1 : -1) : shush && i === 1 ? -45 : a.glb ? 0 : -35,
@@ -388,8 +390,8 @@ export function animate(
     const base = a.eyesBase?.[i];
     if (base) eye.setLocalScale(base[0], base[1] * (1 + agitation * 0.002), base[2]);
   });
-  a.body.setLocalPosition(0, moving ? Math.abs(gait) * 0.035 : Math.sin(time * 2) * 0.01, 0);
-  a.head.setLocalEulerAngles(shush ? 8 : 0, Math.sin(time) * 4, 0);
+  if(!a.rig)a.body.setLocalPosition(0, moving ? Math.abs(gait) * 0.035 : Math.sin(time * 2) * 0.01, 0);
+  if(!a.rig)a.head.setLocalEulerAngles(shush ? 8 : 0, Math.sin(time) * 4, 0);
   a.box.setLocalEulerAngles(
     Math.sin(time * 20) * agitation * 0.04,
     0,

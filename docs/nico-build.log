@@ -1,0 +1,129 @@
+20:22:46 | INFO: Data are loaded, start creating Blender stuff
+20:22:46 | INFO: Blender create Mesh node Cube.199
+20:22:46 | INFO: Blender create Mesh node Cube.202
+20:22:46 | INFO: Blender create Mesh node PrototypePete_body.025
+20:22:46 | INFO: Blender create Mesh node Cube.210
+20:22:46 | INFO: Blender create Mesh node Cube.194
+20:22:46 | INFO: Blender create Mesh node Cube.187
+20:22:46 | INFO: Blender create Mesh node Cylinder.002
+20:22:46 | INFO: Blender create Mesh node Cube.015
+20:22:46 | INFO: Blender create Mesh node Cube.004
+20:22:46 | INFO: Blender create Mesh node Cylinder.008
+20:22:46 | INFO: Blender create Mesh node Cylinder.006
+20:22:46 | INFO: Blender create Mesh node Plane.007
+20:22:47 | INFO: glTF import finished in 0.65s
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Applied modifier was not first, result may not be as expected
+Info: Saved "nico-remodeled.blend"
+ERROR Draco mesh compression is not available because library could not be found at /usr/bin/4.3/python/lib/python3.13/site-packages/libextern_draco.so
+20:22:52 | INFO: Starting glTF 2.0 export
+20:22:52 | INFO: Extracting primitive: Cube.199
+20:22:52 | INFO: Primitives created: 2
+20:22:52 | INFO: Extracting primitive: Cube.202
+20:22:52 | INFO: Primitives created: 2
+20:22:52 | INFO: Extracting primitive: PrototypePete_body.025
+20:22:52 | INFO: Primitives created: 2
+20:22:52 | INFO: Extracting primitive: Cube.194
+20:22:52 | INFO: Primitives created: 2
+20:22:52 | INFO: Extracting primitive: Cube.187
+20:22:52 | INFO: Primitives created: 2
+20:22:52 | INFO: Extracting primitive: Cube.008
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Cube.009
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Cube.003
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Cube.006
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Cube.011
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Cube.010
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Cube.005
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Cube.007
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.006
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.013
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Brow.L
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Brow.R
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Cube.002
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.017
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: CapCurvedVisor
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.004
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.011
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.005
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.012
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.001
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.008
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.003
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.010
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.007
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: FaceSculpt
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: HairLock0
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: HairLock1
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: HairLock2
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: HairLock3
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: HairLock4
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: HairLock5
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: HairLock6
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: HairLock7
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: HairLock8
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.015
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.014
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.002
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.009
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: SideHair
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: SideHair.001
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Sphere.016
+20:22:52 | INFO: Primitives created: 1
+20:22:52 | INFO: Extracting primitive: Cube.001
+20:22:52 | INFO: Primitives created: 1
+20:22:54 | INFO: Finished glTF 2.0 export in 2.0297670364379883 s
+
+BUILD COMPLETE [{'name': 'nico', 'source': 'KayKit Rogue CC0, authored body/rig/animation; remodeled face, wardrobe and carry IK', 'clips': ['Idle', 'Walk', 'Run', 'Carry', 'CarryWalk', 'CarryRun', 'Crouch', 'Hide', 'LookBack', 'Panic', 'Stumble', 'Relief'], 'bytes': 1375312, 'triangles': 26338}]
+Blender 4.3.2
+
+Blender quit

@@ -2,6 +2,7 @@ import { AppBase, Color, Entity, TONEMAP_NEUTRAL } from 'playcanvas';
 import { Art, animate } from './scene';
 import { Player } from './player';
 import { Input } from './input';
+import {animateRig} from './characterAnimation';
 import { FollowCamera } from './camera';
 import { GameState } from './gameState';
 import { Porteiro } from './porteiro';
@@ -60,7 +61,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
   const actorGroup = app.batcher.addGroup('Personagens articulados', true, 4);
   for (const root of [nico.root, monster.root, supply])
     for (const component of root.findComponents('render'))
-      (component as import('playcanvas').RenderComponent).batchGroupId = actorGroup.id;
+      if(!(component as import('playcanvas').RenderComponent).meshInstances.some(m=>m.skinInstance||m.morphInstance))(component as import('playcanvas').RenderComponent).batchGroupId = actorGroup.id;
   let lastSkin = 0;
 
   art.part(app.root, 'mesa de encomendas', 'box', [0.85, 0.37, -12], [0.85, 0.74, 0.65], '#493025');
@@ -386,6 +387,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     nico.root.enabled = !g.hidden;
     monster.root.setPosition(ai.position.x, 0, ai.position.z);
     monster.root.setEulerAngles(0, (ai.heading * 180) / Math.PI, 0);
+    if(nico.rig)animateRig(nico.rig,g.hidden?'Hide':g.held?(player.moving?(input.running&&!input.quiet?'CarryRun':'CarryWalk'):'Carry'):player.moving?(input.running&&!input.quiet?'Run':'Walk'):'Idle',g.phase!=='PLAYING',g.time,ai.state==='CHASE'?1:g.box.agitation/100);
     animate(nico, g.time, player.moving && g.phase === 'PLAYING', input.quiet, g.box.agitation);
     animate(monster, g.time, ai.state !== 'LISTEN' && g.phase === 'PLAYING', false, 0, true);
     if (ai.state === 'LISTEN') {
@@ -400,6 +402,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
       );
     }
     follow.tick(dt, player.position, input.yaw, input.pitch);
+    nico.root.enabled=!g.hidden&&!follow.hideNico;
     ui.update(g, interaction(g, player.position), ai.state, input.quiet);
   });
   if (import.meta.env.DEV) {
@@ -422,7 +425,8 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
             fps,
             input: { quiet: input.quiet, stick: input.stick, yaw: input.yaw },
             drawCalls: app.stats.drawCallCount,
-            joints: {
+            animation: nico.rig?{state:nico.rig.state,clips:nico.rig.clips,time:nico.rig.host.anim?.baseLayer?.activeStateCurrentTime}:null,
+              joints: {
               left: nico.legs[0].getLocalEulerAngles().x,
               right: nico.legs[1].getLocalEulerAngles().x,
             },
