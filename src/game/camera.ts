@@ -1,6 +1,7 @@
 import { Entity, Vec3 } from 'playcanvas';
 import { walkable, lineClear } from './level';
 import type { Point } from './config';
+export type PlanarCameraBasis = { right: Point; forward: Point };
 export class FollowCamera {
   entity: Entity;
   position = new Vec3();
@@ -9,6 +10,15 @@ export class FollowCamera {
   avatarOpacity = 1;
   constructor(entity: Entity) {
     this.entity = entity;
+  }
+  /** Camera-local screen axes projected onto the hotel floor. */
+  movementBasis(): PlanarCameraBasis {
+    const project = (axis: Vec3): Point => {
+      const length = Math.hypot(axis.x, axis.z);
+      if (length < 1e-6) return { x: 0, z: 0 };
+      return { x: axis.x / length, z: axis.z / length };
+    };
+    return { right: project(this.entity.right), forward: project(this.entity.forward) };
   }
   tick(dt: number, p: Point, yaw: number, pitch: number) {
     const target = new Vec3(p.x, 1.0, p.z);

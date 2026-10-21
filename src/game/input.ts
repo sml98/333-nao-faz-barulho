@@ -91,15 +91,18 @@ export class Input {
   get running() {
     return this.run || this.keys.has('ShiftLeft') || this.keys.has('ShiftRight');
   }
-  movement() {
+  movement(basis: PlanarCameraBasis) {
     let x = (this.keys.has('KeyD') ? 1 : 0) - (this.keys.has('KeyA') ? 1 : 0) + this.stick.x;
     let y = (this.keys.has('KeyW') ? 1 : 0) - (this.keys.has('KeyS') ? 1 : 0) - this.stick.y;
     const n = Math.max(1, Math.hypot(x, y));
     x /= n;
     y /= n;
+    const worldX = basis.right.x * x + basis.forward.x * y;
+    const worldZ = basis.right.z * x + basis.forward.z * y;
+    const worldLength = Math.hypot(worldX, worldZ) || 1;
     return {
-      x: x * Math.cos(this.yaw) + y * Math.sin(this.yaw),
-      z: -x * Math.sin(this.yaw) + y * Math.cos(this.yaw),
+      x: worldX / worldLength,
+      z: worldZ / worldLength,
       moving: Math.hypot(x, y) > 0.1,
     };
   }
@@ -115,3 +118,4 @@ export class Input {
     document.querySelector<HTMLElement>('#knob')!.style.transform = '';
   }
 }
+import type { PlanarCameraBasis } from './camera';

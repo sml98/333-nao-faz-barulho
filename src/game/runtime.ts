@@ -248,6 +248,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     follow.initialized = false;
     input.yaw = 0;
     input.pitch = 0.24;
+    follow.tick(0, player.position, input.yaw, input.pitch);
     audio.unlock();
     ui.text('caption', '');
     ui.text('noise', '');
@@ -315,7 +316,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
       g.time += dt;
       bumpCooldown -= dt;
       events = events.filter((e) => g.time - e.timestamp <= e.ttl);
-      const collided = player.tick(dt, input, !!g.hidden);
+      const collided = player.tick(dt, input, !!g.hidden, follow.movementBasis());
       if (
         collided &&
         bumpCooldown <= 0 &&

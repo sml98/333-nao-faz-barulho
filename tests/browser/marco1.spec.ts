@@ -67,13 +67,31 @@ test('toque emulado permite joystick + SHHH sem girar câmera', async ({ browser
   await page.locator('#quality').selectOption('low');
   await page.getByTestId('start').tap();
   await expect.poll(async () => (await snap(page)).time).toBeGreaterThan(0.1);
-  await page.getByTestId('interact').tap();
-  await expect.poll(async () => (await snap(page)).held).toBe(true);
   const session = await context.newCDPSession(page),
     j = (await page.getByTestId('joystick').boundingBox())!,
-    b = (await page.getByTestId('shush').boundingBox())!;
-  const stick = { x: j.x + j.width / 2, y: j.y + j.height / 2 - 35, id: 1 },
+    b = (await page.getByTestId('shush').boundingBox())!,
+    center = { x: j.x + j.width / 2, y: j.y + j.height / 2 },
     shush = { x: b.x + b.width / 2, y: b.y + b.height / 2, id: 2 };
+  const rightStart = await snap(page),
+    stickRight = { ...center, id: 1 };
+  await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [stickRight] });
+  await session.send('Input.dispatchTouchEvent', {
+    type: 'touchMove',
+    touchPoints: [{ ...stickRight, x: center.x + 34 }],
+  });
+  await session.send('Input.dispatchTouchEvent', {
+    type: 'touchStart',
+    touchPoints: [{ ...stickRight, x: center.x + 34 }, shush],
+  });
+  await expect.poll(async () => (await snap(page)).input.quiet).toBe(true);
+  await expect
+    .poll(async () => (await snap(page)).player.x)
+    .toBeLessThan(rightStart.player.x - 0.15);
+  await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+  await expect.poll(async () => (await snap(page)).input.quiet).toBe(false);
+  await page.getByTestId('interact').tap();
+  await expect.poll(async () => (await snap(page)).held).toBe(true);
+  const stick = { x: center.x, y: center.y - 35, id: 1 };
   const initial = await snap(page);
   await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [stick] });
   await session.send('Input.dispatchTouchEvent', {

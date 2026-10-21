@@ -1,12 +1,13 @@
 import { config, type Point } from './config';
 import { move, layout } from './level';
 import type { Input } from './input';
+import type { PlanarCameraBasis } from './camera';
 export class Player {
   position: Point = { x: layout.spawns.nico[0], z: layout.spawns.nico[2] };
   heading = 0;
   moving = false;
-  tick(dt: number, input: Input, hidden: boolean) {
-    const m = input.movement();
+  tick(dt: number, input: Input, hidden: boolean, basis: PlanarCameraBasis) {
+    const m = input.movement(basis);
     this.moving = m.moving && !hidden;
     if (!this.moving) return false;
     const speed = input.quiet ? config.shush : input.running ? config.run : config.walk;
