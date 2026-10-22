@@ -3,15 +3,15 @@ import type { RigAnimation } from './characterAnimation';
 import { AppBase, Color, Entity, StandardMaterial, Texture } from 'playcanvas';
 import { boundaries, layout, inside } from './level';
 export const palette = {
-  navy: '#183449',
-  mustard: '#dba437',
+  navy: '#24556b',
+  mustard: '#f5bd62',
   skin: '#e6ac7b',
-  khaki: '#a68d62',
-  gold: '#c79b58',
-  wood: '#493025',
-  wine: '#691e2b',
-  teal: '#24505a',
-  ivory: '#e9d6b7',
+  khaki: '#d6bd94',
+  gold: '#f3bd67',
+  wood: '#54b9ad',
+  wine: '#ed8190',
+  teal: '#8eb9c4',
+  ivory: '#fff1d4',
 };
 export class Art {
   app: AppBase;
@@ -57,18 +57,28 @@ export class Art {
     parent.addChild(e);
     return e;
   }
-  text(parent: Entity, text: string, p: number[], width = 1, height = 0.35, north = false) {
+  text(
+    parent: Entity,
+    text: string,
+    p: number[],
+    width = 1,
+    height = 0.35,
+    north = false,
+    facingY?: number,
+  ) {
     const c = document.createElement('canvas');
     c.width = 512;
     c.height = 128;
     const ctx = c.getContext('2d')!;
-    ctx.fillStyle = '#152c32';
+    ctx.fillStyle = '#fff1d4';
     ctx.fillRect(0, 0, 512, 128);
-    ctx.strokeStyle = '#c79b58';
-    ctx.lineWidth = 6;
-    ctx.strokeRect(5, 5, 502, 118);
-    ctx.fillStyle = '#f4dbad';
-    ctx.font = '600 56px Georgia';
+    ctx.strokeStyle = '#ed8190';
+    ctx.lineWidth = 9;
+    ctx.beginPath();
+    ctx.roundRect(5, 5, 502, 118, 22);
+    ctx.stroke();
+    ctx.fillStyle = '#24556b';
+    ctx.font = '700 56px system-ui, sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(text, 256, 66, 490);
@@ -81,14 +91,86 @@ export class Art {
     m.emissive = new Color(0.65, 0.65, 0.65);
     m.update();
     const e = this.part(parent, 'placa ' + text, 'plane', p, [width, 1, height], palette.gold);
-    e.setLocalEulerAngles(90, north ? 0 : 180, 0);
+    e.setLocalEulerAngles(90, facingY ?? (north ? 0 : 180), 0);
     e.render!.material = m;
     return e;
   }
-  hotel() {
+  hotel(createModule: (id: string) => Entity) {
     const root = new Entity('Hotel Bellmare — geometria canônica');
     this.app.root.addChild(root);
-    // Nonoverlapping floor strips avoid z-fighting at intersections.
+    const module = (
+      id: string,
+      name: string,
+      position: [number, number, number],
+      yaw = 0,
+      scale: [number, number, number] = [1, 1, 1],
+      parent = root,
+    ) => {
+      const entity = createModule(id);
+      entity.name = name;
+      entity.setLocalPosition(...position);
+      entity.setLocalEulerAngles(0, yaw, 0);
+      entity.setLocalScale(...scale);
+      parent.addChild(entity);
+      return entity;
+    };
+    // Round stone GLBs replace box floor visuals; half-metre cell membership is
+    // still sampled from the unchanged walkable-zone source.
+    const floorCells: Array<[number, number]> = [];
+    const floorKeys = new Set<string>();
+    const cellKey = (x: number, z: number) => `${x.toFixed(1)},${z.toFixed(1)}`;
+    for (let z = -15; z < 7.5; z += 0.5)
+      for (let x = -16; x < 16; x += 0.5) {
+        const center = { x: x + 0.25, z: z + 0.25 };
+        if (
+          layout.zones.some(
+            (r) =>
+              center.x >= r.x_min &&
+              center.x <= r.x_max &&
+              center.z >= r.z_min &&
+              center.z <= r.z_max,
+          )
+        ) {
+          floorCells.push([x, z]);
+          floorKeys.add(cellKey(x, z));
+        }
+      }
+    const placedFloorCells = new Set<string>();
+    for (const [x, z] of floorCells) {
+      const key = cellKey(x, z);
+      if (placedFloorCells.has(key)) continue;
+      const patchCells: Array<[number, number]> = [
+        [x, z],
+        [x + 0.5, z],
+        [x, z + 0.5],
+        [x + 0.5, z + 0.5],
+      ];
+      const fullPatch =
+        Number.isInteger(x) &&
+        Number.isInteger(z) &&
+        patchCells.every(
+          ([cx, cz]) => floorKeys.has(cellKey(cx, cz)) && !placedFloorCells.has(cellKey(cx, cz)),
+        );
+      const tileRotation = (Math.round((x + z) * 2) & 3) * 90;
+      if (fullPatch) {
+        module(
+          'hotelFloorPatch',
+          'pavimento de pedra arredondada',
+          [x + 0.5, 0, z + 0.5],
+          tileRotation,
+        );
+        patchCells.forEach(([cx, cz]) => placedFloorCells.add(cellKey(cx, cz)));
+      } else {
+        module(
+          'hotelFloorTile',
+          'pavimento de pedra arredondada',
+          [x + 0.25, 0, z + 0.25],
+          tileRotation,
+        );
+        placedFloorCells.add(key);
+      }
+    }
+    // Ceiling stays as a light shell; merge continuous runs to limit draw work.
     for (let z = -15; z < 7.5; z += 0.5) {
       let from: number | null = null;
       for (let x = -16; x <= 16; x += 0.5) {
@@ -105,19 +187,11 @@ export class Art {
         if (!on && from !== null) {
           this.part(
             root,
-            'piso',
-            'box',
-            [(from + x) / 2, -0.1, z + 0.25],
-            [x - from, 0.2, 0.5],
-            z > 4 ? palette.wine : z < -9 ? palette.wood : palette.teal,
-          );
-          this.part(
-            root,
             'teto',
             'box',
             [(from + x) / 2, 3.45, z + 0.25],
             [x - from, 0.1, 0.5],
-            '#302a27',
+            '#f4e4c8',
           );
           from = null;
         }
@@ -154,23 +228,10 @@ export class Art {
           'box',
           [cx, 1.7, cz],
           [a.horizontal ? length : 0.16, 3.4, a.horizontal ? 0.16 : length],
-          palette.wood,
+          '#f0d9b6',
         );
-        for (const [y, h, color] of [
-          [0.14, 0.12, palette.gold],
-          [0.95, 0.045, palette.gold],
-          [3.12, 0.14, palette.gold],
-          [1.95, 1.9, '#23383d'],
-        ] as const)
-          this.part(
-            root,
-            'friso',
-            'box',
-            [cx, y, cz],
-            [a.horizontal ? length : 0.18, h, a.horizontal ? 0.18 : length],
-            color,
-          );
-        // Textured inset panels face into the union; narrow real pilasters retain depth.
+        // Rounded Blender panels supply the depth; the wall union and all routes
+        // still come from the canonical layout and its unchanged collision code.
         const inward = a.horizontal
           ? inside({ x: cx, z: cz + 0.3 })
             ? 1
@@ -181,33 +242,23 @@ export class Art {
         for (let k = 0; k < length; k += 2) {
           const width = Math.min(2, length - k),
             pc = cx - (a.horizontal ? length / 2 : 0) + (a.horizontal ? k + width / 2 : 0),
-            pz = cz - (!a.horizontal ? length / 2 : 0) + (!a.horizontal ? k + width / 2 : 0);
-          const panel = this.part(
-            root,
-            'painel de parede',
-            'plane',
+            pz = cz - (!a.horizontal ? length / 2 : 0) + (!a.horizontal ? k + width / 2 : 0),
+            sameDoorWall = layout.doors.some(
+              (d) =>
+                Math.abs(d[a.horizontal ? 'z' : 'x'] - (a.horizontal ? cz : cx)) < 0.2 &&
+                Math.abs(d[a.horizontal ? 'x' : 'z'] - (a.horizontal ? pc : pz)) < width / 2 + 1.08,
+            );
+          if (sameDoorWall) continue;
+          module(
+            'hotelWallPanel',
+            'módulo de parede arredondado',
             [
-              pc + (a.horizontal ? 0 : inward * 0.105),
+              pc + (a.horizontal ? 0 : inward * 0.16),
               1.58,
-              pz + (a.horizontal ? inward * 0.105 : 0),
+              pz + (a.horizontal ? inward * 0.16 : 0),
             ],
-            [width - 0.04, 1, 3.02],
-            palette.teal,
-          );
-          panel.setLocalEulerAngles(
-            90,
             a.horizontal ? (inward > 0 ? 0 : 180) : inward > 0 ? 90 : -90,
-            0,
-          );
-          const px = a.horizontal ? pc - width / 2 : pc,
-            qz = a.horizontal ? pz : pz - width / 2;
-          this.part(
-            root,
-            'pilastra',
-            'box',
-            [px, 1.55, qz],
-            [a.horizontal ? 0.065 : 0.23, 3.1, a.horizontal ? 0.23 : 0.065],
-            palette.gold,
+            [width / 2, 1, 1],
           );
         }
         i = j + 1;
@@ -216,19 +267,12 @@ export class Art {
     // Rich carpet tiles sit just over the nonoverlapping collision floor.
     for (const z of [6, -6])
       for (let x = -15; x < 16; x += 2)
-        this.part(
-          root,
-          'carpete',
-          'plane',
-          [x, 0.014, z],
-          [2, 1, z > 0 ? 2.42 : 1.82],
-          palette.wine,
-        );
+        this.part(root, 'carpete', 'plane', [x, 0.014, z], [2, 1, z > 0 ? 2.42 : 1.82], '#ed8190');
     for (const x of [-14.75, 14.75])
       for (let z = -4; z < 5; z += 2)
-        this.part(root, 'carpete', 'plane', [x, 0.016, z], [1.84, 1, 2], palette.wine);
+        this.part(root, 'carpete', 'plane', [x, 0.016, z], [1.84, 1, 2], '#ed8190');
     for (let z = -13; z < -7; z += 2)
-      this.part(root, 'carpete', 'plane', [0, 0.017, z], [z < -9 ? 2.6 : 1.8, 1, 2], palette.wine);
+      this.part(root, 'carpete', 'plane', [0, 0.017, z], [z < -9 ? 2.6 : 1.8, 1, 2], '#ed8190');
     // Runner with gold piping establishes the long axes.
     for (const z of [6, -6])
       for (const x of [-0.94, 0.94])
@@ -254,31 +298,15 @@ export class Art {
       const elevator = d.id === 'elevador',
         sign = elevator ? 1 : -1,
         z = d.z + sign * 0.02;
-      this.part(root, 'moldura ' + d.id, 'box', [d.x, 1.45, z], [2.03, 2.9, 0.18], palette.gold);
-      this.part(
-        root,
-        'porta ' + d.id,
-        'box',
-        [d.x, 1.4, z + sign * 0.1],
-        [1.78, 2.8, 0.045],
-        elevator ? '#725537' : '#522c29',
-      );
+      module('hotelDoor', 'porta art déco ' + d.id, [d.x, 1.45, z], elevator ? 0 : 180);
 
       this.text(
         root,
         elevator ? 'ELEVADOR' : d.id,
-        [d.x, 2.5, z + sign * 0.16],
+        [d.x, 2.5, z + sign * 0.34],
         1.1,
         0.3,
         elevator,
-      );
-      this.part(
-        root,
-        'maçaneta',
-        'sphere',
-        [d.x + 0.58, 1.15, z + sign * 0.18],
-        [0.1, 0.1, 0.1],
-        palette.gold,
       );
     }
     this.text(root, '3:33', [0, 3.03, -14.6], 1.35, 0.33, true);
@@ -289,39 +317,29 @@ export class Art {
         const south = z < 0;
         // Do not hang a wall fixture across the open hall/corridor junction.
         if (inside({ x, z: south ? -7.5 : 7.7 })) continue;
-        this.part(root, 'suporte arandela', 'box', [x, 2.25, z], [0.25, 0.55, 0.18], palette.gold);
-        this.part(
-          root,
-          'luz âmbar',
-          'sphere',
-          [x, 2.35, z + (south ? 0.18 : -0.18)],
-          [0.22, 0.42, 0.22],
-          '#ffc578',
-          true,
-        );
-        this.part(
-          root,
-          'acabamento arandela',
-          'box',
-          [x, 2.58, z + (south ? 0.18 : -0.18)],
-          [0.3, 0.055, 0.18],
-          palette.gold,
+        module(
+          'hotelSconce',
+          'arandela art déco',
+          [x, 2.25, z + (south ? 0.06 : -0.06)],
+          south ? 0 : 180,
+          [1, 1, 0.55],
         );
       }
     for (const h of layout.hiding_spots) {
       const r = new Entity(h.id);
       r.setPosition(h.x, 0, h.z);
       root.addChild(r);
-      this.part(
+      const facing = h.x < 0 ? 90 : -90,
+        frontOffset = h.x < 0 ? 0.5 : -0.5;
+      module(
+        'hotelWardrobe',
+        'armário Kenney remodelado',
+        [-0.72, 0, 0],
+        facing,
+        [0.7, 1, 0.65],
         r,
-        'esconderijo',
-        'box',
-        [-0.72, 1.0, 0],
-        [0.38, 2, 0.9],
-        h.id.includes('alcova') ? '#5e2338' : '#26424a',
       );
-      this.part(r, 'acabamento', 'box', [-0.72, 2.05, 0], [0.48, 0.08, 1], palette.gold);
-      this.text(r, 'ESCONDER', [-0.72, 1.65, 0.48], 0.8, 0.2, true);
+      this.text(r, 'ESCONDER', [-0.72 + frontOffset, 1.65, 0], 0.8, 0.2, false, facing);
     }
     // Canonical obstacle colliders/noise remain in level.ts; their visual meshes
     // are furnished with the normalized Kenney assets by runtime.ts.

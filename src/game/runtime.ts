@@ -17,7 +17,7 @@ import { Porteiro } from './porteiro';
 import { AudioBus, type NoiseEvent } from './sound';
 import { tickPackage, personalities } from './packages';
 import { ParcelSkin, animateParcel } from './parcelArt';
-import { makeActor, instantiate, atlasMaterial, type GameAssets } from './assets';
+import { makeActor, instantiate, type GameAssets } from './assets';
 import { interaction } from './interaction';
 import { UI } from './ui';
 import { distance } from './config';
@@ -27,23 +27,23 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     input = new Input(canvas),
     audio = new AudioBus(),
     art = new Art(app);
-  const hotel = art.hotel();
-  const wallMat = atlasMaterial(assets.atlas, 'wall'),
-    carpetMat = atlasMaterial(assets.atlas, 'carpet'),
-    woodMat = atlasMaterial(assets.atlas, 'wood'),
-    doorMat = atlasMaterial(assets.atlas, 'door');
+  const hotel = art.hotel((id) => instantiate(assets, id));
   for (const c of hotel.findComponents('render')) {
     const r = c as import('playcanvas').RenderComponent;
     const name = r.entity.name;
-    if (name === 'painel de parede') r.material = wallMat;
-    else if (name === 'carpete') r.material = carpetMat;
-    else if (name === 'parede' || name === 'teto') r.material = woodMat;
-    else if (name.startsWith('porta ')) r.material = doorMat;
+    if (name === 'parede') r.material = art.material('#f0d9b6');
+    else if (name === 'teto') r.material = art.material('#f4e4c8');
+    else if (name === 'piso') r.material = art.material('#a5cbd0');
+    else if (name === 'carpete') r.material = art.material('#ed8190');
+    else if (name.startsWith('borda')) r.material = art.material('#fff1d4');
   }
-  if (!(import.meta.env.DEV && new URLSearchParams(location.search).get('batch') === '0')) {
-    const group = app.batcher.addGroup('Hotel estático', false, 12);
+  const staticGroup =
+    import.meta.env.DEV && new URLSearchParams(location.search).get('batch') === '0'
+      ? null
+      : app.batcher.addGroup('Hotel estático', false, 40);
+  if (staticGroup) {
     for (const component of hotel.findComponents('render'))
-      (component as import('playcanvas').RenderComponent).batchGroupId = group.id;
+      (component as import('playcanvas').RenderComponent).batchGroupId = staticGroup.id;
   }
 
   const nico = makeActor(app, assets),
@@ -83,12 +83,19 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     e.setLocalPosition(x, y, z);
     e.setLocalScale(scale, scale, scale);
     hotel.addChild(e);
+    if (staticGroup)
+      for (const component of e.findComponents('render'))
+        (component as import('playcanvas').RenderComponent).batchGroupId = staticGroup.id;
     return e;
   };
   furnish('sideTableDrawers', 0.85, -12, 1);
   for (const o of layout.obstacles) {
     hotel.findByName(o.id)?.destroy();
-    furnish(o.id === 'planta' ? 'plantSmall1' : 'sideTableDrawers', o.x, o.z, 1.0);
+    if (o.id === 'planta') furnish('plantSmall1', o.x, o.z, 1.0);
+    else if (o.id === 'telefone') {
+      furnish('sideTableDrawers', o.x, o.z, 1.0);
+      furnish('hotelTelephone', o.x, o.z, 1.0, 0.74);
+    } else furnish('hotelParcelStack', o.x, o.z, 1.0);
   }
   // Decorative furniture stays against walls, outside the existing walking route.
   // Chair exported for later dressing; left out to preserve canonical collision paths.
@@ -101,20 +108,20 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     toneMapping: TONEMAP_NEUTRAL,
     nearClip: 0.055,
     farClip: 70,
-    clearColor: new Color(0.04, 0.095, 0.12),
+    clearColor: new Color(0.38, 0.66, 0.72),
   });
   app.root.addChild(camera);
   const follow = new FollowCamera(camera);
-  app.scene.ambientLight = new Color(0.39, 0.29, 0.46);
+  app.scene.ambientLight = new Color(0.66, 0.68, 0.64);
   app.scene.fog.type = 'linear';
-  app.scene.fog.color = new Color(0.13, 0.045, 0.2);
-  app.scene.fog.start = 14;
-  app.scene.fog.end = 38;
+  app.scene.fog.color = new Color(0.63, 0.78, 0.77);
+  app.scene.fog.start = 25;
+  app.scene.fog.end = 52;
   const light = new Entity('Luz principal');
   light.addComponent('light', {
     type: 'directional',
-    color: new Color(1, 0.84, 0.68),
-    intensity: 0.95,
+    color: new Color(1, 0.93, 0.78),
+    intensity: 1.15,
     castShadows: true,
     shadowResolution: 1024,
     shadowDistance: 25,
@@ -126,11 +133,12 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
   const fill = new Entity('Preenchimento frio');
   fill.addComponent('light', {
     type: 'directional',
-    color: new Color(0.68, 0.32, 0.95),
-    intensity: 0.35,
+    color: new Color(0.69, 0.89, 1),
+    intensity: 0.32,
   });
   fill.setEulerAngles(25, 210, 0);
   app.root.addChild(fill);
+  const localLights: Entity[] = [];
   for (const [x, z, warm] of [
     [0, -12, 1],
     [-11, 6, 1],
@@ -142,19 +150,20 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
     const lamp = new Entity('Luz ambiente local');
     lamp.addComponent('light', {
       type: 'omni',
-      color: new Color(warm ? 1 : 0.35, warm ? 0.72 : 0.25, warm ? 0.45 : 0.95),
-      intensity: 0.85,
-      range: 5.2,
+      color: warm ? new Color(1, 0.82, 0.57) : new Color(0.58, 0.85, 0.91),
+      intensity: 0.58,
+      range: 5.8,
       castShadows: false,
     });
     lamp.setPosition(x, 2.6, z);
     app.root.addChild(lamp);
+    localLights.push(lamp);
   }
   const actorFill = new Entity('Luz de leitura dos personagens');
   actorFill.addComponent('light', {
     type: 'omni',
-    color: new Color(0.8, 0.85, 1),
-    intensity: 0.65,
+    color: new Color(0.82, 0.94, 1),
+    intensity: 0.72,
     range: 4,
     castShadows: false,
   });
@@ -162,19 +171,15 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
   if (matchMedia('(pointer:coarse)').matches) {
     document.querySelector<HTMLSelectElement>('#quality')!.value = 'low';
     light.light!.castShadows = false;
+    for (const lamp of localLights) lamp.enabled = false;
     app.graphicsDevice.maxPixelRatio = 1;
     app.resizeCanvas();
   }
-  const goal = art.part(
-    app.root,
-    'Destino da entrega',
-    'cone',
-    [0, 2, -12],
-    [0.17, 0.26, 0.17],
-    '#e5bb72',
-    true,
-  );
-  goal.setEulerAngles(180, 0, 0);
+  const goal = instantiate(assets, 'hotelBeacon');
+  goal.name = 'Sinalizador dourado da encomenda';
+  goal.setPosition(0, 2, -12);
+  goal.setLocalScale(1.35, 1.35, 1.35);
+  app.root.addChild(goal);
   const g = new GameState();
   let player = new Player(),
     ai = new Porteiro(),
@@ -271,7 +276,9 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
         ? Math.min(devicePixelRatio, 1)
         : Math.min(devicePixelRatio, 1.5);
     app.resizeCanvas();
-    light.light!.castShadows = (e.target as HTMLSelectElement).value !== 'low';
+    const lowQuality = (e.target as HTMLSelectElement).value === 'low';
+    light.light!.castShadows = !lowQuality;
+    for (const lamp of localLights) lamp.enabled = !lowQuality;
   });
   window.addEventListener('resize', () => {
     if (
@@ -412,6 +419,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
       g.held ? 3.05 : 1.8 + Math.sin(g.time * 3) * 0.05,
       g.held ? goalDoor.z - 0.65 : -12,
     );
+    goal.setEulerAngles(0, (visualTime * 42) % 360, 0);
     goal.enabled = g.phase === 'PLAYING' && g.delivered < g.total;
     actorFill.setPosition(
       player.position.x - Math.sin(input.yaw) * 1.2,
@@ -539,6 +547,7 @@ export function runGame(app: AppBase, canvas: HTMLCanvasElement, assets: GameAss
             time: g.time,
             fps,
             input: { quiet: input.quiet, stick: input.stick, yaw: input.yaw },
+            cameraBasis: follow.movementBasis(),
             drawCalls: app.stats.drawCallCount,
             monsterAnimation: {
               state: monster.rig?.state,

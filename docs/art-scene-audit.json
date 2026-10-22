@@ -1,0 +1,1817 @@
+{
+  "models": [
+    {
+      "file": "public/assets/characters/caixa_nervosa.glb",
+      "bytes": 145188,
+      "meshObjects": 19,
+      "triangles": 3956,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.32,
+          -0.302,
+          -0.24
+        ],
+        "max": [
+          0.32,
+          0.2175,
+          0.2525
+        ],
+        "size": [
+          0.64,
+          0.5195,
+          0.4925
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.32,
+          -0.24,
+          -0.2175
+        ],
+        "max": [
+          0.32,
+          0.2525,
+          0.302
+        ],
+        "size": [
+          0.64,
+          0.4925,
+          0.5195
+        ]
+      },
+      "materials": [
+        {
+          "name": "76d8ee",
+          "baseColor": [
+            0.18116424977779388,
+            0.68668532371521,
+            0.8549926280975342,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "black",
+          "baseColor": [
+            0.008568125776946545,
+            0.005181516520678997,
+            0.017641954123973846,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "c79359",
+          "baseColor": [
+            0.5711248517036438,
+            0.2917706370353699,
+            0.09989872574806213,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "gold",
+          "baseColor": [
+            0.7912979125976562,
+            0.41788506507873535,
+            0.05951123684644699,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "pink",
+          "baseColor": [
+            0.9130986332893372,
+            0.14702726900577545,
+            0.3277781009674072,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "white",
+          "baseColor": [
+            1.0,
+            0.8713670969009399,
+            0.7230551242828369,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": [
+        "Basis",
+        "Blink",
+        "Look",
+        "Panic"
+      ]
+    },
+    {
+      "file": "public/assets/characters/caixa_paranoica.glb",
+      "bytes": 137248,
+      "meshObjects": 19,
+      "triangles": 3860,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.325,
+          -0.327,
+          -0.21
+        ],
+        "max": [
+          0.325,
+          0.2425,
+          0.2225
+        ],
+        "size": [
+          0.65,
+          0.5695,
+          0.4325
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.325,
+          -0.21,
+          -0.2425
+        ],
+        "max": [
+          0.325,
+          0.2225,
+          0.327
+        ],
+        "size": [
+          0.65,
+          0.4325,
+          0.5695
+        ]
+      },
+      "materials": [
+        {
+          "name": "7991ac",
+          "baseColor": [
+            0.19120168685913086,
+            0.28314873576164246,
+            0.4125426113605499,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "black",
+          "baseColor": [
+            0.008568125776946545,
+            0.005181516520678997,
+            0.017641954123973846,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "gold",
+          "baseColor": [
+            0.7912979125976562,
+            0.41788506507873535,
+            0.05951123684644699,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "pink",
+          "baseColor": [
+            0.9130986332893372,
+            0.14702726900577545,
+            0.3277781009674072,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "white",
+          "baseColor": [
+            1.0,
+            0.8713670969009399,
+            0.7230551242828369,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": [
+        "Basis",
+        "Blink",
+        "Look",
+        "Panic"
+      ]
+    },
+    {
+      "file": "public/assets/characters/nico.glb",
+      "bytes": 1161652,
+      "meshObjects": 15,
+      "triangles": 19852,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.9511,
+          -1.0,
+          -1.0
+        ],
+        "max": [
+          0.9511,
+          1.0,
+          1.9703
+        ],
+        "size": [
+          1.9021,
+          2.0,
+          2.9703
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.9511,
+          -1.0,
+          -1.0
+        ],
+        "max": [
+          0.9511,
+          1.9703,
+          1.0
+        ],
+        "size": [
+          1.9021,
+          2.9703,
+          2.0
+        ]
+      },
+      "materials": [
+        {
+          "name": "black",
+          "baseColor": [
+            0.008568125776946545,
+            0.005181516520678997,
+            0.017641954123973846,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "cheek",
+          "baseColor": [
+            0.8069522380828857,
+            0.26635560393333435,
+            0.25015828013420105,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "eye",
+          "baseColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "gold",
+          "baseColor": [
+            0.7912979125976562,
+            0.41788506507873535,
+            0.05951123684644699,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "hair",
+          "baseColor": [
+            0.04666508734226227,
+            0.014443843625485897,
+            0.022173885256052017,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "iris",
+          "baseColor": [
+            0.08865558356046677,
+            0.021219009533524513,
+            0.0423114113509655,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "navy",
+          "baseColor": [
+            0.014443843625485897,
+            0.023153366521000862,
+            0.0802198201417923,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "pink",
+          "baseColor": [
+            0.9130986332893372,
+            0.14702726900577545,
+            0.3277781009674072,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "red",
+          "baseColor": [
+            0.46207699179649353,
+            0.021219009533524513,
+            0.0802198201417923,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "skin",
+          "baseColor": [
+            0.8962693810462952,
+            0.47353148460388184,
+            0.25015828013420105,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "white",
+          "baseColor": [
+            1.0,
+            0.8713670969009399,
+            0.7230551242828369,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "wine",
+          "baseColor": [
+            0.15292614698410034,
+            0.014443843625485897,
+            0.05780543014407158,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [
+        "CarryRun_NicoRig",
+        "CarryWalk_NicoRig",
+        "Carry_NicoRig",
+        "Crouch_NicoRig",
+        "Hide_NicoRig",
+        "Idle_NicoRig",
+        "LookBack_NicoRig",
+        "Panic_NicoRig",
+        "Relief_NicoRig",
+        "Run_NicoRig",
+        "Stumble_NicoRig",
+        "Walk_NicoRig"
+      ],
+      "morphTargets": [
+        "Basis",
+        "Blink",
+        "Look",
+        "Panic"
+      ]
+    },
+    {
+      "file": "public/assets/characters/pacote_arrogante.glb",
+      "bytes": 133116,
+      "meshObjects": 19,
+      "triangles": 3728,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.285,
+          -0.2775,
+          -0.295
+        ],
+        "max": [
+          0.285,
+          0.1925,
+          0.3075
+        ],
+        "size": [
+          0.57,
+          0.47,
+          0.6025
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.285,
+          -0.295,
+          -0.1925
+        ],
+        "max": [
+          0.285,
+          0.3075,
+          0.2775
+        ],
+        "size": [
+          0.57,
+          0.6025,
+          0.47
+        ]
+      },
+      "materials": [
+        {
+          "name": "ad719d",
+          "baseColor": [
+            0.41788506507873535,
+            0.16513219475746155,
+            0.33716362714767456,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "black",
+          "baseColor": [
+            0.008568125776946545,
+            0.005181516520678997,
+            0.017641954123973846,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "gold",
+          "baseColor": [
+            0.7912979125976562,
+            0.41788506507873535,
+            0.05951123684644699,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "white",
+          "baseColor": [
+            1.0,
+            0.8713670969009399,
+            0.7230551242828369,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": [
+        "Basis",
+        "Blink",
+        "Look",
+        "Panic"
+      ]
+    },
+    {
+      "file": "public/assets/characters/porteiro.glb",
+      "bytes": 802408,
+      "meshObjects": 8,
+      "triangles": 14364,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.9511,
+          -1.0,
+          -1.0
+        ],
+        "max": [
+          0.9511,
+          1.0,
+          2.7238
+        ],
+        "size": [
+          1.9021,
+          2.0,
+          3.7238
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.9511,
+          -1.0,
+          -1.0
+        ],
+        "max": [
+          0.9511,
+          2.7238,
+          1.0
+        ],
+        "size": [
+          1.9021,
+          3.7238,
+          2.0
+        ]
+      },
+      "materials": [
+        {
+          "name": "black",
+          "baseColor": [
+            0.008568125776946545,
+            0.005181516520678997,
+            0.017641954123973846,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "fff078",
+          "baseColor": [
+            1.0,
+            0.8713670969009399,
+            0.18782077729701996,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "gold",
+          "baseColor": [
+            0.7912979125976562,
+            0.41788506507873535,
+            0.05951123684644699,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "pink",
+          "baseColor": [
+            0.9130986332893372,
+            0.14702726900577545,
+            0.3277781009674072,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "red",
+          "baseColor": [
+            0.46207699179649353,
+            0.021219009533524513,
+            0.0802198201417923,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "white",
+          "baseColor": [
+            1.0,
+            0.8713670969009399,
+            0.7230551242828369,
+            1.0
+          ],
+          "roughness": 0.7200000286102295,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [
+        "Chase_PorteiroRig",
+        "Confused_PorteiroRig",
+        "Idle_PorteiroRig",
+        "Investigate_PorteiroRig",
+        "Listen_PorteiroRig",
+        "Patrol_PorteiroRig",
+        "Return_PorteiroRig",
+        "Search_PorteiroRig"
+      ],
+      "morphTargets": [
+        "Basis",
+        "Blink"
+      ]
+    },
+    {
+      "file": "public/assets/environment/chairRounded.glb",
+      "bytes": 17196,
+      "meshObjects": 1,
+      "triangles": 280,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.2088,
+          -0.2088,
+          0.0
+        ],
+        "max": [
+          0.2088,
+          0.2088,
+          0.95
+        ],
+        "size": [
+          0.4176,
+          0.4176,
+          0.95
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.2088,
+          0.0,
+          -0.2088
+        ],
+        "max": [
+          0.2088,
+          0.95,
+          0.2088
+        ],
+        "size": [
+          0.4176,
+          0.95,
+          0.4176
+        ]
+      },
+      "materials": [
+        {
+          "name": "chairRounded0",
+          "baseColor": [
+            0.12743768095970154,
+            0.022173885256052017,
+            0.07818742096424103,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "chairRounded1",
+          "baseColor": [
+            0.6938717365264893,
+            0.366252601146698,
+            0.06480326503515244,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/hotelBeacon.glb",
+      "bytes": 62128,
+      "meshObjects": 3,
+      "triangles": 2300,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.205,
+          -0.205,
+          0.0
+        ],
+        "max": [
+          0.205,
+          0.205,
+          0.36
+        ],
+        "size": [
+          0.41,
+          0.41,
+          0.36
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.205,
+          0.0,
+          -0.205
+        ],
+        "max": [
+          0.205,
+          0.36,
+          0.205
+        ],
+        "size": [
+          0.41,
+          0.36,
+          0.41
+        ]
+      },
+      "materials": [
+        {
+          "name": "Bellmare objective brass",
+          "baseColor": [
+            0.8962693810462952,
+            0.4910208582878113,
+            0.12213877588510513,
+            1.0
+          ],
+          "roughness": 0.2199999988079071,
+          "metallic": 0.7400000095367432,
+          "images": []
+        },
+        {
+          "name": "Bellmare objective enamel",
+          "baseColor": [
+            0.09305896610021591,
+            0.5028864741325378,
+            0.42869049310684204,
+            1.0
+          ],
+          "roughness": 0.4000000059604645,
+          "metallic": 0.019999999552965164,
+          "images": []
+        },
+        {
+          "name": "Bellmare objective glow",
+          "baseColor": [
+            1.0,
+            0.8962693810462952,
+            0.68668532371521,
+            1.0
+          ],
+          "roughness": 0.20000000298023224,
+          "metallic": 0.07999999821186066,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/hotelDoor.glb",
+      "bytes": 153976,
+      "meshObjects": 5,
+      "triangles": 5380,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.99,
+          -0.4038,
+          -1.45
+        ],
+        "max": [
+          0.99,
+          0.15,
+          1.48
+        ],
+        "size": [
+          1.98,
+          0.5538,
+          2.93
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.99,
+          -1.45,
+          -0.15
+        ],
+        "max": [
+          0.99,
+          1.48,
+          0.4038
+        ],
+        "size": [
+          1.98,
+          2.93,
+          0.5538
+        ]
+      },
+      "materials": [
+        {
+          "name": "Bellmare coral door",
+          "baseColor": [
+            0.8631572127342224,
+            0.2158605009317398,
+            0.15896083414554596,
+            1.0
+          ],
+          "roughness": 0.4300000071525574,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare door brass",
+          "baseColor": [
+            0.8962693810462952,
+            0.4910208582878113,
+            0.12213877588510513,
+            1.0
+          ],
+          "roughness": 0.27000001072883606,
+          "metallic": 0.6600000262260437,
+          "images": []
+        },
+        {
+          "name": "Bellmare door champagne",
+          "baseColor": [
+            1.0,
+            0.8713670969009399,
+            0.5840784311294556,
+            1.0
+          ],
+          "roughness": 0.23000000417232513,
+          "metallic": 0.5600000023841858,
+          "images": []
+        },
+        {
+          "name": "Bellmare door shadow",
+          "baseColor": [
+            0.03071344457566738,
+            0.09305896610021591,
+            0.1441284716129303,
+            1.0
+          ],
+          "roughness": 0.5799999833106995,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare sea-glass door inset",
+          "baseColor": [
+            0.09305896610021591,
+            0.5028864741325378,
+            0.42869049310684204,
+            1.0
+          ],
+          "roughness": 0.5,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/hotelFloorPatch.glb",
+      "bytes": 21636,
+      "meshObjects": 3,
+      "triangles": 1020,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.5,
+          -0.5,
+          -0.06
+        ],
+        "max": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "size": [
+          1.0,
+          1.0,
+          0.06
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.5,
+          -0.06,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.0,
+          0.5
+        ],
+        "size": [
+          1.0,
+          0.06,
+          1.0
+        ]
+      },
+      "materials": [
+        {
+          "name": "Bellmare blue-gray paver patch",
+          "baseColor": [
+            0.22696587443351746,
+            0.3967552185058594,
+            0.43965718150138855,
+            1.0
+          ],
+          "roughness": 0.8199999928474426,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare cool sea-glass grout patch",
+          "baseColor": [
+            0.12743768095970154,
+            0.26635560393333435,
+            0.31398871541023254,
+            1.0
+          ],
+          "roughness": 0.8299999833106995,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare mist paver patch",
+          "baseColor": [
+            0.32314321398735046,
+            0.4910208582878113,
+            0.4793201684951782,
+            1.0
+          ],
+          "roughness": 0.8399999737739563,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/hotelFloorTile.glb",
+      "bytes": 11636,
+      "meshObjects": 3,
+      "triangles": 396,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.25,
+          -0.25,
+          -0.06
+        ],
+        "max": [
+          0.25,
+          0.25,
+          0.0
+        ],
+        "size": [
+          0.5,
+          0.5,
+          0.06
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.25,
+          -0.06,
+          -0.25
+        ],
+        "max": [
+          0.25,
+          0.0,
+          0.25
+        ],
+        "size": [
+          0.5,
+          0.06,
+          0.5
+        ]
+      },
+      "materials": [
+        {
+          "name": "Bellmare blue-gray paver",
+          "baseColor": [
+            0.22696587443351746,
+            0.3967552185058594,
+            0.43965718150138855,
+            1.0
+          ],
+          "roughness": 0.8199999928474426,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare cool sea-glass grout",
+          "baseColor": [
+            0.12743768095970154,
+            0.26635560393333435,
+            0.31398871541023254,
+            1.0
+          ],
+          "roughness": 0.8299999833106995,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare mist paver",
+          "baseColor": [
+            0.32314321398735046,
+            0.4910208582878113,
+            0.4793201684951782,
+            1.0
+          ],
+          "roughness": 0.8399999737739563,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/hotelParcelStack.glb",
+      "bytes": 51944,
+      "meshObjects": 3,
+      "triangles": 1548,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.235,
+          -0.23,
+          -0.0111
+        ],
+        "max": [
+          0.4794,
+          0.4709,
+          0.584
+        ],
+        "size": [
+          0.7144,
+          0.7009,
+          0.5951
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.235,
+          -0.0111,
+          -0.4709
+        ],
+        "max": [
+          0.4794,
+          0.584,
+          0.23
+        ],
+        "size": [
+          0.7144,
+          0.5951,
+          0.7009
+        ]
+      },
+      "materials": [
+        {
+          "name": "Bellmare parcel address paper",
+          "baseColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughness": 0.8799999952316284,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare parcel teal cloth tape",
+          "baseColor": [
+            0.09305896610021591,
+            0.5028864741325378,
+            0.42869049310684204,
+            1.0
+          ],
+          "roughness": 0.7400000095367432,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Kenney CC0 paper carton",
+          "baseColor": [
+            0.7758222222328186,
+            0.41788506507873535,
+            0.13563333451747894,
+            1.0
+          ],
+          "roughness": 0.7599999904632568,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/hotelSconce.glb",
+      "bytes": 95180,
+      "meshObjects": 4,
+      "triangles": 3532,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.2407,
+          -0.4975,
+          -0.295
+        ],
+        "max": [
+          0.2407,
+          0.05,
+          0.295
+        ],
+        "size": [
+          0.4814,
+          0.5475,
+          0.59
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.2407,
+          -0.295,
+          -0.05
+        ],
+        "max": [
+          0.2407,
+          0.295,
+          0.4975
+        ],
+        "size": [
+          0.4814,
+          0.59,
+          0.5475
+        ]
+      },
+      "materials": [
+        {
+          "name": "Bellmare amber glass",
+          "baseColor": [
+            1.0,
+            0.7529422044754028,
+            0.2541520893573761,
+            1.0
+          ],
+          "roughness": 0.2199999988079071,
+          "metallic": 0.05000000074505806,
+          "images": []
+        },
+        {
+          "name": "Bellmare sconce brass",
+          "baseColor": [
+            0.8962693810462952,
+            0.4910208582878113,
+            0.12213877588510513,
+            1.0
+          ],
+          "roughness": 0.25999999046325684,
+          "metallic": 0.7200000286102295,
+          "images": []
+        },
+        {
+          "name": "Bellmare sconce enamel",
+          "baseColor": [
+            0.09305896610021591,
+            0.5028864741325378,
+            0.42869049310684204,
+            1.0
+          ],
+          "roughness": 0.4300000071525574,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare sconce trim",
+          "baseColor": [
+            1.0,
+            0.8713670969009399,
+            0.5840784311294556,
+            1.0
+          ],
+          "roughness": 0.23000000417232513,
+          "metallic": 0.5400000214576721,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/hotelTelephone.glb",
+      "bytes": 170196,
+      "meshObjects": 4,
+      "triangles": 6216,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.1573,
+          -0.12,
+          0.015
+        ],
+        "max": [
+          0.155,
+          0.1712,
+          0.28
+        ],
+        "size": [
+          0.3123,
+          0.2912,
+          0.265
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.1573,
+          0.015,
+          -0.1712
+        ],
+        "max": [
+          0.155,
+          0.28,
+          0.12
+        ],
+        "size": [
+          0.3123,
+          0.265,
+          0.2912
+        ]
+      },
+      "materials": [
+        {
+          "name": "Bellmare telephone brass",
+          "baseColor": [
+            0.8962693810462952,
+            0.4910208582878113,
+            0.12213877588510513,
+            1.0
+          ],
+          "roughness": 0.23000000417232513,
+          "metallic": 0.7200000286102295,
+          "images": []
+        },
+        {
+          "name": "Bellmare telephone enamel",
+          "baseColor": [
+            0.8631572127342224,
+            0.2158605009317398,
+            0.15896083414554596,
+            1.0
+          ],
+          "roughness": 0.3799999952316284,
+          "metallic": 0.019999999552965164,
+          "images": []
+        },
+        {
+          "name": "Bellmare telephone ivory",
+          "baseColor": [
+            1.0,
+            0.8962693810462952,
+            0.68668532371521,
+            1.0
+          ],
+          "roughness": 0.25999999046325684,
+          "metallic": 0.11999999731779099,
+          "images": []
+        },
+        {
+          "name": "Bellmare telephone underside",
+          "baseColor": [
+            0.03071344457566738,
+            0.09305896610021591,
+            0.1441284716129303,
+            1.0
+          ],
+          "roughness": 0.49000000953674316,
+          "metallic": 0.05000000074505806,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/hotelWallPanel.glb",
+      "bytes": 209580,
+      "meshObjects": 7,
+      "triangles": 7464,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.995,
+          -0.245,
+          -1.51
+        ],
+        "max": [
+          0.995,
+          0.05,
+          1.645
+        ],
+        "size": [
+          1.99,
+          0.295,
+          3.155
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.995,
+          -1.51,
+          -0.05
+        ],
+        "max": [
+          0.995,
+          1.645,
+          0.245
+        ],
+        "size": [
+          1.99,
+          3.155,
+          0.295
+        ]
+      },
+      "materials": [
+        {
+          "name": "Bellmare blush piping",
+          "baseColor": [
+            0.9130986332893372,
+            0.4125426113605499,
+            0.28744083642959595,
+            1.0
+          ],
+          "roughness": 0.47999998927116394,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare coral lower panel",
+          "baseColor": [
+            0.8631572127342224,
+            0.2158605009317398,
+            0.15896083414554596,
+            1.0
+          ],
+          "roughness": 0.5,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare honey details",
+          "baseColor": [
+            0.8962693810462952,
+            0.4910208582878113,
+            0.12213877588510513,
+            1.0
+          ],
+          "roughness": 0.3400000035762787,
+          "metallic": 0.14000000059604645,
+          "images": []
+        },
+        {
+          "name": "Bellmare leaf accent",
+          "baseColor": [
+            0.17144110798835754,
+            0.5840784311294556,
+            0.27049779891967773,
+            1.0
+          ],
+          "roughness": 0.5400000214576721,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare sea-glass enamel",
+          "baseColor": [
+            0.09305896610021591,
+            0.5028864741325378,
+            0.42869049310684204,
+            1.0
+          ],
+          "roughness": 0.5600000023841858,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare soft blue inset",
+          "baseColor": [
+            0.3967552185058594,
+            0.5840784311294556,
+            0.8631572127342224,
+            1.0
+          ],
+          "roughness": 0.550000011920929,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare warm ivory trim",
+          "baseColor": [
+            1.0,
+            0.8962693810462952,
+            0.68668532371521,
+            1.0
+          ],
+          "roughness": 0.4300000071525574,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/hotelWardrobe.glb",
+      "bytes": 185188,
+      "meshObjects": 4,
+      "triangles": 5958,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.29,
+          -0.53,
+          0.0
+        ],
+        "max": [
+          0.48,
+          1.0,
+          2.0975
+        ],
+        "size": [
+          0.77,
+          1.53,
+          2.0975
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.29,
+          0.0,
+          -1.0
+        ],
+        "max": [
+          0.48,
+          2.0975,
+          0.53
+        ],
+        "size": [
+          0.77,
+          2.0975,
+          1.53
+        ]
+      },
+      "materials": [
+        {
+          "name": "Bellmare armoire brass details",
+          "baseColor": [
+            0.8962693810462952,
+            0.4910208582878113,
+            0.12213877588510513,
+            1.0
+          ],
+          "roughness": 0.2800000011920929,
+          "metallic": 0.6600000262260437,
+          "images": []
+        },
+        {
+          "name": "Bellmare armoire coral",
+          "baseColor": [
+            0.8631572127342224,
+            0.2158605009317398,
+            0.15896083414554596,
+            1.0
+          ],
+          "roughness": 0.6299999952316284,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "Bellmare armoire enamel",
+          "baseColor": [
+            1.0,
+            0.8713670969009399,
+            0.5840784311294556,
+            1.0
+          ],
+          "roughness": 0.23999999463558197,
+          "metallic": 0.4000000059604645,
+          "images": []
+        },
+        {
+          "name": "Kenney CC0 wood recolored Bellmare",
+          "baseColor": [
+            0.09305896610021591,
+            0.5028864741325378,
+            0.42869049310684204,
+            1.0
+          ],
+          "roughness": 0.4300000071525574,
+          "metallic": 0.019999999552965164,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/lampRoundTable.glb",
+      "bytes": 6460,
+      "meshObjects": 1,
+      "triangles": 76,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.0726,
+          -0.0838,
+          0.0
+        ],
+        "max": [
+          0.0726,
+          0.0838,
+          0.3
+        ],
+        "size": [
+          0.1451,
+          0.1676,
+          0.3
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.0726,
+          0.0,
+          -0.0838
+        ],
+        "max": [
+          0.0726,
+          0.3,
+          0.0838
+        ],
+        "size": [
+          0.1451,
+          0.3,
+          0.1676
+        ]
+      },
+      "materials": [
+        {
+          "name": "lampRoundTable0",
+          "baseColor": [
+            0.7083757519721985,
+            0.3915724754333496,
+            0.07421357184648514,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "lampRoundTable1",
+          "baseColor": [
+            1.0,
+            0.7681511640548706,
+            0.366252601146698,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/plantSmall1.glb",
+      "bytes": 8536,
+      "meshObjects": 1,
+      "triangles": 102,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.3305,
+          -0.3305,
+          0.0
+        ],
+        "max": [
+          0.3305,
+          0.3305,
+          1.15
+        ],
+        "size": [
+          0.6609,
+          0.6609,
+          1.15
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.3305,
+          0.0,
+          -0.3305
+        ],
+        "max": [
+          0.3305,
+          1.15,
+          0.3305
+        ],
+        "size": [
+          0.6609,
+          1.15,
+          0.6609
+        ]
+      },
+      "materials": [
+        {
+          "name": "plantSmall10",
+          "baseColor": [
+            0.4677838087081909,
+            0.2622506618499756,
+            0.05612849071621895,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "plantSmall11",
+          "baseColor": [
+            0.07618538290262222,
+            0.3277781009674072,
+            0.177888423204422,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    },
+    {
+      "file": "public/assets/environment/sideTableDrawers.glb",
+      "bytes": 17888,
+      "meshObjects": 3,
+      "triangles": 238,
+      "boundsBlenderXYZ": {
+        "min": [
+          -0.3395,
+          -0.214,
+          0.0
+        ],
+        "max": [
+          0.3395,
+          0.214,
+          0.74
+        ],
+        "size": [
+          0.6791,
+          0.4279,
+          0.74
+        ]
+      },
+      "boundsGameXYZ": {
+        "min": [
+          -0.3395,
+          0.0,
+          -0.214
+        ],
+        "max": [
+          0.3395,
+          0.74,
+          0.214
+        ],
+        "size": [
+          0.6791,
+          0.74,
+          0.4279
+        ]
+      },
+      "materials": [
+        {
+          "name": "sideTableDrawers0",
+          "baseColor": [
+            0.0666259378194809,
+            0.015208514407277107,
+            0.0423114113509655,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "sideTableDrawers0.001",
+          "baseColor": [
+            0.0666259378194809,
+            0.015208514407277107,
+            0.0423114113509655,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "sideTableDrawers0.002",
+          "baseColor": [
+            0.0666259378194809,
+            0.015208514407277107,
+            0.0423114113509655,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0,
+          "images": []
+        },
+        {
+          "name": "sideTableDrawers1.002",
+          "baseColor": [
+            0.7230551242828369,
+            0.3967552185058594,
+            0.06301001459360123,
+            1.0
+          ],
+          "roughness": 0.699999988079071,
+          "metallic": 0.0,
+          "images": []
+        }
+      ],
+      "actions": [],
+      "morphTargets": []
+    }
+  ],
+  "legacyAtlas": {
+    "file": "public/assets/textures/bellmare-atlas.png",
+    "bytes": 1858802,
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "runtimeLoaded": false,
+    "note": "Retained as project source; removed from the gameplay startup to avoid its dark palette and 1.86 MB download."
+  },
+  "visualSceneAudit": {
+    "logicalLayout": "Tecnico/hotel_bellmare_layout_v1.json; not changed",
+    "primitiveRepresentationsReplaced": [
+      "Half-metre floor boxes -> rounded stone GLB clusters, grouped in one-metre patches with half-cell edge tiles",
+      "Flat wall panel compositions -> rounded Blender GLB modules",
+      "Box doors -> rounded Blender GLB doors",
+      "Primitive lamp fixtures -> sculpted GLB sconces",
+      "Box hiding-place silhouettes -> beveled Kenney CC0 cabinets, remodeled in Blender",
+      "Cone delivery marker -> animated multi-material GLB beacon",
+      "Placeholder obstacle box pile -> Kenney CC0 parcel model, recolored and rounded in Blender",
+      "Telephone-only marker -> Kenney CC0 table with sculpted rotary telephone GLB"
+    ],
+    "visiblePrimitivesRemaining": [
+      "Thin carpet/runner sheets and their narrow border strips",
+      "Merged box wall backing and ceiling shell under/behind the GLB facade modules",
+      "Canvas-textured flat signs on the wall"
+    ],
+    "collisionPrimitives": "Remain logical-only in level.ts; no collision or route geometry changed"
+  }
+}

@@ -66,7 +66,8 @@ test('toque emulado permite joystick + SHHH sem girar câmera', async ({ browser
   await page.getByTestId('mode').selectOption('1');
   await page.locator('#quality').selectOption('low');
   await page.getByTestId('start').tap();
-  await expect.poll(async () => (await snap(page)).time).toBeGreaterThan(0.1);
+  await expect(page.getByTestId('context')).toContainText('Pegar', { timeout: 60000 });
+  await expect.poll(async () => (await snap(page)).time, { timeout: 30000 }).toBeGreaterThan(0.1);
   const session = await context.newCDPSession(page),
     j = (await page.getByTestId('joystick').boundingBox())!,
     b = (await page.getByTestId('shush').boundingBox())!,

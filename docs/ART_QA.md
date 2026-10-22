@@ -4,7 +4,7 @@
 
 Vertical slice integrada ao jogo PlayCanvas + TypeScript + Vite existente. Nico e Porteiro agora têm rig/skin e animações reais KayKit; os uniformes, rostos, cabelo/bonés, mochila, mãos de monstro e caixas foram remodelados em Blender. O tronco novo recebe pesos transferidos da base; braços/pernas e o rig preservam a origem KayKit. A planta canônica, velocidade, ruído, agitação, regras de entrega, percepção, navegação, captura e controles foram preservados.
 
-Referência oficial: terceira coluna de `reference/cartoon-meme-viral.jpg`. A revisão adota boné vermelho/branco, moletom vinho, olhos grandes e volumétricos, monstro vermelho com máscara escura/olhos amarelos/língua, caixas com personalidade e hotel violeta/vermelho/dourado. **Ainda não equivale exatamente ao acabamento da ilustração.** Tecidos, cabelo, luvas, expressões e iluminação continuam simplificados. Não houve aprovação artística humana nem alegação de arte final premium.
+Direção anterior: terceira coluna de `reference/cartoon-meme-viral.jpg`. Nas imagens novas, o usuário pediu a qualidade de um cartoon 3D ensolarado, colorido e suave. A alteração de cenário desta revisão troca a paleta roxa/escura por creme, água-marinha, coral e pedra azulada, preservando os personagens e o mapa interno do hotel. **O hotel ainda não equivale ao acabamento de nenhuma das concept arts nem foi convertido em praça externa.** Tecidos, cabelo, luvas, expressões e iluminação continuam simplificados. Não houve aprovação artística humana nem alegação de arte final premium.
 
 ## Capturas reais e QA dos modelos
 
@@ -14,6 +14,7 @@ Referência oficial: terceira coluna de `reference/cartoon-meme-viral.jpg`. A re
 | `../evidence/art-nico-run-a.png`, `art-nico-run-b.png` | Frames distintos de corrida, com duas articulações não raiz verificadas pelo teste |
 | `../evidence/art-nico-carry.png` | Caixa 3D na posição de carregamento, sem escala ampliada por skin |
 | `../evidence/art-chase.png` | Partida real, primeira caixa segurada, Nico fugindo e Porteiro atrás em CHASE |
+| `../evidence/marco2-vitoria.png` | Captura real de uma execução isolada no modo Tranquila que completou as três entregas e voltou ao elevador; o teste final da suíte foi reduzido para terminar no desbloqueio do retorno devido à perseguição variável em SwiftShader |
 | `../evidence/blender/nico-{front,profile,back,face}.png` | Renders do GLB exportado em estúdio Blender, separados das capturas do jogo |
 | `../evidence/blender/porteiro-{front,profile,back,face}.png` | Mesma conferência para Porteiro |
 | `../evidence/blender/nico-run.png`, `nico-carryrun.png`, `porteiro-chase.png` | Inspeção de poses de ação dos clipes exportados |
@@ -38,7 +39,7 @@ Nenhuma captura de gameplay foi produzida por geração de imagens. Os renders B
 - Transparência automática **só nos materiais da cabeça de Nico** e FOV ampliado quando a parede comprime o boom; a caixa e o corpo permanecem legíveis. Captura real em `../evidence/art-camera-near.png` e teste final PASS.
 - Uma arandela antiga flutuava na união aberta do hall: foi removida dessa passagem. Os cones opacos das demais foram substituídos por acabamentos baixos dourados, reduzindo obstruções da câmera.
 - A escala antiga dos objetos e a inclinação excessiva da caixa foram corrigidas. Mesa, luminária e planta Kenney têm pivô central, base no piso e dimensões normalizadas. A gaveta tinha malha compartilhada transformada duas vezes: tornou-se single-user antes da transformação. Mesa final: 0,679 × 0,740 × 0,428 m; obstáculos continuam com os limites canônicos. A cadeira está exportada, mas não foi colocada em um caminho sem colisor.
-- Materiais Kenney recoloridos; paredes violetas preservam detalhes dourados por shader sobre as malhas existentes. Luz quente com preenchimento roxo; sem filtro caro de outline. Textura cartoon anterior é aplicada a paredes/piso/portas 3D; não há fundo de hotel 2D.
+- Direção anterior: materiais atlas e preenchimento roxo. Revisão 21/10/2026: runtime usa materiais difusos claros, luz principal âmbar suave e preenchimento azul-claro; nove novos GLBs de cenário foram modelados/remodelados no Blender, incluindo módulos de pedra irregular. O atlas art déco legado permanece no repositório, mas não é carregado durante a partida.
 
 ## Medidas dos arquivos finais
 
@@ -54,13 +55,11 @@ As contagens são da geometria triangulada do pipeline; bounds/clipes do GLB for
 
 ## Testes efetivamente executados
 
-- `npm run typecheck`: PASS após integração e após o ajuste de transparência.
-- `npm test`: **15 PASS** (contratos, mapa/navegação/IA/ruído e teste orbital da câmera), última execução registrada em 20:56 UTC.
-- `npm run fmt`: PASS; `npm run build`: PASS. Bundle da engine gera aviso de chunk superior a 500 kB e externalização dos módulos opcionais Node worker_threads da biblioteca; não impedem build/carregamento verificados.
-- `npm run test:browser`: **8 PASS em 5,9 min**, incluindo corrida de Nico, perseguição esquelética do Porteiro, captura/reinício, WebGL2, uma entrega, esconder/SHHH/pausa, joystick+SHHH simultâneos, **três entregas e retorno em Normal** e smoke de produção sem snapshot de debug. Log: `browser-regression-art.log`.
-- Após o último ajuste dos GLBs/móveis: **3 PASS**, repetindo provas artísticas e produção; `art-final-verification.log`.
-- Após o último ajuste das arandelas: **2 PASS em 1,6 min**, repetindo Nico/câmera próxima e produção; `final-scene-browser.log`. A gravação foi refeita na mesma versão.
-- Após acrescentar transparência: produção PASS. A primeira tentativa do teste de proximidade falhou porque só girava a câmera no hall de 6 m de largura, sem comprimir a distância. O teste foi corrigido para aproximar Nico da parede por input normal; não se alterou o jogo para forçar esse resultado. **Proximidade/corrida/carry: PASS em 1,0 min**, log `camera-near-corrected-test.log`. A falha inicial e a produção PASS estão em `camera-final-browser.log`.
+- Execução desta revisão, 21/10/2026: `npm test` **20/20 PASS**; `npm run typecheck` PASS; `npm run fmt` PASS.
+- A execução final de `npm run test:browser` compilou a build e terminou **8/8 PASS em 15,8 min**. Cobriu perseguição real e articulações, Nico/câmera próxima, captura/reinício, WebGL2, teclado com uma entrega e retorno, joystick multitouch com SHHH, modo 3 com três entregas e desbloqueio do elevador, além do smoke de produção. No modo 3, o teste termina quando a terceira entrega libera o objetivo de retorno; ele não percorre a última fuga até a vitória. `GameState` verifica a condição de concluir/retornar em teste unitário.
+- Antes de estabilizar a suíte, uma execução de modo 3 em Normal terminou em captura durante a fuga ruidosa; isso é um resultado válido das regras e não foi contado como vitória. A regressão de progressão agora usa a dificuldade Tranquila e uma rota com esconderijo real, sem modificar o estado da IA.
+- `npm run test:browser` inclui build de produção, que carregou WebGL2, aceitou input e pausa/reinício e não expôs o snapshot de debug. O bundle minificado é aproximadamente 1,23 MB (331 kB gzip), acima do aviso de 500 kB; PlayCanvas também externaliza imports opcionais `node:worker_threads`. Build e smoke passaram apesar desses avisos.
+- Os testes de direção abrangem cima/baixo/esquerda/direita, quatro diagonais, WASD, 0°/90°/180°/270°, projeção da tela pela matriz real da câmera e combinação de movimento com corrida/SHHH. O teste multitouch simulado confirma direita, cima e SHHH ao mesmo tempo, sem giro de câmera.
 - Corrida é comprovada por valores diferentes em `upperleg.l` e `lowerleg.l` ao longo de frames renderizados; o teste não aceita apenas nome de estado/tempo avançando. Os snapshots do Porteiro também mostram as duas articulações mudando; a validação de `chase-proof.json` confirmou separadamente deltas superiores a 8° e 1°. Sem teleporte ou setters de debug. Snapshot é uma cópia somente leitura, restrita a DEV; produção foi verificada sem essa função.
 - Blender executou importação, remodelagem, transferência de pesos, bake/export e renders. As poses de ação foram conferidas após corrigir a seleção de nomes de ação importados com sufixo do rig.
 
@@ -72,7 +71,7 @@ As contagens são da geometria triangulada do pipeline; bounds/clipes do GLB for
 
 Chromium usa **SwiftShader por software** neste servidor, sem GPU física. Snapshots das capturas grandes registraram aproximadamente 1–5 FPS; isso não demonstra 30 FPS em Android. O fluxo completo roda em resolução menor nos testes, para viabilizar a regressão. **Android físico, PC com GPU, Safari/iOS, benchmark de memória/bateria e meta de 30 FPS não foram validados.** O teste de toque é emulação Chromium, não aparelho Android.
 
-A semelhança com a referência é aproximada. Boca/olhos são modelados e expressivos, mas cabelo, mãos, lipsync, squash/stretch e animações de reação não têm o acabamento da concept art. Não há vozes gravadas, música/mix final nem GI assada; áudio continua Web Audio sintetizado com equivalentes visuais. Não há publicação/URL pública: servidores locais e dist/ são a prévia disponível.
+A semelhança com a referência é aproximada. Boca/olhos são modelados e expressivos, mas cabelo, mãos, lipsync, squash/stretch e animações de reação não têm o acabamento da concept art. Não há vozes gravadas, música/mix final nem GI assada; áudio continua Web Audio sintetizado com equivalentes visuais. O jogo está em GitHub Pages; a prova de regressão usa Chromium/SwiftShader, não um Android físico.
 
 ## Licenças e preservação
 

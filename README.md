@@ -1,10 +1,10 @@
 # 3:33 — Não Faz Barulho!
 
-Jogo 3D local single-player em **PlayCanvas + TypeScript + Vite**, com direção cartoon 3D. Marcos 0–2 verificados: uma entrega e três entregas jogáveis, vitória, captura e reinício. Arte/áudio finais e validação em Android físico continuam parciais. O repositório é autossuficiente para build; o JSON técnico versionado em `Tecnico/hotel_bellmare_layout_v1.json` é a única fonte geométrica do runtime; mantém os mesmos bytes do kit original. Concept arts não entram no bundle.
+Jogo 3D single-player em **PlayCanvas + TypeScript + Vite**, publicado em [GitHub Pages](https://sml98.github.io/333-nao-faz-barulho/). Marcos 0–2 verificados: entrega no navegador, progressão pelas três encomendas até liberar o retorno, captura e reinício; os contratos de vitória e retorno também passam nos testes de estado. Layout e colisões vêm do JSON técnico versionado `Tecnico/hotel_bellmare_layout_v1.json`; o arquivo canônico não é modificado pela direção de arte. Arte/áudio finais e validação em Android físico continuam parciais.
 
 ## Executar
 
-Requer Node **22.23.2+** (ambiente usado: 24.19.0).
+Requer Node **22.23.2+** (ambiente usado: 24.19.0). Para jogar a versão publicada, abra <https://sml98.github.io/333-nao-faz-barulho/>. O link funciona no navegador Android e PC; em celular, use Chrome/Chromium com a tela na horizontal.
 
 ```bash
 cd /workspace/333/bellmare-333
@@ -46,13 +46,13 @@ npm start
 
 ## Publicação estática opcional
 
-Depois de `npm run build`, hospede **somente o conteúdo de `dist/`** em servidor estático HTTPS. Não publique `node_modules`, referências ou credenciais. O jogo não precisa de backend. Nenhuma conta, compra ou hospedagem externa foi criada. A build não inclui a função de debug `window.snapshot()`; ela existe só em desenvolvimento e retorna uma cópia, sem mutadores.
+O GitHub Pages entrega o conteúdo estático de `dist/`; o jogo não precisa de backend. A build pública não inclui a função de debug `window.snapshot()`; ela existe só em desenvolvimento e retorna uma cópia, sem mutadores. A compatibilidade em aparelho físico não foi testada.
 
 ## Limitações
 
 Personagens foram reconstruídos a partir de bases KayKit **CC0**, com rig e corrida reais, uniformes/rostos remodelados em Blender, morph targets e transições `Anim`. Móveis selecionados são Kenney CC0. A comparação Quaternius não entrou no produto. Fontes, licenças e SHA-256: `docs/ASSET_AUDIT.md` e `docs/ASSET_MANIFEST.csv`.
 
-O visual segue a terceira referência MEME/VIRAL, mas não corresponde exatamente à ilustração. A expressão e o movimento ainda precisam de polimento artístico. Não houve validação em Android físico ou comprovação de 30 FPS. Chromium/SwiftShader deste ambiente renderiza por software e não representa um telefone ou PC com GPU. Áudio continua sintetizado, sem dublagem/música final. Não foi criada uma URL pública.
+O hotel mantém seu mapa interno, com uma nova paleta de dia, pedras arredondadas, painéis 3D e portas/móveis estilizados. As imagens recentes de praça ensolarada orientam cor e formas; não foi criada uma praça externa e o resultado ainda não iguala uma concept art premium. Não houve validação em Android físico ou comprovação de 30 FPS. Chromium/SwiftShader deste ambiente renderiza por software e não representa um telefone ou PC com GPU. Áudio continua sintetizado, sem dublagem/música final.
 
 ## Pipeline de arte executado
 
@@ -62,7 +62,10 @@ Blender **4.3.2**, sem serviços pagos. Os GLBs prontos já estão no projeto; B
 python scripts/fetch_art_sources.py
 blender -b --python scripts/character_build.py -- all
 blender -b --python scripts/prepare_kenney.py
+blender -b --python scripts/build_hotel_models.py
 blender -b --python scripts/render_character_qa.py
+blender -b --python scripts/render_hotel_modules.py
+blender -b --python scripts/audit_art_assets.py
 python scripts/asset_manifest.py
 ```
 
@@ -76,7 +79,10 @@ O script de aquisição usa URLs oficiais verificadas e confere SHA-256. O pack 
 - `evidence/art-nico-carry.png`: caixa sustentada durante a partida.
 - `evidence/art-chase.png`: perseguição real com caixa e Porteiro em CHASE.
 - `evidence/art-camera-near.png`: transparência da cabeça quando a câmera é comprimida pela parede.
-- 15 testes de lógica/câmera, regressão de 8 testes de navegador, 3 verificações após polimento e teste específico de proximidade passaram; detalhes e tentativas em `docs/ART_QA.md`.
+- `evidence/cartoon-gameplay-producao.png`: captura de gameplay da build de produção após o ajuste de luz/paleta e cenário.
+- `evidence/blender/hotel-modules.png`: conferência dos GLBs de cenário no Blender.
+- Testes direcionais e de projeção de tela, emulação multitouch, produção e regressões estão documentados em `docs/ANDROID_TOUCH.md` e `docs/ART_QA.md`.
+- Auditoria visual em `docs/ART_SCENE_AUDIT.md`; avaliação de motores em `docs/ENGINE_ASSESSMENT.md`; inventário GLB em `docs/art-scene-audit.json`.
 - `evidence/blender/`: frente, perfil, costas e rosto dos GLBs.
 - `docs/ART_QA.md`: testes e limitações desta revisão. `QA_REPORT.md` registra a versão anterior.
 - `dist/`: build estática; prévia local na porta 4173.

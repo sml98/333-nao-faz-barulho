@@ -1,10 +1,9 @@
-import { Asset, AppBase, Entity, Texture, StandardMaterial, Color, Vec2 } from 'playcanvas';
+import { Asset, AppBase, Entity, StandardMaterial } from 'playcanvas';
 import type { ContainerResource } from 'playcanvas';
 import type { Actor } from './scene';
 import { attachAnimation } from './characterAnimation';
 export interface GameAssets {
   models: Record<string, Asset>;
-  atlas: Texture;
 }
 function load(app: AppBase, name: string, type: string, url: string): Promise<Asset> {
   return new Promise((resolve, reject) => {
@@ -25,27 +24,35 @@ export async function loadAssets(app: AppBase): Promise<GameAssets> {
     'sideTableDrawers',
     'lampRoundTable',
     'plantSmall1',
+    'hotelFloorTile',
+    'hotelFloorPatch',
+    'hotelWallPanel',
+    'hotelDoor',
+    'hotelSconce',
+    'hotelWardrobe',
+    'hotelBeacon',
+    'hotelTelephone',
+    'hotelParcelStack',
   ];
+  const characters = new Set([
+    'nico',
+    'porteiro',
+    'caixa_nervosa',
+    'pacote_arrogante',
+    'caixa_paranoica',
+  ]);
   const loaded = await Promise.all(
     ids.map((id) =>
       load(
         app,
         id,
         'container',
-        `${import.meta.env.BASE_URL}assets/${ids.indexOf(id) < 5 ? 'characters' : 'environment'}/${id}.glb`,
+        `${import.meta.env.BASE_URL}assets/${characters.has(id) ? 'characters' : 'environment'}/${id}.glb`,
       ),
     ),
   );
   const models = Object.fromEntries(ids.map((id, i) => [id, loaded[i]]));
-  const atlas = await load(
-    app,
-    'Bellmare atlas',
-    'texture',
-    `${import.meta.env.BASE_URL}assets/textures/bellmare-atlas.png`,
-  );
-  const texture = atlas.resource as Texture;
-  texture.anisotropy = 4;
-  return { models, atlas: texture };
+  return { models };
 }
 export function instantiate(assets: GameAssets, id: string) {
   return (assets.models[id].resource as ContainerResource).instantiateRenderEntity({
@@ -109,45 +116,4 @@ export function makeActor(app: AppBase, assets: GameAssets, monster = false): Ac
     rig,
     fadeMaterials,
   };
-}
-// Atlas generated from the supplied hotel references; the horizontal split is at y=580/1254.
-export function atlasMaterial(atlas: Texture, kind: 'wall' | 'carpet' | 'door' | 'wood') {
-  const m = new StandardMaterial();
-  m.diffuseMap = atlas;
-  m.diffuse = new Color(1, 1, 1);
-  m.gloss = kind === 'carpet' ? 2 : 12;
-  const top = 580 / 1254,
-    margin = 0.003;
-  const bounds =
-    kind === 'wall'
-      ? [0, 1 - top, 0.5, top]
-      : kind === 'carpet'
-        ? [0.5, 1 - top, 0.5, top]
-        : kind === 'door'
-          ? [0, 0, 0.5, 1 - top]
-          : [0.5, 0, 0.5, 1 - top];
-  m.diffuseMapTiling = new Vec2(bounds[2] - margin * 2, bounds[3] - margin * 2);
-  m.diffuseMapOffset = new Vec2(bounds[0] + margin, bounds[1] + margin);
-  if (kind === 'wall') {
-    // Preserve gold pixels, shift teal panels to the reference's purple in the material.
-    // This is a shader on the existing 3D walls, not a background image.
-    m.shaderChunksVersion = '2.23';
-    m.getShaderChunks().set(
-      'diffusePS',
-      `
-      uniform vec3 material_diffuse;
-      void getAlbedo() {
-        dAlbedo=material_diffuse;
-        #ifdef STD_DIFFUSE_TEXTURE
-          vec3 tex={STD_DIFFUSE_TEXTURE_DECODE}(texture2DBias({STD_DIFFUSE_TEXTURE_NAME}, {STD_DIFFUSE_TEXTURE_UV}, {STD_TEXTURE_BIAS})).{STD_DIFFUSE_TEXTURE_CHANNEL};
-          float teal=smoothstep(0.003,0.025,min(tex.g-tex.r,tex.b-tex.r));
-          float luminance=dot(tex,vec3(0.2126,0.7152,0.0722));
-          dAlbedo*=mix(tex,vec3(0.46,0.10,0.68)*max(0.12,luminance*3.5),teal);
-        #endif
-      }
-    `,
-    );
-  }
-  m.update();
-  return m;
 }

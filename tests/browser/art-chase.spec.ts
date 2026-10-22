@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { snap, go } from './helpers';
+import { snap, go, approachPorteiro } from './helpers';
 test('slice: caixa viva e perseguição com corrida esquelética do Porteiro', async ({ page }) => {
   test.setTimeout(420000);
   await page.setViewportSize({ width: 480, height: 270 });
@@ -20,11 +20,10 @@ test('slice: caixa viva e perseguição com corrida esquelética do Porteiro', a
   await go(page, -14.7, 5.1);
   // Make real footsteps/parcel noise; the unmodified AI investigates and sees the player.
   await page.keyboard.down('Shift');
-  await page.keyboard.down('d');
+  await approachPorteiro(page);
   await expect
     .poll(async () => (await snap(page)).porteiro.state, { timeout: 90000, intervals: [150] })
     .toBe('CHASE');
-  await page.keyboard.up('d');
   const before: any = await page.evaluate(() => (window as any).snapshot());
   const heading = before.player.x > before.porteiro.position.x ? Math.PI / 2 : -Math.PI / 2;
   const yaw = (heading === Math.PI / 2 ? -Math.PI / 2 : Math.PI / 2) + 0.65;

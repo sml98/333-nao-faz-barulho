@@ -51,9 +51,17 @@ test('Nico: Run esquelético, rosto frontal e câmera segura', async ({ page }) 
   await page.mouse.down();
   await page.mouse.move(286, 190, { steps: 6 });
   await page.mouse.up();
-  await page.keyboard.down('s');
+  const yaw = (await snap()).input.yaw;
+  const positiveXKeyCandidates: Array<[string, number]> = [
+    ['d', -Math.cos(yaw)],
+    ['a', Math.cos(yaw)],
+    ['w', Math.sin(yaw)],
+    ['s', -Math.sin(yaw)],
+  ];
+  const positiveXKey = positiveXKeyCandidates.sort((left, right) => right[1] - left[1])[0][0];
+  await page.keyboard.down(positiveXKey);
   await expect.poll(async () => (await snap()).player.x, { timeout: 15000 }).toBeGreaterThan(2.25);
-  await page.keyboard.up('s');
+  await page.keyboard.up(positiveXKey);
   await expect
     .poll(async () => (await snap()).camera.avatarOpacity, { timeout: 15000 })
     .toBeLessThan(0.95);
